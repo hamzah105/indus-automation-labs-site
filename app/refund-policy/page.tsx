@@ -21,9 +21,10 @@ export default function RefundPolicyPage() {
 
       <h2>Pilot access and subscriptions</h2>
       <p>
-        AutoChat is currently a working pilot under active development. Paid pilot access, subscriptions, or licenses may
-        be offered by written agreement, invoice, or checkout when available. Terms may vary depending on the pilot scope,
-        setup work, and support commitment.
+        AutoChat is currently a working pilot under active development. Pilot license requests and voucher-based offers
+        may be handled through app licensing or approved onboarding. Payments or license activation may be handled
+        through the AutoChat desktop app License section, approved onboarding, or future website/payment-provider checkout
+        depending on availability.
       </p>
 
       <h2>Cancellation requests</h2>
@@ -35,8 +36,9 @@ export default function RefundPolicyPage() {
       <h2>Refund eligibility</h2>
       <p>
         Refunds may be considered for duplicate charges, billing errors, service access issues that cannot be resolved, or
-        cases where a written pilot agreement allows a refund. Requests should be made as soon as possible with order,
-        account, or invoice details.
+        cases where a written pilot agreement allows a refund. Refund eligibility depends on pilot status,
+        installation/support work completed, misuse, and agreed terms. Requests should be made as soon as possible with
+        order, account, license, onboarding, or invoice details.
       </p>
 
       <h2>Non-refundable situations</h2>
@@ -48,7 +50,7 @@ export default function RefundPolicyPage() {
 
       <h2>How to request help</h2>
       <p>
-        Send refund or cancellation questions to <a href={`mailto:${site.email}`}>{site.email}</a>. Include your name,
+        Send billing, refund, or cancellation questions to <a href={site.generalContactMailto}>{site.email}</a>. Include your name,
         business name, contact email, invoice or payment reference if available, and a short explanation of the request.
       </p>
     </PolicyLayout>

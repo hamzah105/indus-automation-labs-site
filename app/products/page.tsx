@@ -29,7 +29,7 @@ export default function ProductsPage() {
             description="AI-powered business messaging automation desktop app for WhatsApp customer support, product questions, customer memory, supplier workflows, and voice-note transcription."
             actions={[
               { label: "Learn More", href: "/products/autochat", variant: "primary" },
-              { label: "Download Release", href: site.githubRelease, variant: "secondary" }
+              { label: "Download Release", href: site.releaseUrl, variant: "secondary" }
             ]}
           />
           <ProductCard

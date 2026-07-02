@@ -23,16 +23,16 @@ const features = [
   "Live training inbox",
   "Supplier desk workflow",
   "Voice-note transcription support",
-  "Trial/license activation foundation",
+  "In-app license section with voucher support",
   "Email support during pilot period"
 ];
 
 const onboardingSteps = [
-  "Contact support using the NEWCOM voucher.",
-  "Receive pilot onboarding instructions.",
-  "Download and install the AutoChat desktop build.",
-  "Configure business profile, product catalog, and WhatsApp connection.",
-  "Start in approval mode for safe testing."
+  "Download the latest AutoChat pilot release.",
+  "Install and open the AutoChat desktop app.",
+  "Go to the License section.",
+  "Enter voucher code NEWCOM.",
+  "Complete the pilot licensing process or contact support for onboarding."
 ];
 
 export default function PricingPage() {
@@ -41,7 +41,7 @@ export default function PricingPage() {
       <Section
         eyebrow="Pricing"
         title="AutoChat launch pricing"
-        description="AutoChat is currently available through an early pilot licensing offer. The standard AutoChat license price is PKR 20,000, but early users can claim the NEWCOM launch voucher for 50% off, reducing the final price to PKR 10,000."
+        description="Public website checkout is not active yet. AutoChat pilot licensing is currently available through the AutoChat desktop app License section and approved pilot onboarding."
         className="pt-20"
       >
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
@@ -63,7 +63,7 @@ export default function PricingPage() {
               </div>
 
               <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300">
-                For early businesses testing AutoChat as a Windows desktop messaging automation tool.
+                For early businesses testing AutoChat as a Windows desktop business messaging automation tool.
               </p>
 
               <div className="mt-8 grid gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-5 sm:grid-cols-3">
@@ -82,7 +82,7 @@ export default function PricingPage() {
               </div>
 
               <div className="mt-6 rounded-2xl border border-cyanGlow/20 bg-cyanGlow/10 p-4 text-sm font-semibold text-cyanGlow">
-                Use voucher code NEWCOM for the launch discount.
+                Voucher Code: NEWCOM
               </div>
 
               <ul className="mt-8 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
@@ -94,12 +94,12 @@ export default function PricingPage() {
                 ))}
               </ul>
 
-              <div className="mt-8 flex flex-wrap gap-3">
-                <ButtonLink href={`mailto:${site.email}?subject=AutoChat%20NEWCOM%20Launch%20Voucher`}>
-                  Claim NEWCOM Offer
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <ButtonLink href={site.releaseUrl}>
+                  Download AutoChat & Apply Voucher
                 </ButtonLink>
-                <ButtonLink href={site.githubRelease} variant="secondary">
-                  Download AutoChat Release
+                <ButtonLink href={site.newcomVoucherMailto} variant="secondary">
+                  Contact Support
                 </ButtonLink>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function PricingPage() {
 
           <aside className="grid gap-5">
             <div className="glass rounded-2xl p-6">
-              <h2 className="font-display text-2xl font-semibold text-white">What happens after claiming?</h2>
+              <h2 className="font-display text-2xl font-semibold text-white">How to claim the NEWCOM offer</h2>
               <ol className="mt-5 grid gap-4 text-sm leading-6 text-slate-300">
                 {onboardingSteps.map((step, index) => (
                   <li key={step} className="flex gap-3">
@@ -126,8 +126,10 @@ export default function PricingPage() {
             </div>
 
             <div className="glass rounded-2xl p-6 text-sm leading-7 text-slate-300">
-              No checkout is active yet. For pilot access, licensing, billing questions, or custom setup, contact{" "}
-              <a className="font-semibold text-cyanGlow hover:text-white" href={`mailto:${site.email}`}>
+              Public website checkout is not active yet. Pilot licensing is currently handled through the AutoChat
+              desktop app License section and approved onboarding. For pilot access, licensing, billing questions, or
+              custom setup, contact{" "}
+              <a className="font-semibold text-cyanGlow hover:text-white" href={site.newcomVoucherMailto}>
                 {site.email}
               </a>
               .

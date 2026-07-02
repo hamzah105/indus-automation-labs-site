@@ -43,15 +43,19 @@ export default function TermsPage() {
 
       <h2>Acceptable use</h2>
       <p>
-        You may not use Indus Automation Labs software or services for spam, fraud, deceptive automation, illegal
-        messaging, harassment, impersonation, phishing, malware, platform abuse, or privacy violations. You must follow
-        all laws and platform rules that apply to your messaging, customer data, and business operations.
+        You may not use Indus Automation Labs software or services for spam, unsolicited bulk messaging, fraud,
+        deception, phishing, platform abuse, harassment, malware, fake reviews, illegal activity, impersonation, or
+        privacy violations. You must follow all laws and platform rules that apply to your messaging, customer data, and
+        business operations.
       </p>
 
       <h2>Subscriptions and licensing</h2>
       <p>
-        Subscription and licensing options are planned and may be offered during or after pilot testing. Any pricing shown
-        on this website is indicative unless a written agreement, invoice, or checkout flow confirms otherwise.
+        AutoChat may include desktop-app-based license activation through the in-app License section. Payments or license
+        activation may be handled through the AutoChat desktop app License section, approved onboarding, or future
+        website/payment-provider checkout depending on availability. Any pricing shown on this website is indicative
+        unless the in-app licensing flow, a written agreement, invoice, approved onboarding, or future checkout flow
+        confirms otherwise.
       </p>
 
       <h2>No misuse or harmful automation</h2>
@@ -78,7 +82,7 @@ export default function TermsPage() {
       <h2>Contact</h2>
       <p>
         Questions about these terms can be sent to{" "}
-        <a href={`mailto:${site.email}`}>{site.email}</a>.
+        <a href={site.generalContactMailto}>{site.email}</a>.
       </p>
     </PolicyLayout>
   );

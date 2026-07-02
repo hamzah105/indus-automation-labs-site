@@ -18,7 +18,7 @@ export function ButtonLink({
 }: ButtonLinkProps) {
   const isExternal = href.startsWith("http") || href.startsWith("mailto:");
   const base =
-    "inline-flex min-h-11 items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyanGlow";
+    "inline-flex min-h-11 w-full items-center justify-center rounded-full px-5 py-2.5 text-center text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyanGlow sm:w-auto";
   const variants = {
     primary:
       "bg-cyanGlow text-slate-950 shadow-glow hover:bg-white hover:shadow-[0_0_42px_rgba(34,211,238,0.32)]",

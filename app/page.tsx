@@ -57,12 +57,12 @@ export default function HomePage() {
         description="AutoChat helps businesses connect WhatsApp, manage customer messages, create AI replies, approve drafts, train business knowledge, manage product catalog data, remember customer-specific details safely, and coordinate supplier-dependent requests."
       >
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {productFeatures.map((feature) => (
+          {productFeatures.map((feature, index) => (
             <FeatureCard
-              key={feature}
-              title={feature}
-              description="Built for a business-safe pilot workflow where owners can review, train, and improve automation before expanding usage."
-              icon="+"
+              key={feature.title}
+              title={feature.title}
+              description={feature.description}
+              icon={String(index + 1)}
             />
           ))}
         </div>

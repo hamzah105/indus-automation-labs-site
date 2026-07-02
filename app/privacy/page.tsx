@@ -68,7 +68,7 @@ export default function PrivacyPage() {
 
       <h2>Contact</h2>
       <p>
-        Privacy questions can be sent to <a href={`mailto:${site.email}`}>{site.email}</a>.
+        Privacy questions can be sent to <a href={site.generalContactMailto}>{site.email}</a>.
       </p>
     </PolicyLayout>
   );

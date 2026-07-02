@@ -8,7 +8,7 @@ type CTASectionProps = {
 
 export function CTASection({
   title = "Ready to test AutoChat?",
-  description = "Download the working desktop pilot, review the product prospectus, or contact Indus Automation Labs for controlled pilot access."
+  description = "Download the working desktop pilot, review the product prospectus, or contact Indus Automation Labs for controlled pilot onboarding."
 }: CTASectionProps) {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
@@ -21,12 +21,12 @@ export function CTASection({
           <p className="mt-4 text-base leading-7 text-slate-300">{description}</p>
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
-          <ButtonLink href={site.githubRelease}>Download AutoChat Release</ButtonLink>
+          <ButtonLink href={site.releaseUrl}>Download AutoChat Release</ButtonLink>
           <ButtonLink href={site.prospectusPath} variant="secondary" download>
-            Download Product Prospectus
+            Download AutoChat Prospectus
           </ButtonLink>
-          <ButtonLink href="/contact" variant="secondary">
-            Contact Us
+          <ButtonLink href={site.generalContactMailto} variant="secondary">
+            Contact Support
           </ButtonLink>
         </div>
       </div>

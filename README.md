@@ -8,7 +8,7 @@ Production-ready lightweight SaaS/company website for Indus Automation Labs and 
 - TypeScript
 - Tailwind CSS
 - CSS-only animated night-sky background
-- Static policy pages for payment processor readiness
+- Static policy pages for pilot licensing and future payment-provider readiness
 - No backend or database required
 
 ## Run locally
@@ -75,8 +75,8 @@ lib/site.ts
 Replace:
 
 ```ts
-youtubeTutorial: "https://www.youtube.com/",
-youtubeAd: "https://www.youtube.com/"
+tutorialUrl: "https://www.youtube.com/",
+adUrl: "https://www.youtube.com/"
 ```
 
 with the final tutorial and product ad URLs.
@@ -92,10 +92,12 @@ lib/site.ts
 Change:
 
 ```ts
-githubRelease: "https://github.com/hamzah105/AutoChat-PK-Releases"
+releaseUrl: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/tag/v0.1.0-pilot"
 ```
 
 to the final release or repository URL if it changes.
+
+Before public launch, confirm that the GitHub release includes a downloadable Windows installer asset, not only release notes.
 
 ## Connect indusautomationlabs.com from Namecheap to Vercel
 
@@ -139,5 +141,16 @@ TTL: Automatic
 
 - AutoChat is intentionally described as a working desktop pilot, early pilot, or under active development.
 - The site does not claim an official Meta/WhatsApp partnership.
-- Pricing is informational only and no payment checkout is active.
+- Public website checkout is not active yet, but AutoChat pilot licensing is available through the in-app License section and approved onboarding.
+- Current pilot pricing should show PKR 20,000 regular price and PKR 10,000 with the NEWCOM voucher.
 - Legal pages are practical placeholders and should be reviewed by a qualified professional before high-volume commercial launch.
+
+## Pre-launch checklist
+
+1. Confirm GitHub release has downloadable installer asset.
+2. Replace YouTube placeholder tutorial/ad links.
+3. Test support@indusautomationlabs.com mailto buttons.
+4. Test site on mobile.
+5. Test prospectus download at `/AutoChat_Prospectus.pdf`.
+6. Confirm pricing shows PKR 20,000 regular and PKR 10,000 with NEWCOM.
+7. Confirm wording says public website checkout is not active yet, but in-app licensing is available.

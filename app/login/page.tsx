@@ -22,7 +22,7 @@ export default function LoginPage() {
         <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-300">
           AutoChat dashboard access will be available for approved pilot customers.
         </p>
-        <ButtonLink href={`mailto:${site.email}`} className="mt-8">
+        <ButtonLink href={site.generalContactMailto} className="mt-8">
           Contact Support
         </ButtonLink>
       </section>

@@ -3,10 +3,14 @@ export const site = {
   domain: "indusautomationlabs.com",
   url: "https://indusautomationlabs.com",
   email: "support@indusautomationlabs.com",
+  releaseUrl: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/tag/v0.1.0-pilot",
   githubRelease: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/tag/v0.1.0-pilot",
   prospectusPath: "/AutoChat_Prospectus.pdf",
-  youtubeTutorial: "https://www.youtube.com/",
-  youtubeAd: "https://www.youtube.com/"
+  generalContactMailto: "mailto:support@indusautomationlabs.com?subject=Indus%20Automation%20Labs%20Inquiry",
+  newcomVoucherMailto: "mailto:support@indusautomationlabs.com?subject=AutoChat%20NEWCOM%20Voucher",
+  // TODO: Replace these placeholder YouTube URLs with the real AutoChat tutorial and product ad links before public marketing.
+  tutorialUrl: "https://www.youtube.com/",
+  adUrl: "https://www.youtube.com/"
 };
 
 export const navigation = [
@@ -27,15 +31,51 @@ export const legalLinks = [
 ];
 
 export const productFeatures = [
-  "WhatsApp business messaging automation",
-  "Product catalog and smart product search",
-  "Manual, approval, and auto modes",
-  "Customer-specific memory isolation",
-  "Live training inbox",
-  "Supplier desk for hidden fulfillment workflows",
-  "Voice-note transcription",
-  "Trial and license foundation",
-  "Windows desktop deployment"
+  {
+    title: "WhatsApp business messaging automation",
+    description:
+      "Connect WhatsApp through the desktop app and manage customer conversations from a controlled business dashboard."
+  },
+  {
+    title: "Product catalog and smart product search",
+    description:
+      "Add products, prices, stock status, descriptions, tags, and product links so AutoChat can answer catalog-related questions more accurately."
+  },
+  {
+    title: "Manual, approval, and auto modes",
+    description:
+      "Start safely in manual or approval mode, then move toward automation after the business knowledge base is trained."
+  },
+  {
+    title: "Customer-specific memory isolation",
+    description:
+      "Store customer preferences and notes per contact so one customer's context is not mixed with another customer's conversation."
+  },
+  {
+    title: "Live training inbox",
+    description:
+      "When AutoChat does not know an answer, the owner can answer once and save it as FAQ, product knowledge, policy, or customer memory."
+  },
+  {
+    title: "Supplier desk workflow",
+    description:
+      "Handle supplier-dependent questions internally and generate customer-safe updates without exposing supplier details, cost, or procurement information."
+  },
+  {
+    title: "Voice-note transcription",
+    description:
+      "Transcribe customer voice notes and pass the transcript into the same AI response pipeline for markets where voice messages are common."
+  },
+  {
+    title: "Trial and license foundation",
+    description:
+      "Support pilot access, license activation, and voucher-based early onboarding through the desktop app."
+  },
+  {
+    title: "Windows desktop deployment",
+    description:
+      "Designed first as a Windows desktop pilot so businesses can test automation without needing custom hardware."
+  }
 ];
 
 export function pageTitle(title: string) {

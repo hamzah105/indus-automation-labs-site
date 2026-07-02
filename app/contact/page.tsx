@@ -28,10 +28,10 @@ export default function ContactPage() {
             <p className="mt-4 text-sm leading-7 text-slate-300">
               Email is the active support channel while the website contact system is being configured.
             </p>
-            <a className="mt-5 block text-lg font-semibold text-cyanGlow hover:text-white" href={`mailto:${site.email}`}>
+            <a className="mt-5 block break-words text-lg font-semibold text-cyanGlow hover:text-white" href={site.generalContactMailto}>
               {site.email}
             </a>
-            <ButtonLink href={`mailto:${site.email}`} className="mt-8">
+            <ButtonLink href={site.generalContactMailto} className="mt-8">
               Email Support
             </ButtonLink>
           </div>

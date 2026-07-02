@@ -63,7 +63,7 @@ export default function AcceptableUsePage() {
 
       <h2>Contact</h2>
       <p>
-        Questions about acceptable use can be sent to <a href={`mailto:${site.email}`}>{site.email}</a>.
+        Questions about acceptable use can be sent to <a href={site.generalContactMailto}>{site.email}</a>.
       </p>
     </PolicyLayout>
   );

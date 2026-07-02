@@ -25,13 +25,13 @@ export function HeroSection() {
           AutoChat, helps businesses automate customer conversations, support workflows, product questions, and lead
           handling through an AI-powered messaging automation platform.
         </p>
-        <div className="mt-8 flex flex-wrap gap-3">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <ButtonLink href="/products/autochat">Explore AutoChat</ButtonLink>
-          <ButtonLink href={site.githubRelease} variant="secondary">
+          <ButtonLink href={site.releaseUrl} variant="secondary">
             Download Latest Release
           </ButtonLink>
           <ButtonLink href={site.prospectusPath} variant="secondary" download>
-            Download Prospectus
+            Download AutoChat Prospectus
           </ButtonLink>
         </div>
       </div>

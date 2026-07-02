@@ -9,11 +9,11 @@ export function Navbar() {
         aria-label="Primary navigation"
         className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8"
       >
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex min-w-0 items-center gap-3">
           <span className="grid h-10 w-10 place-items-center rounded-xl border border-cyanGlow/35 bg-cyanGlow/10 font-display text-lg font-bold text-cyanGlow shadow-glow">
             IA
           </span>
-          <span className="font-display text-base font-semibold tracking-normal text-white sm:text-lg">
+          <span className="truncate font-display text-base font-semibold tracking-normal text-white sm:text-lg">
             {site.name}
           </span>
         </Link>
@@ -31,7 +31,7 @@ export function Navbar() {
         </div>
 
         <div className="hidden lg:block">
-          <ButtonLink href={site.githubRelease}>Download AutoChat</ButtonLink>
+          <ButtonLink href={site.releaseUrl}>Download AutoChat</ButtonLink>
         </div>
 
         <details className="group relative lg:hidden">
@@ -39,7 +39,7 @@ export function Navbar() {
             <span className="sr-only">Open navigation</span>
             <span className="block h-0.5 w-5 bg-current before:mb-1.5 before:block before:h-0.5 before:bg-current after:mt-1.5 after:block after:h-0.5 after:bg-current" />
           </summary>
-          <div className="absolute right-0 mt-3 w-72 rounded-2xl border border-white/12 bg-midnight/95 p-3 shadow-2xl backdrop-blur-xl">
+          <div className="absolute right-0 mt-3 w-72 max-w-[calc(100vw-2rem)] rounded-2xl border border-white/12 bg-midnight/95 p-3 shadow-2xl backdrop-blur-xl">
             {navigation.map((item) => (
               <Link
                 key={item.href}
@@ -49,7 +49,7 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <ButtonLink href={site.githubRelease} className="mt-3 w-full">
+            <ButtonLink href={site.releaseUrl} className="mt-3 w-full">
               Download AutoChat
             </ButtonLink>
           </div>

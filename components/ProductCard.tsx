@@ -22,7 +22,7 @@ export function ProductCard({ title, status, description, actions }: ProductCard
           action.disabled ? (
             <span
               key={action.label}
-              className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/12 px-5 py-2.5 text-sm font-semibold text-slate-500"
+              className="inline-flex min-h-11 w-full items-center justify-center rounded-full border border-white/12 px-5 py-2.5 text-sm font-semibold text-slate-500 sm:w-auto"
             >
               {action.label}
             </span>

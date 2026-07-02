@@ -5,7 +5,7 @@ const productLinks = [
   { label: "Products", href: "/products" },
   { label: "AutoChat", href: "/products/autochat" },
   { label: "Pricing", href: "/pricing" },
-  { label: "GitHub Releases", href: site.githubRelease }
+  { label: "GitHub Releases", href: site.releaseUrl }
 ];
 
 export function Footer() {
@@ -17,7 +17,7 @@ export function Footer() {
           <p className="mt-4 max-w-md text-sm leading-6 text-slate-400">
             AI automation software for customer support, business messaging, and practical local business workflows.
           </p>
-          <a className="mt-4 inline-block text-sm text-cyanGlow hover:text-white" href={`mailto:${site.email}`}>
+          <a className="mt-4 inline-block break-words text-sm text-cyanGlow hover:text-white" href={site.generalContactMailto}>
             {site.email}
           </a>
         </div>
