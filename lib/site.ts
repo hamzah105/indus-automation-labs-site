@@ -10,7 +10,7 @@ export const site = {
   newcomVoucherMailto: "mailto:support@indusautomationlabs.com?subject=AutoChat%20NEWCOM%20Voucher",
   // TODO: Replace these placeholder YouTube URLs with the real AutoChat tutorial and product ad links before public marketing.
   tutorialUrl: "https://www.youtube.com/",
-  adUrl: "https://www.youtube.com/"
+  adUrl: "https://youtube.com/shorts/t7pUX-vO7Tk?si=TRtHz71772v-zMee"
 };
 
 export const navigation = [
