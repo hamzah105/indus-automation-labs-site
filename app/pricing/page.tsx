@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ButtonLink";
+import { CTASection } from "@/components/CTASection";
+import { Icon, type IconName } from "@/components/Icon";
 import { Section } from "@/components/Section";
+import { StatusPill } from "@/components/StatusPill";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -27,144 +30,176 @@ const features = [
   "Email support during pilot period"
 ];
 
-const onboardingSteps = [
-  "Download the latest AutoChat pilot release.",
-  "Install and open the AutoChat desktop app.",
-  "Go to the License section.",
-  "Enter voucher code NEWCOM.",
-  "Complete the pilot licensing process or contact support for onboarding."
+const onboardingSteps: Array<{ title: string; description: string; icon: IconName }> = [
+  {
+    title: "Download AutoChat",
+    description: "Get the latest v1.0.0 Windows installer from the official GitHub release.",
+    icon: "download"
+  },
+  {
+    title: "Open the License section",
+    description: "Install the desktop app and navigate to the in-app licensing area.",
+    icon: "license"
+  },
+  {
+    title: "Enter NEWCOM",
+    description: "Apply the NEWCOM voucher code to receive the current 50% pilot offer.",
+    icon: "spark"
+  },
+  {
+    title: "Complete pilot licensing",
+    description: "Finish the in-app process or contact support for approved onboarding assistance.",
+    icon: "check"
+  }
 ];
 
 export default function PricingPage() {
   return (
     <main>
-      <Section
-        eyebrow="Pricing"
-        title="AutoChat launch pricing"
-        description="Public website checkout is not active yet. AutoChat pilot licensing is currently available through the AutoChat desktop app License section and approved pilot onboarding."
-        className="pt-20"
-      >
-        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          <article className="glass relative overflow-hidden rounded-3xl p-6 shadow-glow sm:p-8">
-            <div className="absolute -right-16 -top-16 h-52 w-52 rounded-full bg-cyanGlow/15 blur-3xl" aria-hidden="true" />
-            <div className="absolute -bottom-20 -left-10 h-52 w-52 rounded-full bg-violetGlow/15 blur-3xl" aria-hidden="true" />
+      <section className="relative mx-auto max-w-7xl overflow-hidden px-4 pb-8 pt-20 sm:px-6 lg:px-8 lg:pb-12 lg:pt-28">
+        <div className="hero-orb hero-orb-cyan" aria-hidden="true" />
+        <div className="relative mx-auto max-w-4xl text-center reveal-up">
+          <p className="eyebrow-label">Pricing</p>
+          <h1 className="mt-5 text-balance font-display text-4xl font-semibold leading-[1.06] tracking-[-0.045em] text-white sm:text-6xl">
+            A clear pilot license for <span className="gradient-text">early AutoChat customers.</span>
+          </h1>
+          <p className="mx-auto mt-6 max-w-3xl text-pretty text-lg leading-8 text-slate-300">
+            Public website checkout is not active yet. AutoChat pilot licensing is currently available through the AutoChat desktop app License section and approved pilot onboarding.
+          </p>
+          <div className="mt-7 flex flex-wrap justify-center gap-2">
+            <StatusPill tone="mint">NEWCOM launch offer</StatusPill>
+            <StatusPill tone="cyan">In-app pilot licensing</StatusPill>
+            <StatusPill tone="violet">Approved onboarding</StatusPill>
+          </div>
+        </div>
+      </section>
 
-            <div className="relative">
-              <div className="flex flex-wrap items-center justify-between gap-3">
-                <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyanGlow">
-                    AutoChat Pilot License
-                  </p>
-                  <h2 className="mt-3 font-display text-3xl font-semibold text-white">Early launch license</h2>
-                </div>
-                <span className="rounded-full border border-mint/25 bg-mint/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-mint">
-                  NEWCOM Launch Offer
-                </span>
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div className="grid gap-6 lg:grid-cols-[1.18fr_0.82fr]">
+          <article className="cta-panel relative isolate overflow-hidden rounded-[2rem] p-6 shadow-[0_28px_90px_rgba(0,0,0,0.42)] sm:p-9 lg:p-10">
+            <div className="cta-orb" aria-hidden="true" />
+            <div className="relative flex flex-wrap items-start justify-between gap-4">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyanGlow">AutoChat Pilot License</p>
+                <h2 className="mt-3 font-display text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl">Early launch license</h2>
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300">
+                  For early businesses testing AutoChat as a Windows desktop business messaging automation tool.
+                </p>
               </div>
+              <StatusPill tone="mint">50% OFF</StatusPill>
+            </div>
 
-              <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300">
-                For early businesses testing AutoChat as a Windows desktop business messaging automation tool.
-              </p>
-
-              <div className="mt-8 grid gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-5 sm:grid-cols-3">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.16em] text-slate-500">Regular price</p>
-                  <p className="mt-2 font-display text-2xl font-semibold text-slate-200">PKR 20,000</p>
-                </div>
-                <div>
-                  <p className="text-xs uppercase tracking-[0.16em] text-slate-500">NEWCOM voucher</p>
-                  <p className="mt-2 font-display text-2xl font-semibold text-cyanGlow">50% off</p>
-                </div>
-                <div>
-                  <p className="text-xs uppercase tracking-[0.16em] text-slate-500">Final price</p>
-                  <p className="mt-2 font-display text-3xl font-semibold text-white">PKR 10,000</p>
-                </div>
+            <div className="relative mt-8 grid gap-3 sm:grid-cols-3">
+              <div className="rounded-2xl border border-white/[0.09] bg-white/[0.035] p-5">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">Regular Price</p>
+                <p className="mt-3 font-display text-2xl font-semibold text-slate-200">PKR 20,000</p>
               </div>
-
-              <div className="mt-6 rounded-2xl border border-cyanGlow/20 bg-cyanGlow/10 p-4 text-sm font-semibold text-cyanGlow">
-                Voucher Code: NEWCOM
+              <div className="rounded-2xl border border-cyanGlow/20 bg-cyanGlow/[0.07] p-5">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">NEWCOM Voucher</p>
+                <p className="mt-3 font-display text-2xl font-semibold text-cyanGlow">50% OFF</p>
               </div>
+              <div className="rounded-2xl border border-mint/20 bg-mint/[0.07] p-5">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">Final Pilot Price</p>
+                <p className="mt-3 font-display text-3xl font-semibold text-mint">PKR 10,000</p>
+              </div>
+            </div>
 
-              <ul className="mt-8 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
+            <div className="relative mt-4 flex items-center justify-between gap-4 rounded-2xl border border-white/[0.09] bg-white/[0.035] p-4">
+              <span className="text-sm text-slate-400">Voucher Code</span>
+              <strong className="rounded-lg border border-cyanGlow/20 bg-cyanGlow/[0.08] px-3 py-1.5 font-display text-lg tracking-[0.08em] text-cyanGlow">NEWCOM</strong>
+            </div>
+
+            <div className="relative mt-8 border-t border-white/[0.08] pt-7">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">Included in the pilot</p>
+              <ul className="mt-5 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
                 {features.map((feature) => (
                   <li key={feature} className="flex gap-3">
-                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-cyanGlow shadow-glow" />
+                    <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full border border-mint/20 bg-mint/[0.07] text-mint"><Icon name="check" className="h-3 w-3" /></span>
                     <span>{feature}</span>
                   </li>
                 ))}
               </ul>
+            </div>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                <ButtonLink href={site.releaseUrl}>
-                  Download AutoChat & Apply Voucher
-                </ButtonLink>
-                <ButtonLink href={site.newcomVoucherMailto} variant="secondary">
-                  Contact Support
-                </ButtonLink>
-              </div>
+            <div className="relative mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <ButtonLink href={site.releaseUrl} showArrow>Download AutoChat &amp; Apply Voucher</ButtonLink>
+              <ButtonLink href={site.newcomVoucherMailto} variant="secondary">Contact Support</ButtonLink>
             </div>
           </article>
 
-          <aside className="grid gap-5">
-            <div className="glass rounded-2xl p-6">
-              <h2 className="font-display text-2xl font-semibold text-white">How to claim the NEWCOM offer</h2>
-              <ol className="mt-5 grid gap-4 text-sm leading-6 text-slate-300">
-                {onboardingSteps.map((step, index) => (
-                  <li key={step} className="flex gap-3">
-                    <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-cyanGlow/30 bg-cyanGlow/10 text-xs font-semibold text-cyanGlow">
-                      {index + 1}
-                    </span>
-                    <span>{step}</span>
-                  </li>
-                ))}
-              </ol>
+          <aside className="grid content-start gap-5">
+            <div className="glass rounded-3xl p-6 sm:p-8">
+              <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-violetGlow/20 bg-violetGlow/[0.07] text-violetGlow"><Icon name="license" /></div>
+              <h2 className="mt-5 font-display text-2xl font-semibold text-white">Licensing stays inside AutoChat</h2>
+              <p className="mt-4 text-sm leading-7 text-slate-300">
+                Public website checkout is not active yet. Pilot licensing is currently handled through the AutoChat desktop app License section and approved onboarding.
+              </p>
             </div>
 
-            <div className="glass rounded-2xl p-6 text-sm leading-7 text-slate-300">
-              This launch offer is intended for early pilot customers and may change before public rollout. Final
-              subscription, renewal, and commercial licensing terms may be updated as AutoChat develops.
+            <div className="premium-card rounded-3xl p-6 sm:p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">Pilot terms</p>
+              <p className="mt-4 text-sm leading-7 text-slate-300">
+                This launch offer is intended for early pilot customers and may change before public rollout. Final subscription, renewal, and commercial licensing terms may be updated as AutoChat develops.
+              </p>
             </div>
 
-            <div className="glass rounded-2xl p-6 text-sm leading-7 text-slate-300">
-              Public website checkout is not active yet. Pilot licensing is currently handled through the AutoChat
-              desktop app License section and approved onboarding. For pilot access, licensing, billing questions, or
-              custom setup, contact{" "}
-              <a className="font-semibold text-cyanGlow hover:text-white" href={site.newcomVoucherMailto}>
-                {site.email}
-              </a>
-              .
+            <div className="premium-card rounded-3xl p-6 sm:p-8">
+              <p className="text-sm leading-7 text-slate-300">
+                For pilot access, licensing, billing questions, or custom setup, contact{" "}
+                <a className="font-semibold text-cyanGlow hover:text-white" href={site.newcomVoucherMailto}>{site.email}</a>.
+              </p>
             </div>
           </aside>
         </div>
+      </section>
 
-        <div className="mt-8 grid gap-5 md:grid-cols-2">
-          <div className="glass rounded-2xl p-6">
+      <Section
+        eyebrow="Claim the offer"
+        title="How to use the NEWCOM voucher."
+        description="The current pilot flow takes place through the desktop app and approved onboarding—not through a public website checkout."
+      >
+        <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {onboardingSteps.map((step, index) => (
+            <li key={step.title} className="premium-card relative rounded-3xl p-6">
+              <div className="flex items-center justify-between gap-4">
+                <span className="grid h-11 w-11 place-items-center rounded-2xl border border-cyanGlow/20 bg-cyanGlow/[0.07] text-cyanGlow"><Icon name={step.icon} /></span>
+                <span className="font-display text-2xl font-semibold text-white/[0.09]">0{index + 1}</span>
+              </div>
+              <h2 className="mt-5 font-display text-xl font-semibold text-white">{step.title}</h2>
+              <p className="mt-3 text-sm leading-6 text-slate-400">{step.description}</p>
+            </li>
+          ))}
+        </ol>
+      </Section>
+
+      <Section
+        eyebrow="Future options"
+        title="Commercial models may expand after the pilot."
+        description="These directions are not active checkout products today and remain clearly separated from the current AutoChat pilot license."
+      >
+        <div className="grid gap-5 md:grid-cols-2">
+          <div className="premium-card rounded-3xl p-6 sm:p-8">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <h2 className="font-display text-xl font-semibold text-white">Future SaaS Subscription</h2>
-              <span className="rounded-full border border-white/12 px-3 py-1 text-xs font-semibold text-slate-400">
-                Coming Soon
-              </span>
+              <StatusPill tone="violet">Coming soon</StatusPill>
             </div>
             <p className="mt-4 text-sm leading-6 text-slate-400">
-              Subscription, renewal, and hosted service options may be introduced after pilot testing and commercial
-              readiness.
+              Subscription, renewal, and hosted service options may be introduced after pilot testing and commercial readiness.
             </p>
           </div>
-
-          <div className="glass rounded-2xl p-6">
+          <div className="premium-card rounded-3xl p-6 sm:p-8">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <h2 className="font-display text-xl font-semibold text-white">Custom Business Setup</h2>
-              <span className="rounded-full border border-cyanGlow/25 bg-cyanGlow/10 px-3 py-1 text-xs font-semibold text-cyanGlow">
-                Contact Support
-              </span>
+              <StatusPill tone="cyan">Contact Support</StatusPill>
             </div>
             <p className="mt-4 text-sm leading-6 text-slate-400">
-              Businesses that need onboarding, catalog setup, or workflow configuration can contact support for pilot
-              guidance.
+              Businesses that need onboarding, catalog setup, or workflow configuration can contact support for pilot guidance.
             </p>
           </div>
         </div>
       </Section>
+
+      <CTASection title="Ready to apply the NEWCOM pilot offer?" description="Download AutoChat v1.0.0, open the in-app License section, and use NEWCOM—or contact support for approved pilot onboarding." />
     </main>
   );
 }

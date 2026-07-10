@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { Icon } from "@/components/Icon";
 
 type ButtonLinkProps = {
   href: string;
@@ -7,6 +8,7 @@ type ButtonLinkProps = {
   variant?: "primary" | "secondary" | "quiet";
   className?: string;
   download?: boolean;
+  showArrow?: boolean;
 };
 
 export function ButtonLink({
@@ -14,17 +16,18 @@ export function ButtonLink({
   children,
   variant = "primary",
   className = "",
-  download = false
+  download = false,
+  showArrow = false
 }: ButtonLinkProps) {
   const isExternal = href.startsWith("http") || href.startsWith("mailto:");
   const base =
-    "inline-flex min-h-11 w-full items-center justify-center rounded-full px-5 py-2.5 text-center text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyanGlow sm:w-auto";
+    "group relative isolate inline-flex min-h-12 w-full items-center justify-center gap-2 overflow-hidden rounded-full px-5 py-3 text-center text-sm font-semibold transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyanGlow active:translate-y-px sm:w-auto";
   const variants = {
     primary:
-      "bg-cyanGlow text-slate-950 shadow-glow hover:bg-white hover:shadow-[0_0_42px_rgba(34,211,238,0.32)]",
+      "border border-cyan-200/30 bg-gradient-to-r from-cyanGlow to-electric text-slate-950 shadow-[0_12px_35px_rgba(34,211,238,0.22)] hover:-translate-y-0.5 hover:from-white hover:to-cyan-100 hover:shadow-[0_16px_45px_rgba(34,211,238,0.32)]",
     secondary:
-      "border border-white/15 bg-white/8 text-white hover:border-cyanGlow/70 hover:bg-cyanGlow/10",
-    quiet: "text-slate-200 hover:text-cyanGlow"
+      "border border-white/[0.14] bg-white/[0.055] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] backdrop-blur-xl hover:-translate-y-0.5 hover:border-cyanGlow/45 hover:bg-cyanGlow/[0.09] hover:text-cyan-50",
+    quiet: "min-h-10 px-3 py-2 text-slate-300 hover:bg-white/[0.05] hover:text-cyanGlow"
   };
   const classes = `${base} ${variants[variant]} ${className}`;
 
@@ -37,14 +40,16 @@ export function ButtonLink({
         rel={href.startsWith("http") ? "noreferrer" : undefined}
         download={download || undefined}
       >
-        {children}
+        <span className="relative z-10">{children}</span>
+        {showArrow ? <Icon name="arrow" className="relative z-10 h-4 w-4 transition-transform group-hover:translate-x-0.5" /> : null}
       </a>
     );
   }
 
   return (
     <Link className={classes} href={href}>
-      {children}
+      <span className="relative z-10">{children}</span>
+      {showArrow ? <Icon name="arrow" className="relative z-10 h-4 w-4 transition-transform group-hover:translate-x-0.5" /> : null}
     </Link>
   );
 }
