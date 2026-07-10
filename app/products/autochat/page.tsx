@@ -249,7 +249,7 @@ export default function AutoChatPage() {
         description="Use these links for the latest desktop release, product prospectus, tutorial, product ad, and support contact."
       >
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <ButtonLink href={site.releaseUrl}>Download Latest Release</ButtonLink>
+          <ButtonLink href={site.releaseUrl}>Download AutoChat v1.0.0</ButtonLink>
           <ButtonLink href={site.prospectusPath} variant="secondary" download>
             Download AutoChat Prospectus
           </ButtonLink>
@@ -266,6 +266,31 @@ export default function AutoChatPage() {
         <p className="mt-5 text-sm leading-6 text-slate-500">
           Video links will be updated after the official tutorial and product ad are published.
         </p>
+        <div className="mt-8 border-t border-white/10 pt-6">
+          <h3 className="font-display text-xl font-semibold text-white">Previous versions</h3>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-400">
+            Legacy builds are provided for reference or compatibility. New users should download the latest v1.0.0
+            installer.
+          </p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {site.legacyDownloads.map((download) => (
+              <a
+                key={download.version}
+                href={download.href}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:border-cyanGlow/50 hover:bg-cyanGlow/10"
+              >
+                <span className="block font-semibold text-white">{download.name}</span>
+                <span className="mt-1 block text-sm text-slate-400">{download.type}</span>
+              </a>
+            ))}
+          </div>
+          <p className="mt-4 max-w-4xl text-sm leading-6 text-slate-500">
+            For most users, the latest v1.0.0 installer is recommended. Previous builds may lack newer fixes, pricing
+            updates, licensing improvements, or security-related changes.
+          </p>
+        </div>
       </Section>
 
       <CTASection />

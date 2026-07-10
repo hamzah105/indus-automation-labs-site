@@ -3,8 +3,22 @@ export const site = {
   domain: "indusautomationlabs.com",
   url: "https://indusautomationlabs.com",
   email: "support@indusautomationlabs.com",
-  releaseUrl: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v0.1.1/AutoChat-Setup-v0.1.1.exe",
-  githubRelease: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v0.1.1/AutoChat-Setup-v0.1.1.exe",
+  releaseUrl: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v1.0.0/AutoChat-Setup-v1.0.0.exe",
+  githubRelease: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v1.0.0/AutoChat-Setup-v1.0.0.exe",
+  legacyDownloads: [
+    {
+      name: "AutoChat PK v0.1.0 Pilot Release",
+      version: "v0.1.0-pilot",
+      type: "Legacy pilot release",
+      href: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/tag/v0.1.0-pilot"
+    },
+    {
+      name: "AutoChat v0.1.1",
+      version: "v0.1.1",
+      type: "Previous installer",
+      href: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v0.1.1/AutoChat-Setup-v0.1.1.exe"
+    }
+  ],
   prospectusPath: "/AutoChat_Prospectus.pdf",
   generalContactMailto: "mailto:support@indusautomationlabs.com?subject=Indus%20Automation%20Labs%20Inquiry",
   newcomVoucherMailto: "mailto:support@indusautomationlabs.com?subject=AutoChat%20NEWCOM%20Voucher",

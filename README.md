@@ -92,7 +92,7 @@ lib/site.ts
 Change:
 
 ```ts
-releaseUrl: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/tag/v0.1.0-pilot"
+releaseUrl: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v1.0.0/AutoChat-Setup-v1.0.0.exe"
 ```
 
 to the final release or repository URL if it changes.
