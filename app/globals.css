@@ -55,6 +55,15 @@ a {
   background: rgba(34, 211, 238, 0.35);
 }
 
+/* Keep small status labels readable on both the page background and dense product panels. */
+.text-slate-500 {
+  color: #94a3b8;
+}
+
+.text-slate-600 {
+  color: #7f8da3;
+}
+
 .glass {
   border: 1px solid var(--border);
   background:
