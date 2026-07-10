@@ -64,22 +64,21 @@ It will be available at:
 
 The website already links to that path from the hero, AutoChat page, and CTA sections.
 
-## Replace YouTube links
+## AutoChat video links
 
-Edit the placeholders in:
+The tutorial and product ad URLs are stored in:
 
 ```text
 lib/site.ts
 ```
 
-Replace:
+Current tutorial URL:
 
 ```ts
-tutorialUrl: "https://www.youtube.com/",
-adUrl: "https://www.youtube.com/"
+tutorialUrl: "https://youtu.be/gtUK3SuWmx8?si=Lfv5laGrJAXX1-uk"
 ```
 
-with the final tutorial and product ad URLs.
+Keep `adUrl` aligned with the published AutoChat product ad when it changes.
 
 ## Update the AutoChat GitHub release link
 
@@ -148,7 +147,7 @@ TTL: Automatic
 ## Pre-launch checklist
 
 1. Confirm GitHub release has downloadable installer asset.
-2. Replace YouTube placeholder tutorial/ad links.
+2. Confirm the published tutorial and product ad links.
 3. Test support@indusautomationlabs.com mailto buttons.
 4. Test site on mobile.
 5. Test prospectus download at `/AutoChat_Prospectus.pdf`.
