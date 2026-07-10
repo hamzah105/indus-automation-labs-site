@@ -1,4 +1,5 @@
 import { ButtonLink } from "@/components/ButtonLink";
+import { Icon } from "@/components/Icon";
 import { site } from "@/lib/site";
 
 type CTASectionProps = {
@@ -11,17 +12,21 @@ export function CTASection({
   description = "Download the working desktop pilot, review the product prospectus, or contact Indus Automation Labs for controlled pilot onboarding."
 }: CTASectionProps) {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-      <div className="glass overflow-hidden rounded-3xl p-8 sm:p-10">
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyanGlow">Next step</p>
-          <h2 className="mt-3 font-display text-3xl font-semibold tracking-normal text-white sm:text-4xl">
+    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+      <div className="cta-panel relative isolate overflow-hidden rounded-[2rem] p-7 sm:p-10 lg:p-12">
+        <div className="cta-orb" aria-hidden="true" />
+        <div className="relative max-w-3xl">
+          <p className="eyebrow-label">Next step</p>
+          <h2 className="mt-4 text-balance font-display text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl lg:text-5xl">
             {title}
           </h2>
-          <p className="mt-4 text-base leading-7 text-slate-300">{description}</p>
+          <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">{description}</p>
         </div>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <ButtonLink href={site.releaseUrl}>Download AutoChat Release</ButtonLink>
+        <div className="relative mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <ButtonLink href={site.releaseUrl} showArrow>Download AutoChat v1.0.0</ButtonLink>
+          <ButtonLink href={site.tutorialUrl} variant="secondary">
+            <span className="inline-flex items-center gap-2"><Icon name="play" className="h-4 w-4" />Watch Tutorial</span>
+          </ButtonLink>
           <ButtonLink href={site.prospectusPath} variant="secondary" download>
             Download AutoChat Prospectus
           </ButtonLink>

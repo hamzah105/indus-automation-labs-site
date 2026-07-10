@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-sans antialiased">
         <StarBackground />
         <Navbar />
-        {children}
+        <div id="main-content">{children}</div>
         <Footer />
       </body>
     </html>

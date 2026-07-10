@@ -22,8 +22,7 @@ export const site = {
   prospectusPath: "/AutoChat_Prospectus.pdf",
   generalContactMailto: "mailto:support@indusautomationlabs.com?subject=Indus%20Automation%20Labs%20Inquiry",
   newcomVoucherMailto: "mailto:support@indusautomationlabs.com?subject=AutoChat%20NEWCOM%20Voucher",
-  // TODO: Replace these placeholder YouTube URLs with the real AutoChat tutorial and product ad links before public marketing.
-  tutorialUrl: "https://www.youtube.com/",
+  tutorialUrl: "https://youtu.be/gtUK3SuWmx8?si=Lfv5laGrJAXX1-uk",
   adUrl: "https://youtube.com/shorts/t7pUX-vO7Tk?si=TRtHz71772v-zMee"
 };
 
