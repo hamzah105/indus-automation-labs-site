@@ -8,8 +8,8 @@ type CTASectionProps = {
 };
 
 export function CTASection({
-  title = "Ready to test AutoChat?",
-  description = "Download the working desktop pilot, review the product prospectus, or contact Indus Automation Labs for controlled pilot onboarding."
+  title = "Ready to use AutoChat?",
+  description = "Download AutoChat v1.0.0, review the product prospectus, or contact Indus Automation Labs for onboarding support."
 }: CTASectionProps) {
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">

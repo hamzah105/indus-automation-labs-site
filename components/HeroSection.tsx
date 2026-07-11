@@ -11,7 +11,7 @@ export function HeroSection() {
       <div className="hero-orb hero-orb-violet" aria-hidden="true" />
       <div className="relative z-10 reveal-up">
         <div className="flex flex-wrap gap-2">
-          <StatusPill tone="mint">Working desktop pilot</StatusPill>
+          <StatusPill tone="mint">Windows desktop automation software</StatusPill>
           <StatusPill tone="violet">Approval mode</StatusPill>
         </div>
         <h1 className="mt-7 max-w-4xl text-balance font-display text-4xl font-semibold leading-[1.04] tracking-[-0.045em] text-white sm:text-6xl lg:text-[4.35rem] xl:text-[4.8rem]">

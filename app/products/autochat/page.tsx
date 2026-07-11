@@ -15,14 +15,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AutoChat - AI Business Messaging Automation",
     description:
-      "A working desktop pilot that helps businesses automate WhatsApp customer conversations while keeping owners in control."
+      "AutoChat v1.0.0 is a Windows desktop application for business messaging and customer-support automation."
   }
 };
 
 const capabilities = [
   {
     title: "WhatsApp QR connection",
-    description: "Connect a business WhatsApp session through the Windows desktop pilot app."
+    description: "Connect a business WhatsApp session through the Windows desktop app."
   },
   {
     title: "Incoming/outgoing message handling",
@@ -66,11 +66,11 @@ const capabilities = [
   },
   {
     title: "In-app license section",
-    description: "Support pilot license activation and voucher-based early onboarding inside the desktop app."
+    description: "Support license activation and voucher-based launch onboarding inside the desktop app."
   },
   {
     title: "Windows app packaging",
-    description: "Ship the pilot as a Windows desktop build for practical small-business testing."
+    description: "Ship AutoChat v1.0.0 as a Windows desktop build for practical small-business use."
   }
 ];
 
@@ -94,7 +94,7 @@ const processSteps = [
   {
     number: "01",
     title: "Connect the workspace",
-    description: "Link the business WhatsApp session and prepare the Windows desktop pilot for controlled testing.",
+    description: "Link the business WhatsApp session and prepare the Windows desktop app for controlled business use.",
     icon: "connected" as IconName
   },
   {
@@ -127,7 +127,7 @@ const modes = [
   {
     title: "Approval Mode",
     code: "A",
-    description: "AutoChat generates editable AI drafts and waits for the owner to approve before sending. Recommended for pilots and new businesses.",
+    description: "AutoChat generates editable AI drafts and waits for the owner to approve before sending. Recommended for new businesses and sensitive conversations.",
     tone: "border-cyanGlow/25 bg-cyanGlow/[0.07] shadow-[0_18px_60px_rgba(34,211,238,0.08)]"
   },
   {
@@ -182,7 +182,7 @@ const architecture = [
 
 const resourceActions = [
   { title: "Latest installer", detail: "AutoChat v1.0.0 for Windows", href: site.releaseUrl, icon: "download" as IconName },
-  { title: "Product prospectus", detail: "Review the pilot overview", href: site.prospectusPath, icon: "catalog" as IconName, download: true },
+  { title: "Product prospectus", detail: "Review the product overview", href: site.prospectusPath, icon: "catalog" as IconName, download: true },
   { title: "Video tutorial", detail: "Watch the setup walkthrough", href: site.tutorialUrl, icon: "play" as IconName },
   { title: "Product ad", detail: "See AutoChat in a short overview", href: site.adUrl, icon: "spark" as IconName }
 ];
@@ -194,7 +194,7 @@ export default function AutoChatPage() {
         <div className="hero-orb hero-orb-violet" aria-hidden="true" />
         <div className="relative z-10 reveal-up">
           <div className="flex flex-wrap gap-2">
-            <StatusPill tone="mint">Working desktop pilot</StatusPill>
+            <StatusPill tone="mint">Windows desktop automation software</StatusPill>
             <StatusPill tone="cyan">Windows v1.0.0</StatusPill>
           </div>
           <p className="mt-7 text-xs font-semibold uppercase tracking-[0.22em] text-cyanGlow">AutoChat by Indus Automation Labs</p>
@@ -247,8 +247,8 @@ export default function AutoChatPage() {
 
       <Section
         eyebrow="Overview"
-        title="Built for controlled real-store testing."
-        description="AutoChat is a business messaging automation desktop app developed under Indus Automation Labs. It is currently a working pilot build, not a final finished product. It is prepared for controlled real-store testing while new modules continue to be improved."
+        title="Built for real-store business workflows."
+        description="AutoChat v1.0.0 is a Windows desktop application for business messaging and customer-support automation. It is prepared for controlled real-store use while modules continue to be improved."
       >
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="premium-card rounded-3xl p-6 sm:p-8">
@@ -269,7 +269,7 @@ export default function AutoChatPage() {
               <StatusPill tone="solar">Active development</StatusPill>
             </div>
             <p className="mt-5 text-sm leading-7 text-slate-300">
-              AutoChat is currently in working pilot stage and is being improved through controlled testing. Features, pricing, licensing, and supported integrations may evolve as the product develops.
+              AutoChat v1.0.0 is available as Windows desktop automation software and continues to improve through controlled real-store use. Features, pricing, licensing, and supported integrations may evolve as the product develops.
             </p>
           </aside>
         </div>
@@ -278,7 +278,7 @@ export default function AutoChatPage() {
       <Section
         eyebrow="How AutoChat works"
         title="From connection to a business-approved reply."
-        description="The pilot workflow is deliberately staged so businesses can build confidence before increasing automation."
+        description="The workflow is deliberately staged so businesses can build confidence before increasing automation."
       >
         <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {processSteps.map((step, index) => (
@@ -294,15 +294,15 @@ export default function AutoChatPage() {
       </Section>
 
       <Section
-        eyebrow="Pilot licensing"
-        title="Download the pilot build and apply the NEWCOM voucher in-app."
-        description="Users can download the latest AutoChat pilot release from GitHub, install the Windows desktop app, open the in-app License section, and apply voucher code NEWCOM. The regular pilot license price is PKR 20,000, and the NEWCOM launch voucher reduces the pilot price to PKR 10,000. Public website checkout is not active yet."
+        eyebrow="Licensing"
+        title="Download AutoChat v1.0.0 and apply the NEWCOM voucher in-app."
+        description="Users can download the latest AutoChat v1.0.0 release from GitHub, install the Windows desktop app, open the in-app License section, and apply voucher code NEWCOM. The regular launch license price is PKR 20,000, and the NEWCOM launch voucher reduces the launch price to PKR 10,000. Public website checkout is not active yet."
       >
         <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
           <article className="cta-panel relative overflow-hidden rounded-3xl p-6 sm:p-8">
             <div className="relative flex flex-wrap items-start justify-between gap-4">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyanGlow">AutoChat Pilot License</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyanGlow">AutoChat License</p>
                 <h2 className="mt-2 font-display text-3xl font-semibold tracking-[-0.025em] text-white">NEWCOM launch offer</h2>
               </div>
               <StatusPill tone="mint">50% off</StatusPill>
@@ -317,7 +317,7 @@ export default function AutoChatPage() {
                 <strong className="mt-2 block font-display text-xl text-cyanGlow">50% OFF</strong>
               </div>
               <div className="rounded-2xl border border-mint/20 bg-mint/[0.07] p-4">
-                <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">Final Pilot Price</p>
+                <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">Final Launch Price</p>
                 <strong className="mt-2 block font-display text-xl text-mint">PKR 10,000</strong>
               </div>
             </div>
@@ -330,9 +330,9 @@ export default function AutoChatPage() {
 
           <aside className="glass rounded-3xl p-6 text-sm leading-7 text-slate-300 sm:p-8">
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-violetGlow/20 bg-violetGlow/[0.07] text-violetGlow"><Icon name="license" /></div>
-            <h2 className="mt-5 font-display text-2xl font-semibold text-white">Important pilot notes</h2>
+            <h2 className="mt-5 font-display text-2xl font-semibold text-white">Important licensing notes</h2>
             <p className="mt-4">
-              Pilot licensing is currently handled through the AutoChat desktop app License section and approved pilot onboarding. Do not treat the website as a public card checkout flow yet.
+              Licensing is currently handled through the AutoChat desktop app License section and approved onboarding. Do not treat the website as a public card checkout flow yet.
             </p>
             <p className="mt-4">
               Before public launch, confirm that the GitHub release includes a downloadable Windows installer asset, not only release notes.
@@ -343,7 +343,7 @@ export default function AutoChatPage() {
 
       <Section
         eyebrow="Core capabilities"
-        title="The pilot foundation covers the full reply workflow."
+        title="The AutoChat foundation covers the full reply workflow."
         description="Each capability supports a specific operator need, from connection and product knowledge to review, training, privacy, and deployment."
       >
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -369,7 +369,7 @@ export default function AutoChatPage() {
             <article key={mode.title} className={`rounded-3xl border p-6 sm:p-8 ${mode.tone}`}>
               <div className="flex items-center justify-between gap-4">
                 <span className="grid h-12 w-12 place-items-center rounded-2xl border border-white/[0.1] bg-white/[0.045] font-display text-lg font-semibold text-white">{mode.code}</span>
-                {mode.code === "A" ? <StatusPill tone="cyan">Pilot recommended</StatusPill> : null}
+                {mode.code === "A" ? <StatusPill tone="cyan">Recommended start</StatusPill> : null}
               </div>
               <h2 className="mt-6 font-display text-2xl font-semibold text-white">{mode.title}</h2>
               <p className="mt-3 text-sm leading-7 text-slate-300">{mode.description}</p>

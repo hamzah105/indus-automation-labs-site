@@ -9,16 +9,16 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "AutoChat launch pricing with the NEWCOM launch voucher for early pilot customers of Indus Automation Labs.",
+    "AutoChat launch pricing with the NEWCOM launch voucher for early AutoChat customers of Indus Automation Labs.",
   openGraph: {
     title: "AutoChat launch pricing",
     description:
-      "Claim the NEWCOM launch voucher for 50% off the AutoChat Pilot License during the early pilot offer."
+      "Claim the NEWCOM launch voucher for 50% off the AutoChat launch license during the current launch offer."
   }
 };
 
 const features = [
-  "Windows desktop AutoChat pilot build",
+  "Windows desktop AutoChat v1.0.0 build",
   "WhatsApp business messaging automation",
   "Product catalog and smart product matching",
   "Manual, approval, and auto reply modes",
@@ -27,7 +27,7 @@ const features = [
   "Supplier desk workflow",
   "Voice-note transcription support",
   "In-app license section with voucher support",
-  "Email support during pilot period"
+  "Email support during launch period"
 ];
 
 const onboardingSteps: Array<{ title: string; description: string; icon: IconName }> = [
@@ -43,11 +43,11 @@ const onboardingSteps: Array<{ title: string; description: string; icon: IconNam
   },
   {
     title: "Enter NEWCOM",
-    description: "Apply the NEWCOM voucher code to receive the current 50% pilot offer.",
+    description: "Apply the NEWCOM voucher code to receive the current 50% launch offer.",
     icon: "spark"
   },
   {
-    title: "Complete pilot licensing",
+    title: "Complete licensing",
     description: "Finish the in-app process or contact support for approved onboarding assistance.",
     icon: "check"
   }
@@ -61,14 +61,14 @@ export default function PricingPage() {
         <div className="relative mx-auto max-w-4xl text-center reveal-up">
           <p className="eyebrow-label">Pricing</p>
           <h1 className="mt-5 text-balance font-display text-4xl font-semibold leading-[1.06] tracking-[-0.045em] text-white sm:text-6xl">
-            A clear pilot license for <span className="gradient-text">early AutoChat customers.</span>
+            A clear launch license for <span className="gradient-text">early AutoChat customers.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-pretty text-lg leading-8 text-slate-300">
-            Public website checkout is not active yet. AutoChat pilot licensing is currently available through the AutoChat desktop app License section and approved pilot onboarding.
+            Public website checkout is not active yet. AutoChat licensing is currently available through the AutoChat desktop app License section and approved onboarding.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-2">
             <StatusPill tone="mint">NEWCOM launch offer</StatusPill>
-            <StatusPill tone="cyan">In-app pilot licensing</StatusPill>
+            <StatusPill tone="cyan">In-app licensing</StatusPill>
             <StatusPill tone="violet">Approved onboarding</StatusPill>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function PricingPage() {
             <div className="cta-orb" aria-hidden="true" />
             <div className="relative flex flex-wrap items-start justify-between gap-4">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyanGlow">AutoChat Pilot License</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyanGlow">AutoChat License</p>
                 <h2 className="mt-3 font-display text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl">Early launch license</h2>
                 <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300">
                   For early businesses testing AutoChat as a Windows desktop business messaging automation tool.
@@ -99,7 +99,7 @@ export default function PricingPage() {
                 <p className="mt-3 font-display text-2xl font-semibold text-cyanGlow">50% OFF</p>
               </div>
               <div className="rounded-2xl border border-mint/20 bg-mint/[0.07] p-5">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">Final Pilot Price</p>
+                <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">Final Launch Price</p>
                 <p className="mt-3 font-display text-3xl font-semibold text-mint">PKR 10,000</p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function PricingPage() {
             </div>
 
             <div className="relative mt-8 border-t border-white/[0.08] pt-7">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">Included in the pilot</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">Included</p>
               <ul className="mt-5 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
                 {features.map((feature) => (
                   <li key={feature} className="flex gap-3">
@@ -132,20 +132,20 @@ export default function PricingPage() {
               <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-violetGlow/20 bg-violetGlow/[0.07] text-violetGlow"><Icon name="license" /></div>
               <h2 className="mt-5 font-display text-2xl font-semibold text-white">Licensing stays inside AutoChat</h2>
               <p className="mt-4 text-sm leading-7 text-slate-300">
-                Public website checkout is not active yet. Pilot licensing is currently handled through the AutoChat desktop app License section and approved onboarding.
+                Public website checkout is not active yet. Licensing is currently handled through the AutoChat desktop app License section and approved onboarding.
               </p>
             </div>
 
             <div className="premium-card rounded-3xl p-6 sm:p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">Pilot terms</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">Launch terms</p>
               <p className="mt-4 text-sm leading-7 text-slate-300">
-                This launch offer is intended for early pilot customers and may change before public rollout. Final subscription, renewal, and commercial licensing terms may be updated as AutoChat develops.
+                This launch offer is intended for early AutoChat customers and may change before public rollout. Final subscription, renewal, and commercial licensing terms may be updated as AutoChat develops.
               </p>
             </div>
 
             <div className="premium-card rounded-3xl p-6 sm:p-8">
               <p className="text-sm leading-7 text-slate-300">
-                For pilot access, licensing, billing questions, or custom setup, contact{" "}
+                For product access, licensing, billing questions, or custom setup, contact{" "}
                 <a className="font-semibold text-cyanGlow hover:text-white" href={site.newcomVoucherMailto}>{site.email}</a>.
               </p>
             </div>
@@ -156,7 +156,7 @@ export default function PricingPage() {
       <Section
         eyebrow="Claim the offer"
         title="How to use the NEWCOM voucher."
-        description="The current pilot flow takes place through the desktop app and approved onboarding—not through a public website checkout."
+        description="The current licensing flow takes place through the desktop app and approved onboarding—not through a public website checkout."
       >
         <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {onboardingSteps.map((step, index) => (
@@ -174,8 +174,8 @@ export default function PricingPage() {
 
       <Section
         eyebrow="Future options"
-        title="Commercial models may expand after the pilot."
-        description="These directions are not active checkout products today and remain clearly separated from the current AutoChat pilot license."
+        title="Commercial models may expand over time."
+        description="These directions are not active checkout products today and remain clearly separated from the current AutoChat launch license."
       >
         <div className="grid gap-5 md:grid-cols-2">
           <div className="premium-card rounded-3xl p-6 sm:p-8">
@@ -184,7 +184,7 @@ export default function PricingPage() {
               <StatusPill tone="violet">Coming soon</StatusPill>
             </div>
             <p className="mt-4 text-sm leading-6 text-slate-400">
-              Subscription, renewal, and hosted service options may be introduced after pilot testing and commercial readiness.
+              Subscription, renewal, and hosted service options may be introduced after further testing and commercial readiness.
             </p>
           </div>
           <div className="premium-card rounded-3xl p-6 sm:p-8">
@@ -193,13 +193,13 @@ export default function PricingPage() {
               <StatusPill tone="cyan">Contact Support</StatusPill>
             </div>
             <p className="mt-4 text-sm leading-6 text-slate-400">
-              Businesses that need onboarding, catalog setup, or workflow configuration can contact support for pilot guidance.
+              Businesses that need onboarding, catalog setup, or workflow configuration can contact support for onboarding guidance.
             </p>
           </div>
         </div>
       </Section>
 
-      <CTASection title="Ready to apply the NEWCOM pilot offer?" description="Download AutoChat v1.0.0, open the in-app License section, and use NEWCOM—or contact support for approved pilot onboarding." />
+      <CTASection title="Ready to apply the NEWCOM launch offer?" description="Download AutoChat v1.0.0, open the in-app License section, and use NEWCOM—or contact support for approved onboarding." />
     </main>
   );
 }

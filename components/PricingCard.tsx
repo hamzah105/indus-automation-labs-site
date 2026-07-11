@@ -29,7 +29,7 @@ export function PricingCard({ name, price, description, features, highlighted }:
         ))}
       </ul>
       <ButtonLink href="/contact" variant={highlighted ? "primary" : "secondary"} className="mt-8">
-        Request pilot access
+        Request product access
       </ButtonLink>
     </article>
   );

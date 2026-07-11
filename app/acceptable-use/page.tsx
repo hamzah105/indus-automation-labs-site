@@ -29,7 +29,7 @@ export default function AcceptableUsePage() {
   return (
     <PolicyLayout title="Acceptable Use Policy">
       <p>
-        This Acceptable Use Policy applies to the Indus Automation Labs website, AutoChat pilot software, downloads,
+        This Acceptable Use Policy applies to the Indus Automation Labs website, AutoChat software, downloads,
         support services, and future hosted or licensed services. It exists to keep automation safe, lawful, and respectful
         of customers and platforms.
       </p>
@@ -50,7 +50,7 @@ export default function AcceptableUsePage() {
 
       <h2>Automation safeguards</h2>
       <p>
-        Businesses should use approval mode, owner-reviewed training, and careful pilot testing before increasing
+        Businesses should use approval mode, owner-reviewed training, and careful testing before increasing
         automation. AutoChat should not be used to send messages that the business would not lawfully and ethically send
         manually.
       </p>

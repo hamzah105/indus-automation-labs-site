@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <PolicyLayout title="Privacy Policy">
+    <PolicyLayout title="Privacy Policy" lastUpdated="July 11, 2026">
       <div className="rounded-2xl border border-cyanGlow/20 bg-cyanGlow/[0.06] p-5 sm:p-6">
         <p className="!mt-0 font-semibold text-white">Privacy summary</p>
         <p>
@@ -86,12 +86,17 @@ export default function PrivacyPage() {
         contact us for support or other business purposes.
       </p>
       <p>
+        Indus Automation Labs is an independent software brand operated by Muhammad Hamza Shoaib. References to
+        &quot;Indus Automation Labs,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot; in this policy refer to Muhammad
+        Hamza Shoaib operating under the Indus Automation Labs brand.
+      </p>
+      <p>
         AutoChat is intended for small and medium-sized businesses across different industries and store types. In this
         policy, a &quot;business user&quot; means the organization or person who installs, configures, or operates
         AutoChat, while a &quot;customer&quot; may mean an individual whose conversation or order information is
         processed by that business user.
       </p>
-      <p><strong>Effective date and last updated:</strong> July 2026.</p>
+      <p><strong>Effective date and last updated:</strong> July 11, 2026.</p>
 
       <h2 id="website-information" className="scroll-mt-28">Information processed by the website</h2>
       <p>

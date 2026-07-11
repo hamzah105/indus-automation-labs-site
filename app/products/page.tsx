@@ -45,10 +45,10 @@ export default function ProductsPage() {
             Practical automation products, <span className="gradient-text">built to grow with operators.</span>
           </h1>
           <p className="mt-6 max-w-3xl text-pretty text-lg leading-8 text-slate-300">
-            We are building a suite of AI-powered tools for customer support, business operations, and local automation—starting with a working desktop pilot businesses can test today.
+            We are building a suite of AI-powered tools for customer support, business operations, and local automation—starting with Windows desktop automation software businesses can use today.
           </p>
           <div className="mt-7 flex flex-wrap gap-2">
-            <StatusPill tone="mint">1 working pilot</StatusPill>
+            <StatusPill tone="mint">1 product available</StatusPill>
             <StatusPill tone="violet">2 planned directions</StatusPill>
             <StatusPill tone="cyan">Desktop-first foundation</StatusPill>
           </div>
@@ -58,13 +58,13 @@ export default function ProductsPage() {
       <Section
         eyebrow="Products"
         title="A focused first product, with a wider platform direction."
-        description="AutoChat is available as a working desktop pilot. AutoVision and broader workflow tools remain clearly labeled as planned product directions."
+        description="AutoChat is available as Windows desktop automation software. AutoVision and broader workflow tools remain clearly labeled as planned product directions."
       >
         <div className="grid gap-5 lg:grid-cols-2">
           <ProductCard
             title="AutoChat"
             eyebrow="Available now"
-            status="Working desktop pilot"
+            status="Windows desktop software"
             featured
             icon={<Icon name="message" />}
             description="AI-powered business messaging automation desktop app for WhatsApp customer support, product questions, customer memory, supplier workflows, and voice-note transcription."
@@ -111,7 +111,7 @@ export default function ProductsPage() {
         </div>
       </Section>
 
-      <CTASection title="Start with AutoChat, our working desktop pilot." />
+      <CTASection title="Start with AutoChat, our Windows desktop automation software." />
     </main>
   );
 }

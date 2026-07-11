@@ -6,10 +6,10 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Customer Dashboard",
-  description: "Customer dashboard placeholder for approved AutoChat pilot customers.",
+  description: "Customer dashboard placeholder for approved AutoChat customers.",
   openGraph: {
     title: "Customer Dashboard Coming Soon",
-    description: "AutoChat dashboard access will be available for approved pilot customers."
+    description: "AutoChat dashboard access will be available for approved customers."
   }
 };
 
@@ -18,15 +18,15 @@ export default function LoginPage() {
     <main className="relative mx-auto grid min-h-[78vh] max-w-6xl items-center gap-8 overflow-hidden px-4 py-20 sm:px-6 lg:grid-cols-[1fr_0.82fr] lg:px-8 lg:py-28">
       <div className="hero-orb hero-orb-cyan" aria-hidden="true" />
       <section className="relative reveal-up">
-        <StatusPill tone="violet">Pilot access</StatusPill>
+        <StatusPill tone="violet">Customer access</StatusPill>
         <h1 className="mt-6 text-balance font-display text-4xl font-semibold leading-[1.06] tracking-[-0.045em] text-white sm:text-6xl">
           Customer dashboard <span className="gradient-text">coming soon.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-          AutoChat dashboard access will be available for approved pilot customers.
+          AutoChat dashboard access will be available for approved customers.
         </p>
         <p className="mt-4 max-w-xl text-sm leading-7 text-slate-400">
-          Current pilot licensing and activation are handled through the AutoChat desktop app License section and approved onboarding.
+          Current licensing and activation are handled through the AutoChat desktop app License section and approved onboarding.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <ButtonLink href={site.generalContactMailto} showArrow>Contact Support</ButtonLink>
@@ -40,7 +40,7 @@ export default function LoginPage() {
           <div className="flex items-center gap-3">
             <span className="grid h-11 w-11 place-items-center rounded-2xl border border-cyanGlow/20 bg-cyanGlow/[0.08] text-cyanGlow"><Icon name="lock" /></span>
             <div>
-              <p className="font-display text-lg font-semibold text-white">Pilot portal</p>
+              <p className="font-display text-lg font-semibold text-white">Customer portal</p>
               <p className="text-xs text-slate-500">Access is not open yet</p>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function LoginPage() {
           {[
             ["Approved customer access", "Planned"],
             ["License and account overview", "Planned"],
-            ["Pilot support resources", "Planned"]
+            ["Support resources", "Planned"]
           ].map(([label, status]) => (
             <div key={label} className="flex items-center justify-between gap-4 rounded-2xl border border-white/[0.08] bg-white/[0.03] p-4">
               <span className="text-sm text-slate-300">{label}</span>

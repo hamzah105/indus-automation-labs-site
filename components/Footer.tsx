@@ -32,7 +32,7 @@ export function Footer() {
             <Icon name="mail" className="h-4 w-4 shrink-0" />{site.email}
           </a>
           <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-mint/20 bg-mint/[0.06] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-mint">
-            <span className="status-dot h-1.5 w-1.5 rounded-full bg-mint" />Working desktop pilot
+            <span className="status-dot h-1.5 w-1.5 rounded-full bg-mint" />Windows desktop automation software
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/[0.08] px-4 py-5 text-center text-xs leading-5 text-slate-500">
-        &copy; 2026 {site.name}. All rights reserved. AutoChat is currently a working pilot under active development.
+        &copy; 2026 {site.name}. All rights reserved. AutoChat v1.0.0 is a Windows desktop application for business messaging and customer-support automation.
       </div>
     </footer>
   );

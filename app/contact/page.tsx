@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Indus Automation Labs for AutoChat pilot access, support, and business automation inquiries.",
+  description: "Contact Indus Automation Labs for AutoChat product access, support, and business automation inquiries.",
   openGraph: {
     title: "Contact Indus Automation Labs",
     description: "Reach support for AutoChat and business automation inquiries."
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 const contactReasons = [
-  "AutoChat pilot access and onboarding",
+  "AutoChat access and onboarding",
   "Licensing and NEWCOM voucher questions",
   "Product catalog or workflow setup",
   "General business automation inquiries"
@@ -32,11 +32,11 @@ export default function ContactPage() {
             Bring us the workflow that <span className="gradient-text">slows your business down.</span>
           </h1>
           <p className="mt-6 max-w-3xl text-pretty text-lg leading-8 text-slate-300">
-            For AutoChat pilot access, product questions, support, or business automation inquiries, contact the team by email or use the inquiry form.
+            For AutoChat product access, product questions, support, or business automation inquiries, contact the team by email or use the inquiry form.
           </p>
           <div className="mt-7 flex flex-wrap gap-2">
             <StatusPill tone="mint">Active email support</StatusPill>
-            <StatusPill tone="cyan">Pilot onboarding</StatusPill>
+            <StatusPill tone="cyan">Product onboarding</StatusPill>
             <StatusPill tone="violet">SME workflow discovery</StatusPill>
           </div>
         </div>

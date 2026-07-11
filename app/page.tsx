@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Indus Automation Labs - AI Automation Software",
     description:
-      "Explore AutoChat, a working desktop pilot for WhatsApp business messaging automation and business-safe support workflows."
+      "Explore AutoChat v1.0.0, a Windows desktop application for business messaging and customer-support automation."
   }
 };
 
@@ -82,12 +82,12 @@ const featureIcons: IconName[] = [
 ];
 
 const responsibleItems = [
-  "Human approval mode for pilots and sensitive conversations",
+  "Human approval mode for sensitive conversations",
   "No hallucinated stock, availability, or prices",
   "Customer memory isolation by contact",
   "Owner-approved training and knowledge updates",
   "Supplier privacy for hidden fulfillment details",
-  "Safe pilot deployment with local language support including English, Urdu, and Roman Urdu"
+  "Safe desktop deployment with local language support including English, Urdu, and Roman Urdu"
 ];
 
 const previewModules: Array<{ label: string; detail: string; icon: IconName; tone: string }> = [
@@ -97,7 +97,7 @@ const previewModules: Array<{ label: string; detail: string; icon: IconName; ton
   { label: "Training Inbox", detail: "Unknown answers captured", icon: "training", tone: "text-cyanGlow" },
   { label: "Supplier Desk", detail: "Private fulfillment flow", icon: "supplier", tone: "text-mint" },
   { label: "Voice Note Transcription", detail: "Audio enters reply flow", icon: "voice", tone: "text-solar" },
-  { label: "License Section", detail: "Pilot activation in-app", icon: "license", tone: "text-violetGlow" }
+  { label: "License Section", detail: "License activation in-app", icon: "license", tone: "text-violetGlow" }
 ];
 
 export default function HomePage() {
@@ -108,7 +108,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
         <div className="grid overflow-hidden rounded-3xl border border-white/[0.08] bg-ink/[0.6] sm:grid-cols-2 lg:grid-cols-4">
           {[
-            ["Desktop-first", "Windows pilot deployment"],
+            ["Desktop-first", "Windows desktop deployment"],
             ["Human-controlled", "Manual and approval modes"],
             ["Business-aware", "Catalog and policy context"],
             ["Privacy-minded", "Memory isolated per customer"]
@@ -134,7 +134,7 @@ export default function HomePage() {
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">AutoChat module map</p>
               <h3 className="mt-2 font-display text-2xl font-semibold tracking-[-0.02em] text-white">Built around real operator decisions</h3>
             </div>
-            <StatusPill tone="mint">7 pilot modules ready</StatusPill>
+            <StatusPill tone="mint">7 workflow modules ready</StatusPill>
           </div>
           <div className="relative mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {previewModules.map((module, index) => (
@@ -195,7 +195,7 @@ export default function HomePage() {
         <div className="grid gap-6 lg:grid-cols-[0.82fr_1.18fr]">
           <div className="glass rounded-3xl p-6 sm:p-8">
             <p className="eyebrow-label">Responsible automation</p>
-            <h3 className="mt-4 font-display text-2xl font-semibold tracking-[-0.02em] text-white">Designed for careful pilots before full automation.</h3>
+            <h3 className="mt-4 font-display text-2xl font-semibold tracking-[-0.02em] text-white">Designed for careful rollout before full automation.</h3>
             <p className="mt-4 text-sm leading-7 text-slate-400">
               The product direction favors human oversight, scoped memory, owner training, and cautious deployment over uncontrolled messaging.
             </p>
@@ -224,7 +224,7 @@ export default function HomePage() {
         description="Indus Automation Labs plans to expand into AutoChat for business messaging automation, future AutoVision/CCTV event intelligence, workflow automation tools, and AI agents for customer support, sales operations, and local business productivity."
       >
         <div className="flex flex-wrap gap-3">
-          <StatusPill tone="mint">AutoChat · working pilot</StatusPill>
+          <StatusPill tone="mint">AutoChat · v1.0.0</StatusPill>
           <StatusPill tone="violet">AutoVision · planned</StatusPill>
           <StatusPill tone="cyan">Workflow tools · planned</StatusPill>
         </div>

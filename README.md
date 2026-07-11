@@ -8,7 +8,7 @@ Production-ready lightweight SaaS/company website for Indus Automation Labs and 
 - TypeScript
 - Tailwind CSS
 - CSS-only animated night-sky background
-- Static policy pages for pilot licensing and future payment-provider readiness
+- Static policy pages for licensing and future payment-provider readiness
 - No backend or database required
 
 ## Run locally
@@ -138,10 +138,10 @@ TTL: Automatic
 
 ## Important content notes
 
-- AutoChat is intentionally described as a working desktop pilot, early pilot, or under active development.
+- AutoChat is described as AutoChat v1.0.0 and Windows desktop automation software where current product wording is needed.
 - The site does not claim an official Meta/WhatsApp partnership.
-- Public website checkout is not active yet, but AutoChat pilot licensing is available through the in-app License section and approved onboarding.
-- Current pilot pricing should show PKR 20,000 regular price and PKR 10,000 with the NEWCOM voucher.
+- Public website checkout is not active yet, but AutoChat licensing is available through the in-app License section and approved onboarding.
+- Current launch pricing should show PKR 20,000 regular price and PKR 10,000 with the NEWCOM voucher.
 - Legal pages are practical placeholders and should be reviewed by a qualified professional before high-volume commercial launch.
 
 ## Pre-launch checklist

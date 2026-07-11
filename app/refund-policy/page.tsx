@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Refund and Cancellation Policy",
-  description: "Refund and cancellation policy for Indus Automation Labs pilot access, subscriptions, and setup work.",
+  description: "Refund and cancellation policy for Indus Automation Labs product access, subscriptions, and setup work.",
   openGraph: {
     title: "Refund and Cancellation Policy",
     description: "Early-stage refund and cancellation policy for AutoChat and related services."
@@ -15,14 +15,14 @@ export default function RefundPolicyPage() {
   return (
     <PolicyLayout title="Refund and Cancellation Policy">
       <p>
-        This policy explains how refunds and cancellations may be handled for Indus Automation Labs pilot access,
+        This policy explains how refunds and cancellations may be handled for Indus Automation Labs product access,
         subscriptions, licenses, and related setup services when paid plans become available.
       </p>
 
-      <h2>Pilot access and subscriptions</h2>
+      <h2>Product access and subscriptions</h2>
       <p>
-        AutoChat is currently a working pilot under active development. Pilot license requests and voucher-based offers
-        may be handled through app licensing or approved onboarding. Payments or license activation may be handled
+        AutoChat v1.0.0 is Windows desktop automation software. License requests and voucher-based offers may be
+        handled through app licensing or approved onboarding. Payments or license activation may be handled
         through the AutoChat desktop app License section, approved onboarding, or future website/payment-provider checkout
         depending on availability.
       </p>
@@ -36,7 +36,7 @@ export default function RefundPolicyPage() {
       <h2>Refund eligibility</h2>
       <p>
         Refunds may be considered for duplicate charges, billing errors, service access issues that cannot be resolved, or
-        cases where a written pilot agreement allows a refund. Refund eligibility depends on pilot status,
+        cases where a written license agreement allows a refund. Refund eligibility depends on license status,
         installation/support work completed, misuse, and agreed terms. Requests should be made as soon as possible with
         order, account, license, onboarding, or invoice details.
       </p>

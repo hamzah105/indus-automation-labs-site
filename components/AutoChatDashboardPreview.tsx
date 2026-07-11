@@ -30,7 +30,7 @@ export function AutoChatDashboardPreview({ compact = false }: { compact?: boolea
           </div>
           <div className="flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.16em] text-slate-500">
             <Icon name="lock" className="h-3.5 w-3.5" />
-            Local desktop pilot
+            Local desktop app
           </div>
         </div>
 
@@ -138,7 +138,7 @@ export function AutoChatDashboardPreview({ compact = false }: { compact?: boolea
                     <div className="flex items-center gap-2 text-[9px] font-semibold uppercase tracking-[0.12em] text-solar">
                       <Icon name="license" className="h-3.5 w-3.5" /> License section
                     </div>
-                    <p className="mt-2 text-[10px] leading-4 text-slate-400">Pilot activation and NEWCOM voucher support are available in-app.</p>
+                    <p className="mt-2 text-[10px] leading-4 text-slate-400">License activation and NEWCOM voucher support are available in-app.</p>
                   </div>
                 </div>
               ) : null}

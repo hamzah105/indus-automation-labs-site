@@ -9,7 +9,7 @@ export const site = {
     {
       name: "AutoChat PK v0.1.0 Pilot Release",
       version: "v0.1.0-pilot",
-      type: "Legacy pilot release",
+      type: "Legacy release page",
       href: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/tag/v0.1.0-pilot"
     },
     {
@@ -82,12 +82,12 @@ export const productFeatures = [
   {
     title: "Trial and license foundation",
     description:
-      "Support pilot access, license activation, and voucher-based early onboarding through the desktop app."
+      "Support license activation and voucher-based launch onboarding through the desktop app."
   },
   {
     title: "Windows desktop deployment",
     description:
-      "Designed first as a Windows desktop pilot so businesses can test automation without needing custom hardware."
+      "Designed as Windows desktop automation software so businesses can run AutoChat without needing custom hardware."
   }
 ];
 

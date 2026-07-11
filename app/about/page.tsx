@@ -38,7 +38,7 @@ export default function AboutPage() {
       <Section
         eyebrow="Company direction"
         title="Start with a real workflow. Build outward carefully."
-        description="The company is beginning with a working customer-support product and a deliberate pilot process before expanding into a broader automation suite."
+        description="The company is beginning with a working customer-support product and a deliberate release process before expanding into a broader automation suite."
       >
         <div className="grid gap-5 lg:grid-cols-2">
           <article className="premium-card rounded-3xl p-6 sm:p-8">
@@ -46,7 +46,7 @@ export default function AboutPage() {
             <p className="mt-6 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">First product</p>
             <h2 className="mt-2 font-display text-2xl font-semibold text-white">AutoChat</h2>
             <p className="mt-4 text-sm leading-7 text-slate-300">
-              The first product is AutoChat, a working desktop pilot for WhatsApp business messaging automation. It is designed for controlled pilot testing, owner-approved training, customer-specific memory, supplier workflows, and voice-note support.
+              AutoChat v1.0.0 is a Windows desktop application for business messaging and customer-support automation. It is designed for owner-approved training, customer-specific memory, supplier workflows, and voice-note support.
             </p>
           </article>
           <article className="premium-card rounded-3xl p-6 sm:p-8">
@@ -60,7 +60,7 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <CTASection title="Start with a controlled AutoChat pilot." />
+      <CTASection title="Start with AutoChat v1.0.0." />
     </main>
   );
 }

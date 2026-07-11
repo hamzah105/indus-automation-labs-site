@@ -16,22 +16,21 @@ export default function TermsPage() {
     <PolicyLayout title="Terms of Service">
       <p>
         These Terms of Service describe the basic rules for using the Indus Automation Labs website, product information,
-        software downloads, pilot access, and related services. They are provided as a practical policy placeholder and
+        software downloads, product access, and related services. They are provided as a practical policy placeholder and
         may be updated as the business, product, licensing, and payment systems mature.
       </p>
 
       <h2>Use of website and software</h2>
       <p>
         You may use this website to learn about Indus Automation Labs, review AutoChat product information, access release
-        links, download product materials, and contact support. If you install AutoChat or participate in a pilot, you are
-        responsible for using the software lawfully and in accordance with these terms and any pilot instructions.
+        links, download product materials, and contact support. If you install AutoChat, you are responsible for using
+        the software lawfully and in accordance with these terms and any applicable product instructions.
       </p>
 
-      <h2>Pilot and early-stage product status</h2>
+      <h2>Product status</h2>
       <p>
-        AutoChat is currently a working desktop pilot under active development. It is not presented as a final finished
-        product. Features, pricing, licensing, integrations, limits, and supported workflows may change as controlled
-        testing continues.
+        AutoChat v1.0.0 is a Windows desktop application for business messaging and customer-support automation.
+        Features, pricing, licensing, integrations, limits, and supported workflows may change as the product develops.
       </p>
 
       <h2>Account and access responsibility</h2>
@@ -68,13 +67,14 @@ export default function TermsPage() {
       <h2>Limitation of liability</h2>
       <p>
         To the maximum extent allowed by applicable law, Indus Automation Labs is not liable for indirect, incidental,
-        special, consequential, or business losses arising from use of the website, product materials, pilot software, or
-        third-party services. Pilot software should be tested carefully before relying on it for critical business use.
+        special, consequential, or business losses arising from use of the website, product materials, AutoChat software,
+        or third-party services. AutoChat should be configured and tested carefully before relying on it for critical
+        business use.
       </p>
 
       <h2>Termination</h2>
       <p>
-        Access to pilot software, licenses, or services may be suspended or terminated if there is misuse, policy
+        Access to AutoChat software, licenses, or services may be suspended or terminated if there is misuse, policy
         violation, security risk, non-payment when billing becomes available, or behavior that creates legal, platform, or
         operational risk.
       </p>
