@@ -22,8 +22,15 @@ export function HeroSection() {
           AutoChat, brings customer support, product knowledge, and approval-based AI replies into one Windows desktop app.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <ButtonLink href={site.releaseUrl} showArrow>
-            Download AutoChat v1.0.0
+          <ButtonLink
+            href={site.microsoftStoreUrl}
+            ariaLabel="Get AutoChat v1.1.0 from Microsoft Store"
+            showArrow
+          >
+            <span className="inline-flex items-center gap-2"><Icon name="windows" className="h-4 w-4" />Get it from Microsoft Store</span>
+          </ButtonLink>
+          <ButtonLink href={site.releaseUrl} variant="secondary" showArrow>
+            Download AutoChat v1.1.0
           </ButtonLink>
           <ButtonLink href="/products/autochat" variant="secondary" showArrow>
             Explore AutoChat

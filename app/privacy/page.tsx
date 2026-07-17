@@ -30,7 +30,7 @@ const contents = [
 export const metadata: Metadata = {
   title: "Privacy Policy - AutoChat",
   description:
-    "Privacy Policy for Indus Automation Labs, AutoChat v1.0.0, website visitors, license users, Microsoft Store distribution, and support contacts.",
+    "Privacy Policy for Indus Automation Labs, AutoChat v1.1.0, website visitors, license users, Microsoft Store distribution, and support contacts.",
   alternates: {
     canonical: privacyUrl
   },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     url: privacyUrl,
     title: "AutoChat Privacy Policy | Indus Automation Labs",
     description:
-      "How Indus Automation Labs and AutoChat v1.0.0 process, store, use, disclose, and protect information."
+      "How Indus Automation Labs and AutoChat v1.1.0 process, store, use, disclose, and protect information."
   }
 };
 
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
       <div className="rounded-2xl border border-cyanGlow/20 bg-cyanGlow/[0.06] p-5 sm:p-6">
         <p className="!mt-0 font-semibold text-white">Privacy summary</p>
         <p>
-          AutoChat v1.0.0 is a Windows desktop application that primarily stores business and customer-support data on
+          AutoChat v1.1.0 is a Windows desktop application that primarily stores business and customer-support data on
           the business user&apos;s own device. Information is sent outside the device only when a connected feature
           requires it, such as WhatsApp, a user-configured AI or cloud voice provider, licensing, updates, Microsoft
           Store services, or user-requested support. Indus Automation Labs does not sell personal information.
@@ -80,7 +80,7 @@ export default function PrivacyPage() {
       <h2 id="introduction" className="scroll-mt-28">Introduction</h2>
       <p>
         This Privacy Policy explains how Indus Automation Labs (&quot;Indus Automation Labs,&quot; &quot;we,&quot;
-        &quot;us,&quot; or &quot;our&quot;) handles information in connection with the AutoChat v1.0.0 desktop
+        &quot;us,&quot; or &quot;our&quot;) handles information in connection with the AutoChat v1.1.0 desktop
         application, the Indus Automation Labs website, licensing and purchase requests, customer support, and related
         services. It applies to website visitors, AutoChat business users, customers and license users, and people who
         contact us for support or other business purposes.
@@ -173,7 +173,7 @@ export default function PrivacyPage() {
         Product catalog data can also be exported in supported formats.
       </p>
       <p>
-        AutoChat v1.0.0 does not provide one in-app control that erases every local file. Uninstalling AutoChat may not
+        AutoChat v1.1.0 does not provide one in-app control that erases every local file. Uninstalling AutoChat may not
         automatically delete every file in the Windows application-data folder, exported backup, product export,
         generated audio folder, or other user-selected location. Users should review and securely remove those files
         separately when they are no longer needed. Data stored only on the user&apos;s device is generally not available
@@ -193,7 +193,7 @@ export default function PrivacyPage() {
         file and transcription instructions to ElevenLabs. Cloud text-to-speech may send reply text and voice/model
         settings to ElevenLabs and store the returned audio locally. AutoChat&apos;s Local Basic voice-generation mode uses
         local model files for supported text-to-speech and does not require sending that reply text to an online voice
-        provider. Local voice-note transcription is not currently implemented in AutoChat v1.0.0.
+        provider. Local voice-note transcription is not currently implemented in AutoChat v1.1.0.
       </p>
       <p>
         OpenRouter, the model provider selected through it, and ElevenLabs process information under their own terms,

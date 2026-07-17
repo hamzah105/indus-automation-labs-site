@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 const features = [
-  "Windows desktop AutoChat v1.0.0 build",
+  "Windows desktop AutoChat v1.1.0 build",
   "WhatsApp business messaging automation",
   "Product catalog and smart product matching",
   "Manual, approval, and auto reply modes",
@@ -33,7 +33,7 @@ const features = [
 const onboardingSteps: Array<{ title: string; description: string; icon: IconName }> = [
   {
     title: "Download AutoChat",
-    description: "Get the latest v1.0.0 Windows installer from the official GitHub release.",
+    description: "Get AutoChat v1.1.0 from Microsoft Store or download the direct Windows installer.",
     icon: "download"
   },
   {
@@ -122,7 +122,14 @@ export default function PricingPage() {
             </div>
 
             <div className="relative mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <ButtonLink href={site.releaseUrl} showArrow>Download AutoChat &amp; Apply Voucher</ButtonLink>
+              <ButtonLink
+                href={site.microsoftStoreUrl}
+                ariaLabel="Get AutoChat v1.1.0 from Microsoft Store"
+                showArrow
+              >
+                <span className="inline-flex items-center gap-2"><Icon name="windows" className="h-4 w-4" />Get it from Microsoft Store</span>
+              </ButtonLink>
+              <ButtonLink href={site.releaseUrl} variant="secondary" showArrow>Download AutoChat v1.1.0</ButtonLink>
               <ButtonLink href={site.newcomVoucherMailto} variant="secondary">Contact Support</ButtonLink>
             </div>
           </article>
@@ -199,7 +206,7 @@ export default function PricingPage() {
         </div>
       </Section>
 
-      <CTASection title="Ready to apply the NEWCOM launch offer?" description="Download AutoChat v1.0.0, open the in-app License section, and use NEWCOM—or contact support for approved onboarding." />
+      <CTASection title="Ready to apply the NEWCOM launch offer?" description="Download AutoChat v1.1.0, open the in-app License section, and use NEWCOM—or contact support for approved onboarding." />
     </main>
   );
 }

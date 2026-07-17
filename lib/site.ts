@@ -3,8 +3,10 @@ export const site = {
   domain: "indusautomationlabs.com",
   url: "https://indusautomationlabs.com",
   email: "support@indusautomationlabs.com",
-  releaseUrl: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v1.0.0/AutoChat-Setup-v1.0.0.exe",
-  githubRelease: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v1.0.0/AutoChat-Setup-v1.0.0.exe",
+  autochatVersion: "1.1.0",
+  releaseUrl: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v1.1.0/AutoChat-Setup-v1.1.0.exe",
+  githubRelease: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v1.1.0/AutoChat-Setup-v1.1.0.exe",
+  microsoftStoreUrl: "https://apps.microsoft.com/detail/9P0FTVQSX1S6?hl=en-us&gl=PK&ocid=pdpshare",
   legacyDownloads: [
     {
       name: "AutoChat PK v0.1.0 Pilot Release",

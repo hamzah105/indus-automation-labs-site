@@ -9,7 +9,7 @@ type CTASectionProps = {
 
 export function CTASection({
   title = "Ready to use AutoChat?",
-  description = "Download AutoChat v1.0.0, review the product prospectus, or contact Indus Automation Labs for onboarding support."
+  description = "Get AutoChat v1.1.0 from Microsoft Store or download the direct Windows installer, review the product prospectus, or contact Indus Automation Labs for onboarding support."
 }: CTASectionProps) {
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
@@ -23,7 +23,14 @@ export function CTASection({
           <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">{description}</p>
         </div>
         <div className="relative mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <ButtonLink href={site.releaseUrl} showArrow>Download AutoChat v1.0.0</ButtonLink>
+          <ButtonLink
+            href={site.microsoftStoreUrl}
+            ariaLabel="Get AutoChat v1.1.0 from Microsoft Store"
+            showArrow
+          >
+            <span className="inline-flex items-center gap-2"><Icon name="windows" className="h-4 w-4" />Get it from Microsoft Store</span>
+          </ButtonLink>
+          <ButtonLink href={site.releaseUrl} variant="secondary" showArrow>Download AutoChat v1.1.0</ButtonLink>
           <ButtonLink href={site.tutorialUrl} variant="secondary">
             <span className="inline-flex items-center gap-2"><Icon name="play" className="h-4 w-4" />Watch Tutorial</span>
           </ButtonLink>

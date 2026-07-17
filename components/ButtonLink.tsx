@@ -9,6 +9,7 @@ type ButtonLinkProps = {
   className?: string;
   download?: boolean;
   showArrow?: boolean;
+  ariaLabel?: string;
 };
 
 export function ButtonLink({
@@ -17,7 +18,8 @@ export function ButtonLink({
   variant = "primary",
   className = "",
   download = false,
-  showArrow = false
+  showArrow = false,
+  ariaLabel
 }: ButtonLinkProps) {
   const isExternal = href.startsWith("http") || href.startsWith("mailto:");
   const base =
@@ -36,8 +38,9 @@ export function ButtonLink({
       <a
         className={classes}
         href={href}
+        aria-label={ariaLabel}
         target={href.startsWith("http") ? "_blank" : undefined}
-        rel={href.startsWith("http") ? "noreferrer" : undefined}
+        rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
         download={download || undefined}
       >
         <span className="relative z-10">{children}</span>
@@ -47,7 +50,7 @@ export function ButtonLink({
   }
 
   return (
-    <Link className={classes} href={href}>
+    <Link aria-label={ariaLabel} className={classes} href={href}>
       <span className="relative z-10">{children}</span>
       {showArrow ? <Icon name="arrow" className="relative z-10 h-4 w-4 transition-transform group-hover:translate-x-0.5" /> : null}
     </Link>

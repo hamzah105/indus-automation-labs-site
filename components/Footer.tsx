@@ -6,7 +6,7 @@ const productLinks = [
   { label: "Products", href: "/products" },
   { label: "AutoChat", href: "/products/autochat" },
   { label: "Pricing", href: "/pricing" },
-  { label: "AutoChat v1.0.0", href: site.releaseUrl }
+  { label: "AutoChat v1.1.0", href: site.releaseUrl }
 ];
 
 const resourceLinks = [
@@ -41,7 +41,7 @@ export function Footer() {
           <div className="mt-4 grid gap-3 text-sm text-slate-400">
             {productLinks.map((link) =>
               link.href.startsWith("http") ? (
-                <a key={link.href} href={link.href} target="_blank" rel="noreferrer" className="transition hover:text-cyanGlow">
+                <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="transition hover:text-cyanGlow">
                   {link.label}
                 </a>
               ) : (
@@ -62,7 +62,7 @@ export function Footer() {
                   key={link.href}
                   href={link.href}
                   target={link.href.startsWith("http") ? "_blank" : undefined}
-                  rel={link.href.startsWith("http") ? "noreferrer" : undefined}
+                  rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   download={link.download || undefined}
                   className="transition hover:text-cyanGlow"
                 >
@@ -87,7 +87,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/[0.08] px-4 py-5 text-center text-xs leading-5 text-slate-500">
-        &copy; 2026 {site.name}. All rights reserved. AutoChat v1.0.0 is a Windows desktop application for business messaging and customer-support automation.
+        &copy; 2026 {site.name}. All rights reserved. AutoChat v1.1.0 is a Windows desktop application for business messaging and customer-support automation.
       </div>
     </footer>
   );

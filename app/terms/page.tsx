@@ -29,7 +29,7 @@ export default function TermsPage() {
 
       <h2>Product status</h2>
       <p>
-        AutoChat v1.0.0 is a Windows desktop application for business messaging and customer-support automation.
+        AutoChat v1.1.0 is a Windows desktop application for business messaging and customer-support automation.
         Features, pricing, licensing, integrations, limits, and supported workflows may change as the product develops.
       </p>
 

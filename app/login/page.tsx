@@ -30,7 +30,7 @@ export default function LoginPage() {
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <ButtonLink href={site.generalContactMailto} showArrow>Contact Support</ButtonLink>
-          <ButtonLink href={site.releaseUrl} variant="secondary">Download AutoChat v1.0.0</ButtonLink>
+          <ButtonLink href={site.releaseUrl} variant="secondary">Download AutoChat v1.1.0</ButtonLink>
         </div>
       </section>
 

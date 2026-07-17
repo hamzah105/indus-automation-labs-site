@@ -52,7 +52,7 @@ export function Navbar() {
         </div>
 
         <div className="hidden xl:block">
-          <ButtonLink href={site.releaseUrl}>Download v1.0.0</ButtonLink>
+          <ButtonLink href={site.releaseUrl}>Download v1.1.0</ButtonLink>
         </div>
 
         <div className="relative xl:hidden">
@@ -80,7 +80,7 @@ export function Navbar() {
               </Link>
             ))}
             <ButtonLink href={site.releaseUrl} className="mt-3 !w-full">
-              Download AutoChat v1.0.0
+              Download AutoChat v1.1.0
             </ButtonLink>
           </div> : null}
         </div>

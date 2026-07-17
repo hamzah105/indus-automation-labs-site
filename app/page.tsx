@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Indus Automation Labs - AI Automation Software",
     description:
-      "Explore AutoChat v1.0.0, a Windows desktop application for business messaging and customer-support automation."
+      "Explore AutoChat v1.1.0, a Windows desktop application for business messaging and customer-support automation."
   }
 };
 
@@ -224,7 +224,7 @@ export default function HomePage() {
         description="Indus Automation Labs plans to expand into AutoChat for business messaging automation, future AutoVision/CCTV event intelligence, workflow automation tools, and AI agents for customer support, sales operations, and local business productivity."
       >
         <div className="flex flex-wrap gap-3">
-          <StatusPill tone="mint">AutoChat · v1.0.0</StatusPill>
+          <StatusPill tone="mint">AutoChat · v1.1.0</StatusPill>
           <StatusPill tone="violet">AutoVision · planned</StatusPill>
           <StatusPill tone="cyan">Workflow tools · planned</StatusPill>
         </div>

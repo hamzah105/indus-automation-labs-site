@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AutoChat - AI Business Messaging Automation",
     description:
-      "AutoChat v1.0.0 is a Windows desktop application for business messaging and customer-support automation."
+      "AutoChat v1.1.0 is a Windows desktop application for business messaging and customer-support automation."
   }
 };
 
@@ -70,7 +70,7 @@ const capabilities = [
   },
   {
     title: "Windows app packaging",
-    description: "Ship AutoChat v1.0.0 as a Windows desktop build for practical small-business use."
+    description: "Ship AutoChat v1.1.0 as a Windows desktop build for practical small-business use."
   }
 ];
 
@@ -181,7 +181,7 @@ const architecture = [
 ];
 
 const resourceActions = [
-  { title: "Latest installer", detail: "AutoChat v1.0.0 for Windows", href: site.releaseUrl, icon: "download" as IconName },
+  { title: "Latest installer", detail: "AutoChat v1.1.0 for Windows", href: site.releaseUrl, icon: "download" as IconName },
   { title: "Product prospectus", detail: "Review the product overview", href: site.prospectusPath, icon: "catalog" as IconName, download: true },
   { title: "Video tutorial", detail: "Watch the setup walkthrough", href: site.tutorialUrl, icon: "play" as IconName },
   { title: "Product ad", detail: "See AutoChat in a short overview", href: site.adUrl, icon: "spark" as IconName }
@@ -195,7 +195,7 @@ export default function AutoChatPage() {
         <div className="relative z-10 reveal-up">
           <div className="flex flex-wrap gap-2">
             <StatusPill tone="mint">Windows desktop automation software</StatusPill>
-            <StatusPill tone="cyan">Windows v1.0.0</StatusPill>
+            <StatusPill tone="cyan">AutoChat v1.1.0 · Now on Microsoft Store</StatusPill>
           </div>
           <p className="mt-7 text-xs font-semibold uppercase tracking-[0.22em] text-cyanGlow">AutoChat by Indus Automation Labs</p>
           <h1 className="mt-4 text-balance font-display text-4xl font-semibold leading-[1.04] tracking-[-0.045em] text-white sm:text-6xl lg:text-[4.35rem]">
@@ -205,7 +205,14 @@ export default function AutoChatPage() {
             A Windows desktop app that helps businesses automate WhatsApp customer conversations while keeping owners in control.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <ButtonLink href={site.releaseUrl} showArrow>Download AutoChat v1.0.0</ButtonLink>
+            <ButtonLink
+              href={site.microsoftStoreUrl}
+              ariaLabel="Get AutoChat v1.1.0 from Microsoft Store"
+              showArrow
+            >
+              <span className="inline-flex items-center gap-2"><Icon name="windows" className="h-4 w-4" />Get it from Microsoft Store</span>
+            </ButtonLink>
+            <ButtonLink href={site.releaseUrl} variant="secondary" showArrow>Download AutoChat v1.1.0</ButtonLink>
             <ButtonLink href={site.prospectusPath} variant="secondary" download>Download AutoChat Prospectus</ButtonLink>
             <ButtonLink href={site.tutorialUrl} variant="secondary">
               <span className="inline-flex items-center gap-2"><Icon name="play" className="h-4 w-4" />Watch Tutorial</span>
@@ -213,8 +220,8 @@ export default function AutoChatPage() {
             <ButtonLink href={site.adUrl} variant="quiet">Watch Product Ad</ButtonLink>
           </div>
           <p className="mt-6 flex items-start gap-2 text-sm leading-6 text-slate-500">
-            <Icon name="shield" className="mt-0.5 h-4 w-4 shrink-0 text-mint" />
-            Built for controlled real-store testing with manual, approval, and carefully introduced auto modes.
+            <Icon name="windows" className="mt-0.5 h-4 w-4 shrink-0 text-mint" />
+            Official Windows desktop release for Windows 10 and Windows 11.
           </p>
         </div>
         <div className="relative z-10 reveal-up reveal-delay-2 lg:-mr-10 xl:-mr-14">
@@ -229,7 +236,7 @@ export default function AutoChatPage() {
               key={resource.title}
               href={resource.href}
               target={resource.href.startsWith("http") ? "_blank" : undefined}
-              rel={resource.href.startsWith("http") ? "noreferrer" : undefined}
+              rel={resource.href.startsWith("http") ? "noopener noreferrer" : undefined}
               download={resource.download || undefined}
               className="premium-card group flex items-center gap-3 rounded-2xl p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyanGlow"
             >
@@ -248,7 +255,7 @@ export default function AutoChatPage() {
       <Section
         eyebrow="Overview"
         title="Built for real-store business workflows."
-        description="AutoChat v1.0.0 is a Windows desktop application for business messaging and customer-support automation. It is prepared for controlled real-store use while modules continue to be improved."
+        description="AutoChat v1.1.0 is a Windows desktop application for business messaging and customer-support automation. It is available as an official Windows desktop release while modules continue to be improved."
       >
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="premium-card rounded-3xl p-6 sm:p-8">
@@ -269,7 +276,7 @@ export default function AutoChatPage() {
               <StatusPill tone="solar">Active development</StatusPill>
             </div>
             <p className="mt-5 text-sm leading-7 text-slate-300">
-              AutoChat v1.0.0 is available as Windows desktop automation software and continues to improve through controlled real-store use. Features, pricing, licensing, and supported integrations may evolve as the product develops.
+              AutoChat v1.1.0 is available as Windows desktop automation software and on Microsoft Store. Features, pricing, licensing, and supported integrations may evolve as the product develops.
             </p>
           </aside>
         </div>
@@ -295,8 +302,8 @@ export default function AutoChatPage() {
 
       <Section
         eyebrow="Licensing"
-        title="Download AutoChat v1.0.0 and apply the NEWCOM voucher in-app."
-        description="Users can download the latest AutoChat v1.0.0 release from GitHub, install the Windows desktop app, open the in-app License section, and apply voucher code NEWCOM. The regular launch license price is PKR 20,000, and the NEWCOM launch voucher reduces the launch price to PKR 10,000. Public website checkout is not active yet."
+        title="Download AutoChat v1.1.0 and apply the NEWCOM voucher in-app."
+        description="Users can download the latest AutoChat v1.1.0 release, install the Windows desktop app, open the in-app License section, and apply voucher code NEWCOM. The regular launch license price is PKR 20,000, and the NEWCOM launch voucher reduces the launch price to PKR 10,000. Public website checkout is not active yet."
       >
         <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
           <article className="cta-panel relative overflow-hidden rounded-3xl p-6 sm:p-8">
@@ -418,12 +425,20 @@ export default function AutoChatPage() {
         <div className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
           <article className="cta-panel relative overflow-hidden rounded-3xl p-6 sm:p-8">
             <StatusPill tone="mint">Recommended for most users</StatusPill>
-            <h2 className="mt-5 font-display text-3xl font-semibold tracking-[-0.025em] text-white">AutoChat v1.0.0</h2>
+            <h2 className="mt-5 font-display text-3xl font-semibold tracking-[-0.025em] text-white">AutoChat v1.1.0</h2>
             <p className="mt-3 max-w-xl text-sm leading-7 text-slate-300">The latest Windows installer includes the newest fixes, pricing updates, licensing improvements, and security-related changes available in the current release.</p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <ButtonLink href={site.releaseUrl} showArrow>Download AutoChat v1.0.0</ButtonLink>
+              <ButtonLink
+                href={site.microsoftStoreUrl}
+                ariaLabel="Get AutoChat v1.1.0 from Microsoft Store"
+                showArrow
+              >
+                <span className="inline-flex items-center gap-2"><Icon name="windows" className="h-4 w-4" />Get it from Microsoft Store</span>
+              </ButtonLink>
+              <ButtonLink href={site.releaseUrl} variant="secondary" showArrow>Download AutoChat v1.1.0</ButtonLink>
               <ButtonLink href={site.newcomVoucherMailto} variant="secondary">Contact Support</ButtonLink>
             </div>
+            <p className="mt-4 text-xs text-slate-500">Windows 10 and Windows 11</p>
           </article>
           <div className="glass rounded-3xl p-6 sm:p-8">
             <h2 className="font-display text-2xl font-semibold text-white">Product resources</h2>
@@ -440,7 +455,7 @@ export default function AutoChatPage() {
             <div className="max-w-3xl">
               <h2 className="font-display text-2xl font-semibold text-white">Previous versions</h2>
               <p className="mt-2 text-sm leading-6 text-slate-400">
-                Legacy builds are provided for reference or compatibility. New users should download the latest v1.0.0 installer.
+                Legacy builds are provided for reference or compatibility. New users should download the latest v1.1.0 installer.
               </p>
             </div>
             <StatusPill tone="solar">Legacy builds</StatusPill>
@@ -451,7 +466,7 @@ export default function AutoChatPage() {
                 key={download.version}
                 href={download.href}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="premium-card group flex items-center justify-between gap-4 rounded-2xl p-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyanGlow"
               >
                 <span>
@@ -464,7 +479,7 @@ export default function AutoChatPage() {
           </div>
           <p className="mt-5 flex items-start gap-2 text-sm leading-6 text-slate-500">
             <Icon name="shield" className="mt-0.5 h-4 w-4 shrink-0 text-solar" />
-            For most users, the latest v1.0.0 installer is recommended. Previous builds may lack newer fixes, pricing updates, licensing improvements, or security-related changes.
+            For most users, the latest v1.1.0 installer is recommended. Previous builds may lack newer fixes, pricing updates, licensing improvements, or security-related changes.
           </p>
         </div>
       </Section>

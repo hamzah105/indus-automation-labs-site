@@ -21,7 +21,7 @@ export default function RefundPolicyPage() {
 
       <h2>Product access and subscriptions</h2>
       <p>
-        AutoChat v1.0.0 is Windows desktop automation software. License requests and voucher-based offers may be
+        AutoChat v1.1.0 is Windows desktop automation software. License requests and voucher-based offers may be
         handled through app licensing or approved onboarding. Payments or license activation may be handled
         through the AutoChat desktop app License section, approved onboarding, or future website/payment-provider checkout
         depending on availability.

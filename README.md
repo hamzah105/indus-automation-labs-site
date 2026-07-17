@@ -91,7 +91,7 @@ lib/site.ts
 Change:
 
 ```ts
-releaseUrl: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v1.0.0/AutoChat-Setup-v1.0.0.exe"
+releaseUrl: "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v1.1.0/AutoChat-Setup-v1.1.0.exe"
 ```
 
 to the final release or repository URL if it changes.
@@ -138,7 +138,7 @@ TTL: Automatic
 
 ## Important content notes
 
-- AutoChat is described as AutoChat v1.0.0 and Windows desktop automation software where current product wording is needed.
+- AutoChat is described as AutoChat v1.1.0 and Windows desktop automation software where current product wording is needed.
 - The site does not claim an official Meta/WhatsApp partnership.
 - Public website checkout is not active yet, but AutoChat licensing is available through the in-app License section and approved onboarding.
 - Current launch pricing should show PKR 20,000 regular price and PKR 10,000 with the NEWCOM voucher.
