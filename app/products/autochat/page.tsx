@@ -212,7 +212,7 @@ export default function AutoChatPage() {
             >
               <span className="inline-flex items-center gap-2"><Icon name="windows" className="h-4 w-4" />Get it from Microsoft Store</span>
             </ButtonLink>
-            <ButtonLink href={site.releaseUrl} variant="secondary" showArrow>Download AutoChat v1.1.0</ButtonLink>
+            <ButtonLink href={site.releaseUrl} variant="secondary" showArrow matterFluxLabel="Preparing the latest AutoChat installer">Download AutoChat v1.1.0</ButtonLink>
             <ButtonLink href={site.prospectusPath} variant="secondary" download>Download AutoChat Prospectus</ButtonLink>
             <ButtonLink href={site.tutorialUrl} variant="secondary">
               <span className="inline-flex items-center gap-2"><Icon name="play" className="h-4 w-4" />Watch Tutorial</span>
@@ -435,7 +435,7 @@ export default function AutoChatPage() {
               >
                 <span className="inline-flex items-center gap-2"><Icon name="windows" className="h-4 w-4" />Get it from Microsoft Store</span>
               </ButtonLink>
-              <ButtonLink href={site.releaseUrl} variant="secondary" showArrow>Download AutoChat v1.1.0</ButtonLink>
+              <ButtonLink href={site.releaseUrl} variant="secondary" showArrow matterFluxLabel="Preparing the latest AutoChat installer">Download AutoChat v1.1.0</ButtonLink>
               <ButtonLink href={site.newcomVoucherMailto} variant="secondary">Contact Support</ButtonLink>
             </div>
             <p className="mt-4 text-xs text-slate-500">Windows 10 and Windows 11</p>

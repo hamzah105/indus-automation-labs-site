@@ -29,7 +29,12 @@ export function HeroSection() {
           >
             <span className="inline-flex items-center gap-2"><Icon name="windows" className="h-4 w-4" />Get it from Microsoft Store</span>
           </ButtonLink>
-          <ButtonLink href={site.releaseUrl} variant="secondary" showArrow>
+          <ButtonLink
+            href={site.releaseUrl}
+            variant="secondary"
+            showArrow
+            matterFluxLabel="Preparing AutoChat download"
+          >
             Download AutoChat v1.1.0
           </ButtonLink>
           <ButtonLink href="/products/autochat" variant="secondary" showArrow>

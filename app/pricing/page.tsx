@@ -129,7 +129,7 @@ export default function PricingPage() {
               >
                 <span className="inline-flex items-center gap-2"><Icon name="windows" className="h-4 w-4" />Get it from Microsoft Store</span>
               </ButtonLink>
-              <ButtonLink href={site.releaseUrl} variant="secondary" showArrow>Download AutoChat v1.1.0</ButtonLink>
+              <ButtonLink href={site.releaseUrl} variant="secondary" showArrow matterFluxLabel="Preparing AutoChat for the NEWCOM voucher">Download AutoChat v1.1.0</ButtonLink>
               <ButtonLink href={site.newcomVoucherMailto} variant="secondary">Contact Support</ButtonLink>
             </div>
           </article>
