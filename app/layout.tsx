@@ -3,6 +3,7 @@ import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { StarBackground } from "@/components/StarBackground";
+import { MatterFluxProvider } from "@/components/matterflux";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -34,10 +35,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="font-sans antialiased">
-        <StarBackground />
-        <Navbar />
-        <div id="main-content">{children}</div>
-        <Footer />
+        <MatterFluxProvider>
+          <StarBackground />
+          <Navbar />
+          <div id="main-content">{children}</div>
+          <Footer />
+        </MatterFluxProvider>
       </body>
     </html>
   );

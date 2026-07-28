@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
-import type { ReactNode } from "react";
+import type { MouseEvent, ReactNode } from "react";
 import { Icon } from "@/components/Icon";
+import { useMatterFlux, type MatterFluxIntensity } from "@/components/matterflux";
 
 type ButtonLinkProps = {
   href: string;
@@ -10,6 +13,8 @@ type ButtonLinkProps = {
   download?: boolean;
   showArrow?: boolean;
   ariaLabel?: string;
+  matterFluxLabel?: string;
+  matterFluxIntensity?: MatterFluxIntensity;
 };
 
 export function ButtonLink({
@@ -19,8 +24,11 @@ export function ButtonLink({
   className = "",
   download = false,
   showArrow = false,
-  ariaLabel
+  ariaLabel,
+  matterFluxLabel,
+  matterFluxIntensity = "high"
 }: ButtonLinkProps) {
+  const { runMatterFlux } = useMatterFlux();
   const isExternal = href.startsWith("http") || href.startsWith("mailto:");
   const base =
     "group relative isolate inline-flex min-h-12 w-full items-center justify-center gap-2 overflow-hidden rounded-full px-5 py-3 text-center text-sm font-semibold transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyanGlow active:translate-y-px sm:w-auto";
@@ -33,6 +41,21 @@ export function ButtonLink({
   };
   const classes = `${base} ${variants[variant]} ${className}`;
 
+  const handleMatterFlux = matterFluxLabel
+    ? (event: MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault();
+        void runMatterFlux({
+          event,
+          label: matterFluxLabel,
+          href,
+          target: href.startsWith("http") ? "_blank" : "_self",
+          intensity: matterFluxIntensity,
+          mode: "success",
+          successMessage: "Download ready"
+        });
+      }
+    : undefined;
+
   if (isExternal || download) {
     return (
       <a
@@ -42,6 +65,7 @@ export function ButtonLink({
         target={href.startsWith("http") ? "_blank" : undefined}
         rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
         download={download || undefined}
+        onClick={handleMatterFlux}
       >
         <span className="relative z-10">{children}</span>
         {showArrow ? <Icon name="arrow" className="relative z-10 h-4 w-4 transition-transform group-hover:translate-x-0.5" /> : null}
@@ -50,7 +74,7 @@ export function ButtonLink({
   }
 
   return (
-    <Link aria-label={ariaLabel} className={classes} href={href}>
+    <Link aria-label={ariaLabel} className={classes} href={href} onClick={handleMatterFlux}>
       <span className="relative z-10">{children}</span>
       {showArrow ? <Icon name="arrow" className="relative z-10 h-4 w-4 transition-transform group-hover:translate-x-0.5" /> : null}
     </Link>
