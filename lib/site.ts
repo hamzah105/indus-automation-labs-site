@@ -33,6 +33,7 @@ export const navigation = [
   { label: "Products", href: "/products" },
   { label: "AutoChat", href: "/products/autochat" },
   { label: "Pricing", href: "/pricing" },
+  { label: "Labs", href: "/labs/matterflux" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
   { label: "Login", href: "/login" }

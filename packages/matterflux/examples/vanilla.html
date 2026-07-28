@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MatterFlux vanilla example</title>
+    <link rel="stylesheet" href="../dist/matterflux.css" />
+    <style>
+      body { display: grid; min-height: 100vh; margin: 0; place-items: center; background: #05070f; color: white; font: 16px system-ui; }
+      button { border: 1px solid #c084fc; border-radius: 999px; background: #7c3aed; padding: 0.9rem 1.4rem; color: white; cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <button id="download" type="button">Download</button>
+
+    <script src="../dist/matterflux.iife.js"></script>
+    <script>
+      const flux = MatterFlux.create();
+
+      document.getElementById("download").addEventListener("click", async (event) => {
+        await flux.run({
+          event,
+          label: "Preparing download",
+          mode: "success"
+        });
+      });
+    </script>
+  </body>
+</html>

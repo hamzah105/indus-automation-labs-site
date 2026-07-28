@@ -6,6 +6,7 @@ const routes = [
   "/products",
   "/products/autochat",
   "/pricing",
+  "/labs/matterflux",
   "/about",
   "/contact",
   "/terms",

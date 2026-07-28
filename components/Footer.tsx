@@ -10,6 +10,7 @@ const productLinks = [
 ];
 
 const resourceLinks = [
+  { label: "MatterFlux", href: "/labs/matterflux" },
   { label: "Watch Tutorial", href: site.tutorialUrl },
   { label: "Watch Product Ad", href: site.adUrl },
   { label: "Download Prospectus", href: site.prospectusPath, download: true },
