@@ -35,15 +35,17 @@ export function MatterFluxDemo() {
           type="button"
           disabled={isActive}
           onClick={async (event) => {
-            setLastResult("Running success sequence…");
+            setLastResult("Running success transition...");
             const succeeded = await runMatterFlux({
               event,
-              label: "Converting interface matter",
+              label: "Running success transition",
               mode: "success",
               intensity: "high",
+              duration: 2200,
+              particleCount: 210,
               successMessage: "MatterFlux resolved successfully"
             });
-            setLastResult(succeeded ? "Success sequence completed." : "Sequence was interrupted.");
+            setLastResult(succeeded ? "Success transition completed." : "Success transition could not complete.");
           }}
           className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-full border border-violet-300/30 bg-gradient-to-r from-violet-600 to-fuchsia-500 px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_50px_rgba(168,85,247,0.24)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_60px_rgba(168,85,247,0.36)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-300 disabled:cursor-wait disabled:opacity-60"
         >
@@ -54,15 +56,17 @@ export function MatterFluxDemo() {
           type="button"
           disabled={isActive}
           onClick={async (event) => {
-            setLastResult("Running failure sequence…");
+            setLastResult("Running failure transition...");
             await runMatterFlux({
               event,
-              label: "Testing failure recovery",
+              label: "Running failure transition",
               mode: "failure",
-              intensity: "medium",
+              intensity: "high",
+              duration: 2400,
+              particleCount: 190,
               failureMessage: "Demo failure: the interface has been safely restored"
             });
-            setLastResult("Failure handled; normal interaction restored.");
+            setLastResult("Failure transition completed; normal interaction restored.");
           }}
           className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full border border-white/[0.14] bg-white/[0.055] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-violetGlow/45 hover:bg-violetGlow/[0.09] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-300 disabled:cursor-wait disabled:opacity-60"
         >

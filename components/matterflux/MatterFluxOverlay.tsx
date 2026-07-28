@@ -26,13 +26,22 @@ type MatterFluxStyle = CSSProperties & {
   "--matterflux-secondary": string;
   "--matterflux-core": string;
   "--matterflux-bg": string;
+  "--matterflux-resolve-duration": string;
 };
 
 const clamp = (value: number, min = 0, max = 1) => Math.min(max, Math.max(min, value));
 const easeInCubic = (value: number) => value * value * value;
 const easeOutCubic = (value: number) => 1 - Math.pow(1 - value, 3);
 
-function createParticles(count: number, width: number, height: number, primary: string, secondary: string, seed: number) {
+function createParticles(
+  count: number,
+  width: number,
+  height: number,
+  primary: string,
+  secondary: string,
+  core: string,
+  seed: number
+) {
   let randomState = seed >>> 0;
   const random = () => {
     randomState += 0x6d2b79f5;
@@ -70,7 +79,7 @@ function createParticles(count: number, width: number, height: number, primary: 
       spin: (random() > 0.5 ? 1 : -1) * (0.3 + random() * 1.2),
       phase: random() * Math.PI * 2,
       alpha: 0.42 + random() * 0.58,
-      color: index % 5 === 0 ? secondary : primary
+      color: index % 13 === 0 ? core : index % 5 === 0 ? secondary : primary
     };
   });
 }
@@ -91,9 +100,10 @@ export function MatterFluxOverlay({ session, onComplete }: MatterFluxOverlayProp
       "--matterflux-primary": options.primaryColor,
       "--matterflux-secondary": options.secondaryColor,
       "--matterflux-core": options.coreColor,
-      "--matterflux-bg": options.backgroundColor
+      "--matterflux-bg": options.backgroundColor,
+      "--matterflux-resolve-duration": `${options.duration * (outcome === "failure" ? 0.5 : 0.36)}ms`
     }),
-    [options]
+    [options, outcome]
   );
 
   const finish = useCallback(() => {
@@ -144,6 +154,7 @@ export function MatterFluxOverlay({ session, onComplete }: MatterFluxOverlayProp
         height,
         options.primaryColor,
         options.secondaryColor,
+        options.coreColor,
         session.id
       );
     };
@@ -263,6 +274,7 @@ export function MatterFluxOverlay({ session, onComplete }: MatterFluxOverlayProp
             <span className="matterflux-ring matterflux-ring--outer" />
             <span className="matterflux-ring matterflux-ring--inner" />
             <span className="matterflux-core" />
+            {outcome === "success" ? <span className="matterflux-shockwave" /> : null}
           </div>
         </>
       )}

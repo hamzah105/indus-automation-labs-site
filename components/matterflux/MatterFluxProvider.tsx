@@ -79,8 +79,13 @@ export function MatterFluxProvider({
   const sessionIdRef = useRef(0);
 
   useEffect(() => {
+    // React Strict Mode runs an extra setup/cleanup cycle in development.
+    // Restore this guard during setup so the remounted provider remains usable.
+    mountedRef.current = true;
+
     return () => {
       mountedRef.current = false;
+      activeRef.current = false;
       if (announcementTimerRef.current) window.clearTimeout(announcementTimerRef.current);
       completionRef.current?.();
     };
