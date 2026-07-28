@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useMatterFlux } from "./useMatterFlux";
+import { useMatterFlux } from "@/packages/matterflux/src/react";
 
 export function MatterFluxDemo() {
   const { isActive, runMatterFlux } = useMatterFlux();
@@ -40,9 +40,8 @@ export function MatterFluxDemo() {
               event,
               label: "Running success transition",
               mode: "success",
-              intensity: "high",
-              duration: 2200,
-              particleCount: 210,
+              intensity: "medium",
+              duration: 1600,
               successMessage: "MatterFlux resolved successfully"
             });
             setLastResult(succeeded ? "Success transition completed." : "Success transition could not complete.");
@@ -50,7 +49,7 @@ export function MatterFluxDemo() {
           className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-full border border-violet-300/30 bg-gradient-to-r from-violet-600 to-fuchsia-500 px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_50px_rgba(168,85,247,0.24)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_60px_rgba(168,85,247,0.36)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-300 disabled:cursor-wait disabled:opacity-60"
         >
           <span className="h-2 w-2 rounded-full bg-white shadow-[0_0_14px_white] transition group-hover:scale-125" aria-hidden="true" />
-          Run Success Transition
+          Run Success Demo
         </button>
         <button
           type="button"
@@ -61,9 +60,8 @@ export function MatterFluxDemo() {
               event,
               label: "Running failure transition",
               mode: "failure",
-              intensity: "high",
-              duration: 2400,
-              particleCount: 190,
+              intensity: "medium",
+              duration: 1700,
               failureMessage: "Demo failure: the interface has been safely restored"
             });
             setLastResult("Failure transition completed; normal interaction restored.");
@@ -71,7 +69,7 @@ export function MatterFluxDemo() {
           className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full border border-white/[0.14] bg-white/[0.055] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-violetGlow/45 hover:bg-violetGlow/[0.09] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-300 disabled:cursor-wait disabled:opacity-60"
         >
           <span className="h-2 w-2 rounded-full border border-violet-300 bg-violet-400/30" aria-hidden="true" />
-          Run Failure Transition
+          Run Failure Demo
         </button>
       </div>
     </div>

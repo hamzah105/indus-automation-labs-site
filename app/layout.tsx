@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "@/packages/matterflux/src/styles/matterflux.css";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { StarBackground } from "@/components/StarBackground";
-import { MatterFluxProvider } from "@/components/matterflux";
+import { SiteMatterFluxProvider } from "@/components/matterflux/SiteMatterFluxProvider";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -35,12 +36,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="font-sans antialiased">
-        <MatterFluxProvider>
+        <SiteMatterFluxProvider>
           <StarBackground />
           <Navbar />
           <div id="main-content">{children}</div>
           <Footer />
-        </MatterFluxProvider>
+        </SiteMatterFluxProvider>
       </body>
     </html>
   );

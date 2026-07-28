@@ -1,90 +1,150 @@
 # MatterFlux
 
-MatterFlux is an experimental matter-to-energy transition for critical UI actions. It darkens the interface, moves edge particles into a purple singularity near the trigger point, and resolves with either a success shockwave or a recoverable failure fade.
+MatterFlux is a cinematic matter-to-energy transition for important UI actions. The page darkens, particles collapse from the viewport edges into a purple singularity near the trigger point, and the sequence resolves as a success burst or a failure fade.
 
-Current status: experimental website-integrated effect by Indus Automation Labs, designed for later extraction into a standalone open-source package.
+Current release: `v0.1.0`
 
-## Components
+Package name: `@indusautomationlabs/matterflux`
 
-- `MatterFluxProvider` owns transition state, async action resolution, messaging, and deferred navigation.
-- `MatterFluxOverlay` renders the vignette, singularity, particles, and result states using Canvas and CSS.
-- `useMatterFlux` exposes `runMatterFlux` and `isActive` to client components.
-- `types.ts` contains the public TypeScript API.
+License: MIT
 
-The root layout already includes `MatterFluxProvider`.
+Status: experimental open-source interaction plugin by Indus Automation Labs
 
-## Trigger an action
+## Repository layout
+
+The reusable package is the source of truth:
+
+```text
+packages/matterflux/
+  package.json
+  README.md
+  LICENSE
+  src/
+    index.ts
+    matterflux.ts
+    types.ts
+    react/
+      MatterFluxProvider.tsx
+      MatterFluxOverlay.tsx
+      useMatterFlux.ts
+      index.ts
+    vanilla/
+      index.ts
+      browser.ts
+    styles/
+      matterflux.css
+  examples/
+    vanilla.html
+    react-basic.tsx
+    nextjs-client.tsx
+  tsconfig.json
+  tsup.config.ts
+```
+
+The website's client wrapper imports the provider and hook from `packages/matterflux/src/react`, and the root layout imports the package stylesheet. This keeps the live `/labs/matterflux` demo on the same implementation that is distributed to other developers.
+
+## Public API
+
+### Vanilla
+
+```ts
+import { createMatterFlux } from "@indusautomationlabs/matterflux";
+
+const flux = createMatterFlux({ intensity: "medium" });
+const succeeded = await flux.run({
+  event,
+  label: "Preparing download",
+  mode: "success"
+});
+
+flux.destroy();
+```
+
+The IIFE build exposes `MatterFlux.create()`. A vanilla instance provides `run(options)`, `destroy()`, and `isActive()`.
+
+### React and Next.js
 
 ```tsx
 "use client";
 
-import { useMatterFlux } from "@/components/matterflux";
-
-export function DownloadButton() {
-  const { runMatterFlux } = useMatterFlux();
-
-  return (
-    <button
-      onClick={(event) =>
-        runMatterFlux({
-          event,
-          label: "Downloading AutoChat",
-          href: site.releaseUrl,
-          target: "_blank",
-          mode: "success"
-        })
-      }
-    >
-      Download
-    </button>
-  );
-}
+import { MatterFluxProvider, useMatterFlux } from "@indusautomationlabs/matterflux/react";
 ```
 
-Navigation waits until the success animation resolves. Existing important download buttons use the optional `matterFluxLabel` prop on `ButtonLink`; ordinary navigation remains unaffected.
+`useMatterFlux()` exposes `runMatterFlux(options)` and `isActive`. React bindings use browser APIs and Canvas, so they belong in client components. Import `@indusautomationlabs/matterflux/styles.css` once from the application root.
 
-## Async actions and failures
+## Performance behavior
 
-```tsx
-const succeeded = await runMatterFlux({
-  event,
-  label: "Deploying workspace",
-  action: async () => deployWorkspace(),
-  successMessage: "Workspace deployed",
-  failureMessage: "Deployment failed; no changes were applied"
-});
+The default intensity is `medium`.
+
+| Intensity | Desktop particles | Mobile particles |
+| --- | ---: | ---: |
+| `low` | 50 | 25 |
+| `medium` | 90 | 45 |
+| `high` | 140 | 70 |
+
+The renderer caps its device pixel ratio, limits drawing to about 60 FPS, stops drawing while a settled collapse waits for an asynchronous action, pauses requestAnimationFrame while `document.hidden` is true, and removes frames, timers, resize listeners, visibility listeners, and overlays after completion. A provider or vanilla instance ignores overlapping transitions. Older GPUs should use `low` or `medium`.
+
+## Accessibility
+
+MatterFlux always honors `prefers-reduced-motion: reduce`. The fallback does not render Canvas particles or rotating rings. It uses a short dark overlay and compact glowing orb, retains the live status text, preserves focus, and completes quickly. `reducedMotion: true` can force the fallback; `false` does not override a user's system preference.
+
+## Website integration
+
+The root layout owns one `MatterFluxProvider`. The `matterFluxLabel` property on `ButtonLink` is opt-in and remains limited to these important AutoChat actions:
+
+- Homepage direct AutoChat download
+- AutoChat product page latest installer buttons
+- Pricing page download/apply-voucher CTA
+
+Normal navigation, legacy downloads, the prospectus, YouTube links, pricing, legal routes, support email, and Paddle-related behavior are unchanged.
+
+The official product and live demo page is:
+
+```text
+/labs/matterflux
 ```
 
-If `action` resolves, MatterFlux shows the success state. If it rejects, MatterFlux restores the page, shows the failure message, and resolves the returned promise to `false`. Use `mode: "failure"` to demonstrate or explicitly render the failure path without an action.
+The site-hosted release asset is:
 
-## Options
+```text
+/downloads/matterflux-v0.1.0.zip
+```
 
-| Option | Purpose |
-| --- | --- |
-| `event` / `origin` | Positions the singularity at a click or element; otherwise uses the viewport center. |
-| `action` | Optional synchronous or asynchronous work to resolve. |
-| `href` / `target` | Optional navigation after a successful resolve. |
-| `mode` / `result` | Explicit `success` or `failure` result. |
-| `duration` | Transition duration from 650–3000ms. |
-| `particleCount` | Particle budget, clamped to 24–240. |
-| `intensity` | `low`, `medium`, or `high` particle density. |
-| `primaryColor` | Main energy color. Default `#a855f7`. |
-| `secondaryColor` | Secondary energy color. Default `#22d3ee`. |
-| `coreColor` | Singularity center color. Default `#f5d0fe`. |
-| `backgroundColor` | Overlay color. Default `#020617`. |
-| `label` | In-progress accessible status. |
-| `successMessage` / `failureMessage` | Result labels and live-region messages. |
+## Build and release asset
 
-Provider props set site-wide defaults; trigger options override them for one run. Desktop defaults to 160 particles and mobile to 70 before intensity scaling.
+From the repository root:
 
-## Accessibility and cleanup
+```bash
+npm run matterflux:build
+npm run matterflux:zip
+```
 
-When `prefers-reduced-motion: reduce` is active, MatterFlux skips Canvas particles and rotating rings. It uses a short, low-motion dark overlay with a small progress signal instead. Status text uses a live region, the transition does not move focus or trap it, and pointer blocking ends when the overlay unmounts.
+The package build produces ESM, CommonJS, IIFE, source maps, type declarations, and `matterflux.css` in `packages/matterflux/dist`. The ZIP command rebuilds the package, then creates `public/downloads/matterflux-v0.1.0.zip` with `dist`, examples, README, license, and package metadata.
 
-Animation frames, media-query listeners, resize listeners, timers, and pending completion callbacks are cleaned up when their owner unmounts. A completion watchdog prevents the overlay from remaining active if Canvas is unavailable.
+Run the full website validation separately:
 
-## Safety and rollback
+```bash
+npm run build
+```
 
-MatterFlux is isolated in `components/matterflux`, global styles use the `matterflux-` prefix, and CTA integration is opt-in. It has no backend, secrets, animation dependencies, or pricing/payment logic.
+## Future GitHub release plan
 
-To remove only the integration, remove `matterFluxLabel` from the selected `ButtonLink` instances and remove the provider wrapper from `app/layout.tsx`. To roll back the complete feature branch before merging, switch to `main` and delete `feature/matterflux-transition`.
+1. Create a dedicated GitHub repository named `matterflux`.
+2. Push `packages/matterflux` as the package source.
+3. Attach `matterflux-v0.1.0.zip` as a release asset.
+4. Optionally publish `@indusautomationlabs/matterflux` to npm later.
+
+The website currently links to `https://github.com/hamzah105/matterflux` as a placeholder. The external repository is not created by this branch.
+
+## Rollback
+
+To remove only the website integration, revert the package imports in `app/layout.tsx` and `components/ButtonLink.tsx`, remove MatterFlux props from the selected CTA instances, and remove the lab/footer links if desired.
+
+To discard the complete unmerged branch from a clean worktree:
+
+```bash
+git switch feature/matterflux-transition
+git branch -D feature/matterflux-open-source-plugin
+```
+
+Do not run the branch deletion command with uncommitted changes. No production deployment settings are changed by this work.

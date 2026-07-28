@@ -3,7 +3,7 @@
 import Link from "next/link";
 import type { MouseEvent, ReactNode } from "react";
 import { Icon } from "@/components/Icon";
-import { useMatterFlux, type MatterFluxIntensity } from "@/components/matterflux";
+import { useMatterFlux, type MatterFluxIntensity } from "@/packages/matterflux/src/react";
 
 type ButtonLinkProps = {
   href: string;
@@ -26,7 +26,7 @@ export function ButtonLink({
   showArrow = false,
   ariaLabel,
   matterFluxLabel,
-  matterFluxIntensity = "high"
+  matterFluxIntensity = "medium"
 }: ButtonLinkProps) {
   const { runMatterFlux } = useMatterFlux();
   const isExternal = href.startsWith("http") || href.startsWith("mailto:");
