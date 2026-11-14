@@ -1,0 +1,606 @@
+{
+  "browser": "Installed Chrome, Playwright 1.63.0",
+  "build": "production",
+  "checks": [
+    {
+      "name": "Phase 1 accessible typewriter hero remains intact",
+      "detail": true
+    },
+    {
+      "name": "metadata matches verified apex canonical and GitHub target",
+      "detail": {
+        "title": "OOMP — Memory beyond the context window | Indus Automation Labs",
+        "canonical": "https://indusautomationlabs.com/labs/oomp",
+        "og": "https://indusautomationlabs.com/labs/oomp",
+        "image": "https://indusautomationlabs.com/oomp/og.png"
+      }
+    },
+    {
+      "name": "desktop scene 1",
+      "detail": {
+        "stage": {
+          "top": 96,
+          "bottom": 798,
+          "viewport": 1000
+        },
+        "progress": "0.6799"
+      }
+    },
+    {
+      "name": "desktop scene 2",
+      "detail": {
+        "stage": {
+          "top": 96,
+          "bottom": 798,
+          "viewport": 1000
+        },
+        "progress": "0.6799"
+      }
+    },
+    {
+      "name": "desktop scene 3",
+      "detail": {
+        "stage": {
+          "top": 96,
+          "bottom": 798,
+          "viewport": 1000
+        },
+        "progress": "0.6799"
+      }
+    },
+    {
+      "name": "desktop scene 4",
+      "detail": {
+        "stage": {
+          "top": 96,
+          "bottom": 798,
+          "viewport": 1000
+        },
+        "progress": "0.6799"
+      }
+    },
+    {
+      "name": "desktop scene 5",
+      "detail": {
+        "stage": {
+          "top": 96,
+          "bottom": 798,
+          "viewport": 1000
+        },
+        "progress": "0.6799"
+      }
+    },
+    {
+      "name": "native wheel advances the bounded conversation",
+      "detail": {
+        "before": "matrix(1, 0, 0, 1, 0, -42.0009)",
+        "after": "matrix(1, 0, 0, 1, 0, -77.4696)"
+      }
+    },
+    {
+      "name": "five scenes reverse deterministically",
+      "detail": true
+    },
+    {
+      "name": "scene boundary transitions",
+      "detail": [
+        "0",
+        "1",
+        "1",
+        "2",
+        "2",
+        "3",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "name": "rapid scroll leaves every graph node visible without overlaps",
+      "detail": {
+        "nodes": [
+          {
+            "id": "project",
+            "x": 666.875,
+            "y": 228.65625,
+            "right": 810.875,
+            "bottom": 306.53125,
+            "width": 144,
+            "height": 77.875,
+            "within": true,
+            "opacity": "1"
+          },
+          {
+            "id": "preference",
+            "x": 1086.953125,
+            "y": 211.765625,
+            "right": 1230.953125,
+            "bottom": 305.828125,
+            "width": 144,
+            "height": 94.0625,
+            "within": true,
+            "opacity": "1"
+          },
+          {
+            "id": "plan",
+            "x": 643.953125,
+            "y": 413.453125,
+            "right": 787.953125,
+            "bottom": 491.328125,
+            "width": 144,
+            "height": 77.875,
+            "within": true,
+            "opacity": "1"
+          },
+          {
+            "id": "episode",
+            "x": 1102.234375,
+            "y": 396.5625,
+            "right": 1246.234375,
+            "bottom": 490.625,
+            "width": 144,
+            "height": 94.0625,
+            "within": true,
+            "opacity": "1"
+          },
+          {
+            "id": "source-01",
+            "x": 748.109375,
+            "y": 522.2421875,
+            "right": 867.109375,
+            "bottom": 576.1328125,
+            "width": 119,
+            "height": 53.890625,
+            "within": true,
+            "opacity": "1"
+          },
+          {
+            "id": "source-04",
+            "x": 1023.078125,
+            "y": 522.2421875,
+            "right": 1142.078125,
+            "bottom": 576.1328125,
+            "width": 119,
+            "height": 53.890625,
+            "within": true,
+            "opacity": "1"
+          }
+        ],
+        "overlaps": []
+      }
+    },
+    {
+      "name": "pointer, keyboard, persistent selection, clear and Escape source inspection",
+      "detail": true
+    },
+    {
+      "name": "recall highlights project/source while unrelated objects remain present",
+      "detail": [
+        {
+          "id": "project",
+          "match": "true",
+          "opacity": 1
+        },
+        {
+          "id": "preference",
+          "match": "false",
+          "opacity": 0.64
+        },
+        {
+          "id": "plan",
+          "match": "false",
+          "opacity": 0.64
+        },
+        {
+          "id": "episode",
+          "match": "false",
+          "opacity": 0.64
+        },
+        {
+          "id": "source-01",
+          "match": "true",
+          "opacity": 1
+        },
+        {
+          "id": "source-04",
+          "match": "false",
+          "opacity": 0.64
+        }
+      ]
+    },
+    {
+      "name": "mid-story reload restores the correct scene",
+      "detail": {
+        "y": 2749,
+        "restored": 2749
+      }
+    },
+    {
+      "name": "explicit static view and return to scroll view",
+      "detail": true
+    },
+    {
+      "name": "compact desktop stages 1024×768",
+      "detail": true
+    },
+    {
+      "name": "compact desktop stages 1280×720",
+      "detail": true
+    },
+    {
+      "name": "compact desktop stages 1280×900",
+      "detail": true
+    },
+    {
+      "name": "stacked tablet/mobile 320px",
+      "detail": {
+        "dimensions": {
+          "width": 320,
+          "scroll": 320,
+          "story": 320,
+          "storyWidth": 320
+        },
+        "nodes": [
+          {
+            "id": "project",
+            "width": 111,
+            "height": 73.171875
+          },
+          {
+            "id": "preference",
+            "width": 111,
+            "height": 89.359375
+          },
+          {
+            "id": "plan",
+            "width": 111,
+            "height": 73.171875
+          },
+          {
+            "id": "episode",
+            "width": 111,
+            "height": 89.359375
+          },
+          {
+            "id": "source-01",
+            "width": 94,
+            "height": 51.890625
+          },
+          {
+            "id": "source-04",
+            "width": 94,
+            "height": 51.890625
+          }
+        ],
+        "host": {
+          "bottom": 3299.46875,
+          "canvasBottom": 3320.09375
+        }
+      }
+    },
+    {
+      "name": "stacked tablet/mobile 360px",
+      "detail": {
+        "dimensions": {
+          "width": 360,
+          "scroll": 360,
+          "story": 360,
+          "storyWidth": 360
+        },
+        "nodes": [
+          {
+            "id": "project",
+            "width": 111,
+            "height": 73.171875
+          },
+          {
+            "id": "preference",
+            "width": 111,
+            "height": 89.359375
+          },
+          {
+            "id": "plan",
+            "width": 111,
+            "height": 73.171875
+          },
+          {
+            "id": "episode",
+            "width": 111,
+            "height": 89.359375
+          },
+          {
+            "id": "source-01",
+            "width": 94,
+            "height": 51.890625
+          },
+          {
+            "id": "source-04",
+            "width": 94,
+            "height": 51.890625
+          }
+        ],
+        "host": {
+          "bottom": 2694.578125,
+          "canvasBottom": 2737.5
+        }
+      }
+    },
+    {
+      "name": "stacked tablet/mobile 430px",
+      "detail": {
+        "dimensions": {
+          "width": 430,
+          "scroll": 430,
+          "story": 430,
+          "storyWidth": 430
+        },
+        "nodes": [
+          {
+            "id": "project",
+            "width": 111,
+            "height": 73.171875
+          },
+          {
+            "id": "preference",
+            "width": 111,
+            "height": 89.359375
+          },
+          {
+            "id": "plan",
+            "width": 111,
+            "height": 73.171875
+          },
+          {
+            "id": "episode",
+            "width": 111,
+            "height": 89.359375
+          },
+          {
+            "id": "source-01",
+            "width": 94,
+            "height": 51.890625
+          },
+          {
+            "id": "source-04",
+            "width": 94,
+            "height": 51.890625
+          }
+        ],
+        "host": {
+          "bottom": 2510.09375,
+          "canvasBottom": 2553.015625
+        }
+      }
+    },
+    {
+      "name": "stacked tablet/mobile 768px",
+      "detail": {
+        "dimensions": {
+          "width": 768,
+          "scroll": 768,
+          "story": 768,
+          "storyWidth": 768
+        },
+        "nodes": [
+          {
+            "id": "project",
+            "width": 111,
+            "height": 73.171875
+          },
+          {
+            "id": "preference",
+            "width": 111,
+            "height": 89.359375
+          },
+          {
+            "id": "plan",
+            "width": 111,
+            "height": 73.171875
+          },
+          {
+            "id": "episode",
+            "width": 111,
+            "height": 89.359375
+          },
+          {
+            "id": "source-01",
+            "width": 94,
+            "height": 51.890625
+          },
+          {
+            "id": "source-04",
+            "width": 94,
+            "height": 51.890625
+          }
+        ],
+        "host": {
+          "bottom": 663.6875,
+          "canvasBottom": 699.6875
+        }
+      }
+    },
+    {
+      "name": "stacked tablet/mobile 834px",
+      "detail": {
+        "dimensions": {
+          "width": 834,
+          "scroll": 834,
+          "story": 834,
+          "storyWidth": 834
+        },
+        "nodes": [
+          {
+            "id": "project",
+            "width": 111,
+            "height": 73.171875
+          },
+          {
+            "id": "preference",
+            "width": 111,
+            "height": 89.359375
+          },
+          {
+            "id": "plan",
+            "width": 111,
+            "height": 73.171875
+          },
+          {
+            "id": "episode",
+            "width": 111,
+            "height": 89.359375
+          },
+          {
+            "id": "source-01",
+            "width": 94,
+            "height": 51.890625
+          },
+          {
+            "id": "source-04",
+            "width": 94,
+            "height": 51.890625
+          }
+        ],
+        "host": {
+          "bottom": 1977.171875,
+          "canvasBottom": 2013.171875
+        }
+      }
+    },
+    {
+      "name": "stacked tablet/mobile 1023px",
+      "detail": {
+        "dimensions": {
+          "width": 1023,
+          "scroll": 1023,
+          "story": 1023,
+          "storyWidth": 1023
+        },
+        "nodes": [
+          {
+            "id": "project",
+            "width": 111,
+            "height": 73.171875
+          },
+          {
+            "id": "preference",
+            "width": 111,
+            "height": 89.359375
+          },
+          {
+            "id": "plan",
+            "width": 111,
+            "height": 73.171875
+          },
+          {
+            "id": "episode",
+            "width": 111,
+            "height": 89.359375
+          },
+          {
+            "id": "source-01",
+            "width": 94,
+            "height": 51.890625
+          },
+          {
+            "id": "source-04",
+            "width": 94,
+            "height": 51.890625
+          }
+        ],
+        "host": {
+          "bottom": 1977.203125,
+          "canvasBottom": 2013.203125
+        }
+      }
+    },
+    {
+      "name": "scroll work pauses outside story; no idle animation loop",
+      "detail": {
+        "active": {
+          "cls": 0.0005955684732929512,
+          "lcp": 560,
+          "longTasks": [],
+          "frameCallbacks": 129,
+          "pendingRaf": 0,
+          "windowScrollListeners": 1,
+          "sceneListeners": 2,
+          "storyObservers": 1,
+          "storySizeObservers": 1,
+          "usedHeap": 7399558
+        },
+        "idle": {
+          "cls": 0.0005955684732929512,
+          "lcp": 560,
+          "longTasks": [],
+          "frameCallbacks": 130,
+          "pendingRaf": 0,
+          "windowScrollListeners": 0,
+          "sceneListeners": 2,
+          "storyObservers": 1,
+          "storySizeObservers": 1,
+          "usedHeap": 7550076
+        }
+      }
+    },
+    {
+      "name": "three SPA navigation cycles clean up observers/listeners and avoid duplicate subscriptions",
+      "detail": true
+    },
+    {
+      "name": "reduced motion: complete static scenes, no choreography or motion chunk",
+      "detail": {
+        "running": 0,
+        "position": "sticky"
+      }
+    },
+    {
+      "name": "no-JavaScript source details and five static diagrams 1440px",
+      "detail": true
+    },
+    {
+      "name": "no-JavaScript source details and five static diagrams 360px",
+      "detail": true
+    },
+    {
+      "name": "touch selection works without loading desktop motion module",
+      "detail": true
+    },
+    {
+      "name": "existing route /",
+      "detail": {
+        "status": 200,
+        "heading": "AI automation for customer conversations and SME operations."
+      }
+    },
+    {
+      "name": "existing route /products/autochat",
+      "detail": {
+        "status": 200,
+        "heading": "Business messaging automation, with the owner in control."
+      }
+    },
+    {
+      "name": "existing route /labs/matterflux",
+      "detail": {
+        "status": 200,
+        "heading": "MatterFlux"
+      }
+    },
+    {
+      "name": "MatterFlux success and failure demos",
+      "detail": true
+    },
+    {
+      "name": "fictional-data labeling, alpha-claim boundaries, sitemap and server rendering",
+      "detail": true
+    },
+    {
+      "name": "zero runtime, hydration, console or unexpected network errors",
+      "detail": true
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "navigationAborts": [],
+  "status": "PASS"
+}

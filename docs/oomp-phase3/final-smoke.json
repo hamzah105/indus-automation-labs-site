@@ -1,0 +1,129 @@
+{
+  "build": "final production build",
+  "checks": [
+    {
+      "name": "MatterFlux final-build source copy and both demo outcomes",
+      "detail": true
+    },
+    {
+      "name": "Every scene fits final desktop viewport: 720px / scene 1",
+      "detail": {
+        "top": 88,
+        "bottom": 614,
+        "height": 720
+      }
+    },
+    {
+      "name": "Every scene fits final desktop viewport: 720px / scene 2",
+      "detail": {
+        "top": 88,
+        "bottom": 614,
+        "height": 720
+      }
+    },
+    {
+      "name": "Every scene fits final desktop viewport: 720px / scene 3",
+      "detail": {
+        "top": 88,
+        "bottom": 614,
+        "height": 720
+      }
+    },
+    {
+      "name": "Every scene fits final desktop viewport: 720px / scene 4",
+      "detail": {
+        "top": 88,
+        "bottom": 614,
+        "height": 720
+      }
+    },
+    {
+      "name": "Every scene fits final desktop viewport: 720px / scene 5",
+      "detail": {
+        "top": 88,
+        "bottom": 614,
+        "height": 720
+      }
+    },
+    {
+      "name": "Every scene fits final desktop viewport: 900px / scene 1",
+      "detail": {
+        "top": 96,
+        "bottom": 798,
+        "height": 900
+      }
+    },
+    {
+      "name": "Every scene fits final desktop viewport: 900px / scene 2",
+      "detail": {
+        "top": 96,
+        "bottom": 798,
+        "height": 900
+      }
+    },
+    {
+      "name": "Every scene fits final desktop viewport: 900px / scene 3",
+      "detail": {
+        "top": 96,
+        "bottom": 798,
+        "height": 900
+      }
+    },
+    {
+      "name": "Every scene fits final desktop viewport: 900px / scene 4",
+      "detail": {
+        "top": 96,
+        "bottom": 798,
+        "height": 900
+      }
+    },
+    {
+      "name": "Every scene fits final desktop viewport: 900px / scene 5",
+      "detail": {
+        "top": 96,
+        "bottom": 798,
+        "height": 900
+      }
+    },
+    {
+      "name": "Portrait/landscape resize keeps inspector below graph 430×932",
+      "detail": {
+        "canvasBottom": 531.484375,
+        "inspectorTop": 531.484375,
+        "labelFont": "12px",
+        "categoryFont": "8px",
+        "sourceFont": "9px",
+        "mainWidth": 430,
+        "mainScroll": 430
+      }
+    },
+    {
+      "name": "Portrait/landscape resize keeps inspector below graph 932×430",
+      "detail": {
+        "canvasBottom": 332.765625,
+        "inspectorTop": 332.765625,
+        "labelFont": "12px",
+        "categoryFont": "8px",
+        "sourceFont": "9px",
+        "mainWidth": 932,
+        "mainScroll": 932
+      }
+    },
+    {
+      "name": "Portrait/landscape resize keeps inspector below graph 360×800",
+      "detail": {
+        "canvasBottom": 500.203125,
+        "inspectorTop": 500.203125,
+        "labelFont": "12px",
+        "categoryFont": "8px",
+        "sourceFont": "9px",
+        "mainWidth": 360,
+        "mainScroll": 360
+      }
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "browser": "157.0.8103.51",
+  "status": "PASS"
+}

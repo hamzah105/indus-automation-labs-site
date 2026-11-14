@@ -1,0 +1,218 @@
+{
+  "build": "production",
+  "browser": "Installed Chrome via externally supplied Playwright",
+  "checks": [
+    {
+      "name": "Route and navigation /",
+      "detail": {
+        "heading": "AI automation for customer conversations and SME operations."
+      }
+    },
+    {
+      "name": "Route and navigation /labs",
+      "detail": {
+        "heading": "Tools for\nwhat comes next."
+      }
+    },
+    {
+      "name": "Route and navigation /labs/oomp",
+      "detail": {
+        "heading": "Introducing OOMP\nI\nn\nt\nr\no\nd\nu\nc\ni\nn\ng\n \nO\nO\nM\nP"
+      }
+    },
+    {
+      "name": "Route and navigation /labs/matterflux",
+      "detail": {
+        "heading": "MatterFlux"
+      }
+    },
+    {
+      "name": "Route and navigation /products",
+      "detail": {
+        "heading": "Practical automation products, built to grow with operators."
+      }
+    },
+    {
+      "name": "Route and navigation /products/autochat",
+      "detail": {
+        "heading": "Business messaging automation, with the owner in control."
+      }
+    },
+    {
+      "name": "Route and navigation /pricing",
+      "detail": {
+        "heading": "A clear launch license for early AutoChat customers."
+      }
+    },
+    {
+      "name": "Route and navigation /about",
+      "detail": {
+        "heading": "Founder-led AI automation for practical business workflows."
+      }
+    },
+    {
+      "name": "Route and navigation /contact",
+      "detail": {
+        "heading": "Bring us the workflow that slows your business down."
+      }
+    },
+    {
+      "name": "Route and navigation /login",
+      "detail": {
+        "heading": "Customer dashboard coming soon."
+      }
+    },
+    {
+      "name": "Route and navigation /terms",
+      "detail": {
+        "heading": "Terms of Service"
+      }
+    },
+    {
+      "name": "Route and navigation /privacy",
+      "detail": {
+        "heading": "Privacy Policy"
+      }
+    },
+    {
+      "name": "Route and navigation /refund-policy",
+      "detail": {
+        "heading": "Refund and Cancellation Policy"
+      }
+    },
+    {
+      "name": "Route and navigation /acceptable-use",
+      "detail": {
+        "heading": "Acceptable Use Policy"
+      }
+    },
+    {
+      "name": "Canonical, social metadata, H1 and actual 1200×630 OG image /labs",
+      "detail": {
+        "title": "Labs — Tools for what comes next | Indus Automation Labs",
+        "description": "Explore MatterFlux, an experimental UI interaction library, and OOMP, a local-first alpha memory engine for AI applications. Built at Indus Automation Labs.",
+        "canonical": "https://indusautomationlabs.com/labs",
+        "og": "https://indusautomationlabs.com/labs",
+        "image": "https://indusautomationlabs.com/labs/og.png",
+        "width": "1200",
+        "height": "630",
+        "twitter": "summary_large_image",
+        "twitterImage": "https://indusautomationlabs.com/labs/og.png",
+        "h1": [
+          "Tools forwhat comes next."
+        ]
+      }
+    },
+    {
+      "name": "Labs has exactly two projects; OOMP discovery link navigates",
+      "detail": true
+    },
+    {
+      "name": "Canonical, social metadata, H1 and actual 1200×630 OG image /labs/oomp",
+      "detail": {
+        "title": "OOMP — Memory beyond the context window | Indus Automation Labs",
+        "description": "Meet OOMP, an open-source alpha memory engine for AI agents. Durable local history, source provenance and selective recall for finite-context models.",
+        "canonical": "https://indusautomationlabs.com/labs/oomp",
+        "og": "https://indusautomationlabs.com/labs/oomp",
+        "image": "https://indusautomationlabs.com/oomp/og.png",
+        "width": "1200",
+        "height": "630",
+        "twitter": "summary_large_image",
+        "twitterImage": "https://indusautomationlabs.com/oomp/og.png",
+        "h1": [
+          "Introducing OOMPIntroducing OOMP"
+        ]
+      }
+    },
+    {
+      "name": "Crawlable source, inspection, quickstart, latest-main and release references",
+      "detail": [
+        "https://github.com/hamzah105/OOMP/blob/bebee6194c0c5f3963b15cbbf56ebc10dd83ccf6/LICENSE",
+        "https://github.com/hamzah105/OOMP",
+        "https://github.com/hamzah105/OOMP/blob/bebee6194c0c5f3963b15cbbf56ebc10dd83ccf6/docs/product-onboarding.md",
+        "https://github.com/hamzah105/OOMP/tree/bebee6194c0c5f3963b15cbbf56ebc10dd83ccf6",
+        "https://github.com/hamzah105/OOMP/blob/bebee6194c0c5f3963b15cbbf56ebc10dd83ccf6/examples/quickstart.py",
+        "https://github.com/hamzah105/OOMP/blob/bebee6194c0c5f3963b15cbbf56ebc10dd83ccf6/docs/memory-inspection.md",
+        "https://github.com/hamzah105/OOMP/tree/main",
+        "https://github.com/hamzah105/OOMP/releases",
+        "https://github.com/hamzah105/OOMP/commits/main/",
+        "https://github.com/hamzah105/OOMP/blob/bebee6194c0c5f3963b15cbbf56ebc10dd83ccf6/docs/limitations.md",
+        "https://github.com/hamzah105/OOMP/blob/bebee6194c0c5f3963b15cbbf56ebc10dd83ccf6/docs/product-roadmap.md",
+        "https://github.com/hamzah105/OOMP/blob/bebee6194c0c5f3963b15cbbf56ebc10dd83ccf6/docs/research-plan.md",
+        "https://github.com/hamzah105/OOMP/blob/bebee6194c0c5f3963b15cbbf56ebc10dd83ccf6/docs/getting-started.md"
+      ]
+    },
+    {
+      "name": "Keyboard copy, clipboard equality, announced success and touch target: Windows setup commands",
+      "detail": true
+    },
+    {
+      "name": "Keyboard copy, clipboard equality, announced success and touch target: POSIX setup commands",
+      "detail": true
+    },
+    {
+      "name": "Keyboard copy, clipboard equality, announced success and touch target: Optional Windows profile commands",
+      "detail": true
+    },
+    {
+      "name": "Denied clipboard selects visible commands, focuses code and announces manual copy",
+      "detail": true
+    },
+    {
+      "name": "Content fit, mobile Labs active state, Escape and menu-link close 320px",
+      "detail": true
+    },
+    {
+      "name": "Content fit, mobile Labs active state, Escape and menu-link close 360px",
+      "detail": true
+    },
+    {
+      "name": "Content fit, mobile Labs active state, Escape and menu-link close 430px",
+      "detail": true
+    },
+    {
+      "name": "Content fit, mobile Labs active state, Escape and menu-link close 768px",
+      "detail": true
+    },
+    {
+      "name": "Content fit, mobile Labs active state, Escape and menu-link close 1024px",
+      "detail": true
+    },
+    {
+      "name": "Direct section URLs clear the sticky navigation",
+      "detail": true
+    },
+    {
+      "name": "Contact stays a local preview and sends no request",
+      "detail": true
+    },
+    {
+      "name": "Login remains coming soon",
+      "detail": true
+    },
+    {
+      "name": "Actual local download /downloads/matterflux-v0.1.0.zip",
+      "detail": true
+    },
+    {
+      "name": "Actual local download /AutoChat_Prospectus.pdf",
+      "detail": true
+    },
+    {
+      "name": "Sitemap uses the existing canonical origin for all entries",
+      "detail": true
+    },
+    {
+      "name": "Labs, install commands and native setup details remain usable without JavaScript",
+      "detail": true
+    },
+    {
+      "name": "Zero runtime, hydration, console and unexpected request errors",
+      "detail": true
+    }
+  ],
+  "runtimeErrors": [],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "status": "PASS"
+}

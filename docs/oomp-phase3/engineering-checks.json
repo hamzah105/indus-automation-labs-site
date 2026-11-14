@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "command": "npm.cmd run lint",
+      "exitCode": 0,
+      "result": "No ESLint warnings or errors"
+    },
+    {
+      "command": "npx.cmd tsc --noEmit",
+      "exitCode": 0
+    },
+    {
+      "command": "npm.cmd run build",
+      "exitCode": 0,
+      "log": "build.txt"
+    }
+  ],
+  "bundle": {
+    "phase2OompRouteKB": 6.05,
+    "phase3OompRouteKB": 6.52,
+    "phase3OompFirstLoadKB": 103,
+    "labsRouteBytes": 725,
+    "labsFirstLoadKB": 96.7,
+    "deferredMotion": [
+      {
+        "file": "196.87a3bf92ca7103f5.js",
+        "rawBytes": 2784,
+        "gzipBytes": 1164
+      }
+    ]
+  },
+  "dependenciesUnchanged": true,
+  "sensitivePathAndCommonCredentialScan": "PASS; selected website/review files only, not a comprehensive secret scanner",
+  "unrelatedContextPreserved": true
+}
