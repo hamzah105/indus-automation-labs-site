@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "sourceRepository": "https://github.com/hamzah105/OOMP",
+  "sourceBranch": "main",
+  "sourceCommit": "bebee6194c0c5f3963b15cbbf56ebc10dd83ccf6",
+  "method": "Tracked source snapshot exported to a fresh temporary directory outside the website, installed in a new venv",
+  "platform": "Windows",
+  "python": "3.11.4",
+  "commands": [
+    "python -m pip install \".[mcp,ui]\"",
+    "oomp --version",
+    "python examples/quickstart.py",
+    "oomp onboard --help"
+  ],
+  "versionOutput": "oomp 0.1.0",
+  "syntheticQuickstart": {
+    "schema": 6,
+    "sourceEvents": 13,
+    "earlierFactOutsideRecentEight": true,
+    "sourceEventIds": ["early-project"],
+    "contextBytes": 727,
+    "budgetBytes": 3000,
+    "modelCalls": 0,
+    "retrievalIsAnAnswer": false
+  },
+  "repositoryMutations": false,
+  "privateProfileMutations": false,
+  "servicesStarted": false,
+  "githubReleasesObserved": 0,
+  "limitations": "Only Windows Python 3.11 was freshly installed in this task; no cross-platform certification or production claim."
+}

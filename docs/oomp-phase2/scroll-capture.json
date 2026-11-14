@@ -1,0 +1,319 @@
+{
+  "method": "Actual Chrome viewport captures during native mouse-wheel scrolling; GIF is review evidence, not UI media",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "frames": 40,
+  "scenes": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "samples": [
+    {
+      "y": 1004,
+      "scene": "0",
+      "progress": "0.1205",
+      "time": 1579.300000000745,
+      "nodes": 746
+    },
+    {
+      "y": 1083,
+      "scene": "0",
+      "progress": "0.2425",
+      "time": 1836.4000000003725,
+      "nodes": 746
+    },
+    {
+      "y": 1162,
+      "scene": "0",
+      "progress": "0.3644",
+      "time": 2088.199999999255,
+      "nodes": 746
+    },
+    {
+      "y": 1240,
+      "scene": "0",
+      "progress": "0.4847",
+      "time": 2369.9000000003725,
+      "nodes": 746
+    },
+    {
+      "y": 1319,
+      "scene": "0",
+      "progress": "0.6067",
+      "time": 2618.300000000745,
+      "nodes": 746
+    },
+    {
+      "y": 1398,
+      "scene": "0",
+      "progress": "0.7286",
+      "time": 2864.199999999255,
+      "nodes": 746
+    },
+    {
+      "y": 1477,
+      "scene": "0",
+      "progress": "0.8505",
+      "time": 3119.5,
+      "nodes": 746
+    },
+    {
+      "y": 1555,
+      "scene": "0",
+      "progress": "0.9708",
+      "time": 3372.0999999996275,
+      "nodes": 746
+    },
+    {
+      "y": 1634,
+      "scene": "1",
+      "progress": "0.0928",
+      "time": 3643.300000000745,
+      "nodes": 746
+    },
+    {
+      "y": 1713,
+      "scene": "1",
+      "progress": "0.2147",
+      "time": 3931.4000000003725,
+      "nodes": 746
+    },
+    {
+      "y": 1792,
+      "scene": "1",
+      "progress": "0.3366",
+      "time": 4196.5999999996275,
+      "nodes": 746
+    },
+    {
+      "y": 1871,
+      "scene": "1",
+      "progress": "0.4585",
+      "time": 4459.199999999255,
+      "nodes": 746
+    },
+    {
+      "y": 1949,
+      "scene": "1",
+      "progress": "0.5789",
+      "time": 4722.5,
+      "nodes": 746
+    },
+    {
+      "y": 2028,
+      "scene": "1",
+      "progress": "0.7008",
+      "time": 4988.4000000003725,
+      "nodes": 746
+    },
+    {
+      "y": 2107,
+      "scene": "1",
+      "progress": "0.8227",
+      "time": 5247.4000000003725,
+      "nodes": 746
+    },
+    {
+      "y": 2186,
+      "scene": "1",
+      "progress": "0.9446",
+      "time": 5518.800000000745,
+      "nodes": 746
+    },
+    {
+      "y": 2264,
+      "scene": "2",
+      "progress": "0.0650",
+      "time": 5802.5,
+      "nodes": 746
+    },
+    {
+      "y": 2343,
+      "scene": "2",
+      "progress": "0.1869",
+      "time": 6081,
+      "nodes": 746
+    },
+    {
+      "y": 2422,
+      "scene": "2",
+      "progress": "0.3088",
+      "time": 6348.5,
+      "nodes": 746
+    },
+    {
+      "y": 2501,
+      "scene": "2",
+      "progress": "0.4307",
+      "time": 6627.0999999996275,
+      "nodes": 746
+    },
+    {
+      "y": 2579,
+      "scene": "2",
+      "progress": "0.5511",
+      "time": 6895.5,
+      "nodes": 746
+    },
+    {
+      "y": 2658,
+      "scene": "2",
+      "progress": "0.6730",
+      "time": 7163.5,
+      "nodes": 746
+    },
+    {
+      "y": 2737,
+      "scene": "2",
+      "progress": "0.7949",
+      "time": 7449.9000000003725,
+      "nodes": 746
+    },
+    {
+      "y": 2816,
+      "scene": "2",
+      "progress": "0.9168",
+      "time": 7719.4000000003725,
+      "nodes": 746
+    },
+    {
+      "y": 2895,
+      "scene": "3",
+      "progress": "0.0387",
+      "time": 8010.0999999996275,
+      "nodes": 748
+    },
+    {
+      "y": 2973,
+      "scene": "3",
+      "progress": "0.1591",
+      "time": 8309.599999999627,
+      "nodes": 748
+    },
+    {
+      "y": 3052,
+      "scene": "3",
+      "progress": "0.2810",
+      "time": 8590.699999999255,
+      "nodes": 748
+    },
+    {
+      "y": 3131,
+      "scene": "3",
+      "progress": "0.4029",
+      "time": 8870.5,
+      "nodes": 748
+    },
+    {
+      "y": 3210,
+      "scene": "3",
+      "progress": "0.5249",
+      "time": 9135,
+      "nodes": 748
+    },
+    {
+      "y": 3288,
+      "scene": "3",
+      "progress": "0.6452",
+      "time": 9455.800000000745,
+      "nodes": 748
+    },
+    {
+      "y": 3367,
+      "scene": "3",
+      "progress": "0.7671",
+      "time": 9720.199999999255,
+      "nodes": 748
+    },
+    {
+      "y": 3446,
+      "scene": "3",
+      "progress": "0.8891",
+      "time": 10001.699999999255,
+      "nodes": 748
+    },
+    {
+      "y": 3525,
+      "scene": "4",
+      "progress": "0.0110",
+      "time": 10285.199999999255,
+      "nodes": 746
+    },
+    {
+      "y": 3604,
+      "scene": "4",
+      "progress": "0.1329",
+      "time": 10574.699999999255,
+      "nodes": 746
+    },
+    {
+      "y": 3682,
+      "scene": "4",
+      "progress": "0.2533",
+      "time": 10886,
+      "nodes": 746
+    },
+    {
+      "y": 3761,
+      "scene": "4",
+      "progress": "0.3752",
+      "time": 11169,
+      "nodes": 746
+    },
+    {
+      "y": 3840,
+      "scene": "4",
+      "progress": "0.4971",
+      "time": 11446.300000000745,
+      "nodes": 746
+    },
+    {
+      "y": 3919,
+      "scene": "4",
+      "progress": "0.6190",
+      "time": 11732.099999999627,
+      "nodes": 746
+    },
+    {
+      "y": 3997,
+      "scene": "4",
+      "progress": "0.7394",
+      "time": 11988.800000000745,
+      "nodes": 746
+    }
+  ],
+  "metrics": {
+    "cls": 0.00008977347479926214,
+    "longTasks": [
+      {
+        "start": 329.59999999962747,
+        "duration": 60
+      }
+    ]
+  },
+  "delta": {
+    "TaskDuration": 0.9662470000000001,
+    "ScriptDuration": 0.011843,
+    "LayoutDuration": 0.01389,
+    "RecalcStyleDuration": 0.369715,
+    "LayoutCount": 46,
+    "RecalcStyleCount": 758
+  },
+  "heap": {
+    "before": 4615816,
+    "after": 4892008
+  },
+  "errors": [],
+  "instrumentation": "PerformanceObserver CLS/long tasks and CDP totals; no frame-rate benchmark",
+  "gif": {
+    "file": "scroll-progression.gif",
+    "frames": 40,
+    "durationMs": 12560,
+    "bytes": 2984627
+  }
+}

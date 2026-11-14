@@ -187,10 +187,10 @@ export default function MatterFluxPage() {
           <article className="glass rounded-3xl p-7 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-violet-300">Open-source status</p>
             <h2 className="mt-4 font-display text-2xl font-semibold text-white">Experimental, reusable, and MIT licensed.</h2>
-            <p className="mt-4 text-sm leading-7 text-slate-400">MatterFlux is an experimental open-source interaction plugin by Indus Automation Labs. Version 0.1.0 is available as a site-hosted ZIP; its dedicated GitHub repository and optional npm release are planned next.</p>
+            <p className="mt-4 text-sm leading-7 text-slate-400">MatterFlux is an experimental open-source interaction plugin by Indus Automation Labs. Version 0.1.0 is available as a site-hosted ZIP; explore its source in the public GitHub repository.</p>
             <div className="mt-6 flex flex-wrap gap-4 text-sm font-semibold">
               <a className="text-cyan-200 transition hover:text-white" href="/downloads/matterflux-v0.1.0.zip" download>Download v0.1.0 ZIP</a>
-              <a className="text-violet-200 transition hover:text-white" href="https://github.com/hamzah105/matterflux" target="_blank" rel="noopener noreferrer">GitHub placeholder</a>
+              <a className="text-violet-200 transition hover:text-white" href="https://github.com/hamzah105/matterflux" target="_blank" rel="noopener noreferrer">GitHub source</a>
             </div>
           </article>
         </div>

@@ -1,0 +1,102 @@
+.page { max-width: 1440px; margin: 0 auto; color: #e7e1f0; font-family: var(--font-inter), sans-serif; background: radial-gradient(ellipse 70% 30% at 55% 0%, #7d43b312, transparent 85%), #070811d9; }
+.page :is(a, button):focus-visible { outline: 2px solid #cfadfb; outline-offset: 6px; border-radius: 3px; }
+.intro { padding: 85px 6% 67px; }
+.eyebrow { display: flex; align-items: center; gap: 12px; color: #b4a4c4; font-family: ui-monospace, monospace; font-size: 10px; letter-spacing: .13em; }
+.eyebrow > span { width: 6px; height: 6px; border-radius: 50%; background: #b193dc; box-shadow: 0 0 12px #b193dc50; }
+.introColumns { display: grid; grid-template-columns: 1.35fr 1fr; align-items: end; gap: 75px; margin-top: 35px; }
+.intro h1 { font-family: var(--font-space-grotesk), sans-serif; font-size: clamp(42px, 5.7vw, 76px); font-weight: 500; line-height: 1.06; letter-spacing: -.055em; }
+.intro h1 > span { color: #bda7da; }
+.introColumns > div { max-width: 370px; padding-bottom: 5px; }
+.introColumns > div > p { color: #afa4be; font-size: 13px; line-height: 1.95; }
+.projectCount { display: block; margin-top: 25px; color: #8e819f; font-size: 9px; letter-spacing: .09em; font-family: ui-monospace, monospace; }
+.projects { padding: 0 6%; }
+.project { display: grid; grid-template-columns: 1fr 1fr; align-items: center; min-height: 450px; border-top: 1px solid #ffffff16; gap: 7%; position: relative; }
+.projectCopy { padding: 40px 0 45px; min-width: 0; }
+.projectNumber { display: flex; align-items: center; gap: 18px; color: #9b91ae; font-family: ui-monospace, monospace; font-size: 11px; }
+.projectNumber > span { border-left: 1px solid #433951; padding-left: 18px; color: #a39ab2; font-size: 9px; letter-spacing: .11em; }
+.status { display: inline-block; margin-top: 33px; color: #9fd3dc; background: #84d8e908; border: 1px solid #85c9d12e; border-radius: 3px; padding: 6px 8px; font-size: 10px; }
+.project h2 { margin-top: 18px; color: #f0ebf7; font-family: var(--font-space-grotesk), sans-serif; font-size: 45px; font-weight: 500; letter-spacing: -.05em; line-height: 1.15; }
+.project h2 > span { display: block; color: #b8c3d3; margin-top: 9px; font-size: 22px; letter-spacing: -.035em; line-height: 1.4; }
+.projectCopy > p:not(.projectNumber) { margin-top: 22px; max-width: 400px; color: #aaa1b8; font-size: 12px; line-height: 1.95; }
+.projectLink { display: inline-flex; align-items: center; justify-content: space-between; gap: 45px; min-height: 46px; margin-top: 25px; padding: 0 15px; border: 1px solid #79bccc50; border-radius: 4px; color: #c3e7ee; background: #82c3d10a; font-size: 12px; transition: border-color 160ms, background 160ms; }
+.projectLink:hover { border-color: #8ccddb; background: #82c3d117; }
+.projectFootnote { display: block; margin-top: 27px; color: #9388a5; font-family: ui-monospace, monospace; font-size: 8px; letter-spacing: .07em; line-height: 1.8; }
+.memoryProject { min-height: 505px; background: radial-gradient(ellipse at 26% 48%, #8954b612, transparent 65%); }
+.memoryProject .status { color: #c9abe7; border-color: #c092ef2e; background: #bb8beb08; }
+.memoryProject h2 > span { color: #c4b0da; }
+.memoryProject .projectLink { border-color: #a77acb50; color: #dec5f4; background: #b182d40a; }
+.memoryProject .projectLink:hover { border-color: #c79be9; background: #b182d417; }
+.projectCopy > .expansion { margin-top: 12px !important; color: #b199c8 !important; font-size: 10px !important; }
+.memoryGraphic { position: relative; width: 100%; max-width: 530px; margin: 20px auto; }
+.memoryGraphic > svg:first-child { width: 100%; height: auto; }
+.memoryMark { position: absolute; width: 11%; height: auto; left: 44.5%; top: 42%; color: #c6a4ec; filter: drop-shadow(0 0 15px #bc83ed80); }
+.graphCaption { display: block; margin-top: 20px; color: #a78abf; text-align: center; font-family: ui-monospace, monospace; font-size: 8px; letter-spacing: .12em; }
+.fluxGraphic { position: relative; width: 100%; min-height: 310px; display: grid; align-content: center; padding: 35px 8%; }
+.fluxOrbit { position: absolute; inset: 8% 5%; border: 1px solid #6aafd125; border-radius: 50%; transform: rotate(-24deg); background: radial-gradient(ellipse at center, #67bcd00b, transparent 70%); }
+.fluxWindow { position: relative; border: 1px solid #6a9cb948; background: linear-gradient(130deg, #101e2c, #0d101b); border-radius: 10px; box-shadow: 15px 20px 0 -8px #101522, 15px 20px 0 -7px #53678850, 0 15px 75px #5cabd410; transform: rotate(-4deg); }
+.windowTop { display: flex; align-items: center; gap: 5px; padding: 14px 16px; border-bottom: 1px solid #78b9c91b; }
+.windowTop > span { width: 4px; height: 4px; border-radius: 50%; background: #79abb4; }
+.windowTop > code { margin-left: auto; font-size: 7px; color: #8bafbd; letter-spacing: .09em; }
+.fluxTarget { display: flex; align-items: center; justify-content: center; gap: 22px; padding: 30px 15px 24px; color: #adcbd8; font-size: 14px; line-height: 1.5; }
+.fluxTarget strong { color: #d1ecf3; font-weight: 500; }
+.fluxSpark { color: #9bdded; font-size: 49px; font-family: Arial, sans-serif; text-shadow: 0 0 35px #78cbdf50; }
+.fluxProgress { height: 3px; margin: 0 22px; background: #73a5bb23; }
+.fluxProgress > span { display: block; height: 100%; width: 72%; background: linear-gradient(90deg, #798be0, #9bd7df); }
+.fluxWindow > p { display: flex; align-items: center; justify-content: space-between; margin: 15px 22px 22px; color: #87acbf; font-family: ui-monospace, monospace; font-size: 7px; letter-spacing: .07em; }
+.fluxWindow > p > span { color: #7393ac; }
+.fluxCoordinate { position: absolute; right: 0; bottom: 0; font-family: ui-monospace, monospace; font-size: 9px; line-height: 1.7; color: #7595a8; }
+.closing { display: flex; align-items: center; gap: 27px; margin: 0 6%; border-top: 1px solid #ffffff16; padding: 38px 0 55px; }
+.closingMark { font-family: ui-monospace, monospace; font-size: 9px; color: #9d85b7; border: 1px solid #5e486f; padding: 14px; }
+.closing > p { font-family: var(--font-space-grotesk), sans-serif; font-size: 19px; color: #c8b7db; line-height: 1.5; letter-spacing: -.02em; }
+.closing > p > span { color: #a899bb; }
+.closing > a { display: flex; align-items: center; gap: 20px; min-height: 44px; margin-left: auto; color: #ba9bd5; font-size: 11px; }
+@media (max-width: 800px) {
+  .intro { padding-top: 58px; padding-bottom: 42px; }
+  .introColumns { grid-template-columns: 1fr; gap: 28px; }
+  .introColumns > div { max-width: 480px; }
+  .projectCount { margin-top: 20px; }
+  .project { gap: 3%; }
+  .project h2 { font-size: 36px; }
+  .project h2 > span { font-size: 20px; }
+  .projectNumber > span { font-size: 8px; padding-left: 12px; }
+  .projectNumber { gap: 12px; }
+  .projectCopy > p:not(.projectNumber) { font-size: 12px; }
+  .fluxGraphic { padding: 25px 5%; min-height: 270px; }
+  .fluxTarget { gap: 12px; font-size: 12px; }
+  .fluxSpark { font-size: 38px; }
+  .fluxWindow > p { font-size: 6px; margin: 15px; }
+  .windowTop { padding: 12px; }
+  .windowTop > code { font-size: 6px; }
+  .status { font-size: 9px; line-height: 1.6; }
+}
+@media (max-width: 600px) {
+  .intro { padding: 44px 22px 34px; }
+  .eyebrow { font-size: 8px; letter-spacing: .06em; gap: 8px; }
+  .introColumns { margin-top: 28px; }
+  .intro h1 { font-size: clamp(38px, 9.5vw, 57px); }
+  .introColumns > div > p { font-size: 12px; line-height: 1.9; }
+  .projectCount { font-size: 8px; }
+  .projects { padding: 0 22px; }
+  .project { grid-template-columns: 1fr; gap: 0; }
+  .projectCopy { padding-top: 29px; padding-bottom: 0; }
+  .projectNumber { font-size: 10px; }
+  .projectNumber > span { font-size: 9px; }
+  .status { margin-top: 25px; font-size: 10px; }
+  .project h2 { font-size: 39px; }
+  .project h2 > span { font-size: 22px; }
+  .projectCopy > p:not(.projectNumber) { font-size: 13px; margin-top: 18px; }
+  .projectLink { margin-top: 23px; }
+  .projectFootnote { margin-top: 22px; }
+  .fluxGraphic { min-height: 310px; max-width: 420px; margin: 12px auto 35px; padding: 36px 9%; }
+  .fluxOrbit { inset: 12% 14%; }
+  .fluxTarget { font-size: 13px; padding: 28px 12px; gap: 18px; }
+  .fluxSpark { font-size: 44px; }
+  .windowTop > code, .fluxWindow > p { font-size: 7px; }
+  .memoryProject > .projectCopy { grid-row: 1; }
+  .memoryGraphic { margin: 18px auto 35px; }
+  .graphCaption { font-size: 8px; letter-spacing: .03em; margin-top: 15px; }
+  .closing { margin: 0 22px; padding: 28px 0 40px; display: grid; grid-template-columns: auto 1fr; gap: 20px; }
+  .closing > p { font-size: 17px; }
+  .closing > a { grid-column: 2; margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .projectLink { transition: none; } }

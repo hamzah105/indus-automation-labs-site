@@ -1,0 +1,374 @@
+{
+  "status": "PASS",
+  "compared": 61,
+  "unchanged": 51,
+  "modifiedWithinScope": 10,
+  "files": [
+    {
+      "path": ".eslintrc.json",
+      "before": "1589a15e55fbebc6519c95d91d8f0a090618f20dc78e479858b9c27552484961",
+      "after": "1589a15e55fbebc6519c95d91d8f0a090618f20dc78e479858b9c27552484961",
+      "unchanged": true
+    },
+    {
+      "path": "app/labs/matterflux/page.tsx",
+      "before": "e12d10f34a20281737a59377c81bb8435355bd496a0d37f9f7711c3ba01dd4c3",
+      "after": "8274453997fa52ef41b1225c5e981ec71988b61fd5485551567d779c3b47e079",
+      "unchanged": false
+    },
+    {
+      "path": "app/labs/oomp/page.tsx",
+      "before": "d7ff1276d106fa05647a0ca6e02ebf9da1ba69cbefbb19673f347d0dfb12f4df",
+      "after": "de91fdd6b3e559979a9e8903ae7049d0999eefe1df767e6203d80cd1552e4846",
+      "unchanged": false
+    },
+    {
+      "path": "app/sitemap.ts",
+      "before": "21ec8c60bb8a6a23504d58beb7bb87a2c1dfc99e3081f8d0dbe847435cf933b2",
+      "after": "b6763cdfe64c4b6f23affd98f2be689fa6d80cb6fe1013078b473cbcf1a2e870",
+      "unchanged": false
+    },
+    {
+      "path": "components/Footer.tsx",
+      "before": "5f483c9a756f1c592378334fa90f820713e4e22311be1600ce1ff6067bb0ef16",
+      "after": "5787d706b422c059b8d63d57e7cf13aefb6105ee2e03575e208939383196d46e",
+      "unchanged": false
+    },
+    {
+      "path": "components/Navbar.tsx",
+      "before": "ce4ab5322c0bcf39916452e38e61913f437a4ad92d3c4426e8e557b346b6c0fa",
+      "after": "aa65fe1f286e18f5581444946a4c4e5ece2ded8a1c6dfb90def40bdf3248dffa",
+      "unchanged": false
+    },
+    {
+      "path": "components/oomp/oomp-story-motion.ts",
+      "before": "fc6e09cde359a1956e55af73aff539923a927c0470598d2d63e4703fa5c8a04e",
+      "after": "fc6e09cde359a1956e55af73aff539923a927c0470598d2d63e4703fa5c8a04e",
+      "unchanged": true
+    },
+    {
+      "path": "components/oomp/oomp-story.module.css",
+      "before": "78795a107479641892e74bf9220bba2f6ca93ae0759b7f630e5ddb759f39de1c",
+      "after": "6a97262bc680a4ae42169bd9ab0d869a28ff2cfd7e4e7c9bee34723274edcb3f",
+      "unchanged": false
+    },
+    {
+      "path": "components/oomp/oomp.module.css",
+      "before": "2fdf6efb7ae787ea3e295f12641c321f15599cf2b5efbaea2b81d9d8fb71aba8",
+      "after": "c3fb581d65f75ef4f94318b5099f82ebc4a6ee95df3131102b331289e3ba9ffa",
+      "unchanged": false
+    },
+    {
+      "path": "components/oomp/OompArchitecture.tsx",
+      "before": "e80ce1eaa844c95e3f6885c3faa395386ad0b7018c94322038fec657bdb85f8b",
+      "after": "e80ce1eaa844c95e3f6885c3faa395386ad0b7018c94322038fec657bdb85f8b",
+      "unchanged": true
+    },
+    {
+      "path": "components/oomp/OompEvidenceFlow.tsx",
+      "before": "d148cfc0dc542b2b4d56a21a8e941ae54552fb642703da2a8524154624d18e9f",
+      "after": "d148cfc0dc542b2b4d56a21a8e941ae54552fb642703da2a8524154624d18e9f",
+      "unchanged": true
+    },
+    {
+      "path": "components/oomp/OompHero.tsx",
+      "before": "88233a49ad23b80a1a95b2cd2d49bce111d72f2f0a5d3b451a6123b42208738a",
+      "after": "88233a49ad23b80a1a95b2cd2d49bce111d72f2f0a5d3b451a6123b42208738a",
+      "unchanged": true
+    },
+    {
+      "path": "components/oomp/OompMark.tsx",
+      "before": "9d85c4cd94d62cc3924bf24c2c484c2149d9c3e2401306778db9b4eaebbd2354",
+      "after": "9d85c4cd94d62cc3924bf24c2c484c2149d9c3e2401306778db9b4eaebbd2354",
+      "unchanged": true
+    },
+    {
+      "path": "components/oomp/OompMemoryConstellation.tsx",
+      "before": "42b3e9b95afc1430a40fcdc2207bcdf88e4632e697d873d14acd37984c8078c3",
+      "after": "42b3e9b95afc1430a40fcdc2207bcdf88e4632e697d873d14acd37984c8078c3",
+      "unchanged": true
+    },
+    {
+      "path": "components/oomp/OompScrollStory.tsx",
+      "before": "e7201d2e34dc2511ecd23d2993405d6e853ee034eb7c81c25a0b2133c2581569",
+      "after": "e7201d2e34dc2511ecd23d2993405d6e853ee034eb7c81c25a0b2133c2581569",
+      "unchanged": true
+    },
+    {
+      "path": "components/oomp/OompSections.tsx",
+      "before": "43b07a3ff96c2dd030d61c2303ab0d9409dcb6cc185c57d6fa490829d2f2fe31",
+      "after": "d718af6045450cf2202e02a1f0f5e378bd21254ebb202a38555e880d03ff1357",
+      "unchanged": false
+    },
+    {
+      "path": "components/oomp/OompStoryControls.tsx",
+      "before": "284c762974dde7db322e529475bc49c0cc5881de4f8c06af830399c73d75f384",
+      "after": "284c762974dde7db322e529475bc49c0cc5881de4f8c06af830399c73d75f384",
+      "unchanged": true
+    },
+    {
+      "path": "components/oomp/OompStoryStage.tsx",
+      "before": "80296390f5059507aa2565c3a71737990adfb38e87172dec490790f11d0708a5",
+      "after": "80296390f5059507aa2565c3a71737990adfb38e87172dec490790f11d0708a5",
+      "unchanged": true
+    },
+    {
+      "path": "components/oomp/OompTypewriter.tsx",
+      "before": "0bf07d69bac2678058c1a93ba1fdf4af633442b3f0a887a5be61f6943284e79b",
+      "after": "0bf07d69bac2678058c1a93ba1fdf4af633442b3f0a887a5be61f6943284e79b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase1/browser-checks.json",
+      "before": "abf2523a001fe4e72314ff4a864b752f10a11a03fd4c09dba6ad0328b536d453",
+      "after": "abf2523a001fe4e72314ff4a864b752f10a11a03fd4c09dba6ad0328b536d453",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase1/desktop-hero.png",
+      "before": "b5445e9d2290a6e8bafda1259ae6e52fda384f2aed387eba54dbceeb039a3128",
+      "after": "b5445e9d2290a6e8bafda1259ae6e52fda384f2aed387eba54dbceeb039a3128",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase1/desktop.png",
+      "before": "7152273ea298206f76aee7da990ba7f46c015eecbf3b8580ab6e3ea46c167c24",
+      "after": "7152273ea298206f76aee7da990ba7f46c015eecbf3b8580ab6e3ea46c167c24",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase1/install-check.json",
+      "before": "bb36c30510822c27ab25e691f4a16c80bf690f98287a448109f63494a536e8c0",
+      "after": "bb36c30510822c27ab25e691f4a16c80bf690f98287a448109f63494a536e8c0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase1/mobile-full.png",
+      "before": "c41f64fd7b6e68f0b3764edde5faef49c51df6664ace4effd58fcec94fe7ed3f",
+      "after": "c41f64fd7b6e68f0b3764edde5faef49c51df6664ace4effd58fcec94fe7ed3f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase1/mobile.png",
+      "before": "cceeeb77eb6842916caa5ac2ed64fac701dfd12bb0f5e4af9bce23ba2eeb98e2",
+      "after": "cceeeb77eb6842916caa5ac2ed64fac701dfd12bb0f5e4af9bce23ba2eeb98e2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase1/reduced-motion.png",
+      "before": "19a96da87447a5473889ae2b33b55145f4268a8c933c8fc7903b8afafd8a0e3d",
+      "after": "19a96da87447a5473889ae2b33b55145f4268a8c933c8fc7903b8afafd8a0e3d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase1-implementation.md",
+      "before": "a88f77a44f1c96477abc166759ea8e93adce49d055063567b6c78fdb83f14932",
+      "after": "a88f77a44f1c96477abc166759ea8e93adce49d055063567b6c78fdb83f14932",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/browser-checks.json",
+      "before": "0e7d87cf2d9e16f4f0464adab5f8aa75d220d93f5109848d9bbce482387c7d77",
+      "after": "0e7d87cf2d9e16f4f0464adab5f8aa75d220d93f5109848d9bbce482387c7d77",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/desktop-hero.png",
+      "before": "fa143013ba685beed64c6f121f05b1f6d7eba4f0161c8c9160c4b8fc8a796e7f",
+      "after": "fa143013ba685beed64c6f121f05b1f6d7eba4f0161c8c9160c4b8fc8a796e7f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/graph-320px.png",
+      "before": "db768ec06ca9dab554e3ec95629fdd703689a0db4cff4a700d4339cd602960cb",
+      "after": "db768ec06ca9dab554e3ec95629fdd703689a0db4cff4a700d4339cd602960cb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/graph-360px.png",
+      "before": "8cedac9dbe67637d4be4e902bbcf0ab946921df3da3a3f0d6fc5ed381a80e1c7",
+      "after": "8cedac9dbe67637d4be4e902bbcf0ab946921df3da3a3f0d6fc5ed381a80e1c7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/graph-430px.png",
+      "before": "92fec8439c6efad75266a9fa253c6d52af662d75400545f33e29cfe8491116c3",
+      "after": "92fec8439c6efad75266a9fa253c6d52af662d75400545f33e29cfe8491116c3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/graph-768px.png",
+      "before": "820d8775618a9f3d561b379be71dbfd1fa3ea907c9d027930ef42cb2c5064be6",
+      "after": "820d8775618a9f3d561b379be71dbfd1fa3ea907c9d027930ef42cb2c5064be6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/mobile-scene-1.png",
+      "before": "c18e83b09d0104c73c8327a311cfbd738a9f734751c8babb47eef4a9261a22dd",
+      "after": "c18e83b09d0104c73c8327a311cfbd738a9f734751c8babb47eef4a9261a22dd",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/mobile-scene-2.png",
+      "before": "951a61dd8f728cc186563ab3c5c742138e28f3124e918e6e93fc74fe88c12e11",
+      "after": "951a61dd8f728cc186563ab3c5c742138e28f3124e918e6e93fc74fe88c12e11",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/mobile-scene-4.png",
+      "before": "01ddc46621f10d97c7131c5d4131a1a9580321b29eb00a79d7d11449658bb9b3",
+      "after": "01ddc46621f10d97c7131c5d4131a1a9580321b29eb00a79d7d11449658bb9b3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/mobile-scene-5.png",
+      "before": "13e04e4e37d71478296e0b7fa2983c165fbcc108b406f036589e26bd7aee3dd5",
+      "after": "13e04e4e37d71478296e0b7fa2983c165fbcc108b406f036589e26bd7aee3dd5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/mobile-source-selected.png",
+      "before": "95999427604fc6da171d93f67b23026767080608c8891f9784ecedd6f5f304ca",
+      "after": "95999427604fc6da171d93f67b23026767080608c8891f9784ecedd6f5f304ca",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/no-javascript.png",
+      "before": "20c4ff63a3b42fdca74e8c16dd41efa50bbddab41de7c7fcc229f8be9aa40ae7",
+      "after": "20c4ff63a3b42fdca74e8c16dd41efa50bbddab41de7c7fcc229f8be9aa40ae7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/preservation-checks.json",
+      "before": "5896c3dda5c5a6e8d05a95d15cad74a5e45f04c8feb23e6920d1098a21ef4385",
+      "after": "5896c3dda5c5a6e8d05a95d15cad74a5e45f04c8feb23e6920d1098a21ef4385",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/reduced-motion.png",
+      "before": "a3392f3365b9a36ece1ccde7c0996e317f944c12c32e0844de1140c60d81973c",
+      "after": "a3392f3365b9a36ece1ccde7c0996e317f944c12c32e0844de1140c60d81973c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/scene-1.png",
+      "before": "5f7f480a5f11c651c3bd51a64f33180669414919d512f9a2f7a068cad637a144",
+      "after": "5f7f480a5f11c651c3bd51a64f33180669414919d512f9a2f7a068cad637a144",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/scene-2.png",
+      "before": "b46f7ba7f3a2c3da637b11c3d4dac68c13be3555f89c483ab3fc08804ad14229",
+      "after": "b46f7ba7f3a2c3da637b11c3d4dac68c13be3555f89c483ab3fc08804ad14229",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/scene-3.png",
+      "before": "68046cdf0671387803a4e4c1a8fc4e6ca89ce2cfeeb346eb4ffa552e7f9afe93",
+      "after": "68046cdf0671387803a4e4c1a8fc4e6ca89ce2cfeeb346eb4ffa552e7f9afe93",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/scene-4.png",
+      "before": "60697fb95904725027877bb26a8cd942ebee210807be62866fc3c23cef0b8c26",
+      "after": "60697fb95904725027877bb26a8cd942ebee210807be62866fc3c23cef0b8c26",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/scene-5.png",
+      "before": "329825c74598ee3f7e5fa32197463c3430d8c27d65b900f7d63d97c7a4c4f295",
+      "after": "329825c74598ee3f7e5fa32197463c3430d8c27d65b900f7d63d97c7a4c4f295",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/scroll-capture.json",
+      "before": "5facf498e8ecea3ef42bbe9877f8059c9a66ed0f3dcfa764c599bdd4d77d31fb",
+      "after": "5facf498e8ecea3ef42bbe9877f8059c9a66ed0f3dcfa764c599bdd4d77d31fb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/scroll-progression.gif",
+      "before": "0694cbf1106050fdd2998ec92ae3ac3c0273fe8c7cd25167c43b54c814915d5c",
+      "after": "0694cbf1106050fdd2998ec92ae3ac3c0273fe8c7cd25167c43b54c814915d5c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2/source-selected.png",
+      "before": "5d7b419e03f3ea6ba629e8715af1f42815515b9fe151bd0db98c15805a7241d7",
+      "after": "5d7b419e03f3ea6ba629e8715af1f42815515b9fe151bd0db98c15805a7241d7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/oomp-phase2-implementation.md",
+      "before": "c58bf3d4b536021c33c2bab7d8da8c628498794b5bdab09b15e070d380895823",
+      "after": "c58bf3d4b536021c33c2bab7d8da8c628498794b5bdab09b15e070d380895823",
+      "unchanged": true
+    },
+    {
+      "path": "lib/oomp-content.ts",
+      "before": "1417a3ab043974b52e1bb81c90cb1de54f15ab57b79c29a412f63f328c560948",
+      "after": "8a9793d5c60b977b69a2bd751c2a234691f866060928f877d101d3dbfa75bc69",
+      "unchanged": false
+    },
+    {
+      "path": "lib/oomp-story-data.ts",
+      "before": "ddbde2f2f3fe7f8daf22f5b4feeca1fce568d1ba9abce9f1c5a9f6ab208d597e",
+      "after": "ddbde2f2f3fe7f8daf22f5b4feeca1fce568d1ba9abce9f1c5a9f6ab208d597e",
+      "unchanged": true
+    },
+    {
+      "path": "lib/site.ts",
+      "before": "d19632582a0abb8a7bcaf0f0c3ea0973b55681e269b835a7c86fd91f8402db5d",
+      "after": "b7d3268954132ba8312a313369e79f41c37a353da5a741caa1c119a0ad6c2728",
+      "unchanged": false
+    },
+    {
+      "path": "package-lock.json",
+      "before": "b8a09269d47c59b4af213de815e40d10273ed38206efa834bd7af85c21955b62",
+      "after": "b8a09269d47c59b4af213de815e40d10273ed38206efa834bd7af85c21955b62",
+      "unchanged": true
+    },
+    {
+      "path": "package.json",
+      "before": "e6beead150d475b1cc54cb5619ed15ca20644de0fdb3e1d357041d0a013d44aa",
+      "after": "e6beead150d475b1cc54cb5619ed15ca20644de0fdb3e1d357041d0a013d44aa",
+      "unchanged": true
+    },
+    {
+      "path": "public/oomp/fonts/inter-latin.woff2",
+      "before": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "after": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "unchanged": true
+    },
+    {
+      "path": "public/oomp/fonts/Inter-OFL.txt",
+      "before": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "after": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "unchanged": true
+    },
+    {
+      "path": "public/oomp/fonts/space-grotesk-latin.woff2",
+      "before": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+      "after": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+      "unchanged": true
+    },
+    {
+      "path": "public/oomp/fonts/Space-Grotesk-OFL.txt",
+      "before": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72",
+      "after": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72",
+      "unchanged": true
+    },
+    {
+      "path": "public/oomp/og.png",
+      "before": "aae5f43fee68da6e86459c3fe9501f95d41ae6227b69850dd1f6f1c3559f9066",
+      "after": "aae5f43fee68da6e86459c3fe9501f95d41ae6227b69850dd1f6f1c3559f9066",
+      "unchanged": true
+    },
+    {
+      "path": "public/oomp/og.svg",
+      "before": "f5707756573750e39f7b997a0b33042a12245e1a9b7c31f7d001b24c318217a2",
+      "after": "f5707756573750e39f7b997a0b33042a12245e1a9b7c31f7d001b24c318217a2",
+      "unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+
+> indus-automation-labs-site@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/19) ...
+   Generating static pages (4/19) 
+   Generating static pages (9/19) 
+   Generating static pages (14/19) 
+ ✓ Generating static pages (19/19)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    2.29 kB         102 kB
+├ ○ /_not-found                          873 B          88.2 kB
+├ ○ /about                               2.29 kB         102 kB
+├ ○ /acceptable-use                      150 B          87.5 kB
+├ ○ /contact                             3.62 kB         104 kB
+├ ○ /labs                                725 B          96.7 kB
+├ ○ /labs/matterflux                     1.82 kB          93 kB
+├ ○ /labs/oomp                           6.52 kB         103 kB
+├ ○ /login                               2.29 kB         102 kB
+├ ○ /pricing                             2.29 kB         102 kB
+├ ○ /privacy                             150 B          87.5 kB
+├ ○ /products                            2.29 kB         102 kB
+├ ○ /products/autochat                   2.29 kB         102 kB
+├ ○ /refund-policy                       150 B          87.5 kB
+├ ○ /robots.txt                          0 B                0 B
+├ ○ /sitemap.xml                         0 B                0 B
+└ ○ /terms                               150 B          87.5 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-e166e5a0268c297b.js       31.7 kB
+  ├ chunks/fd9d1056-bb3eabe4fc6f14cb.js  53.6 kB
+  └ other shared chunks (total)          1.93 kB
+
+
+○  (Static)  prerendered as static content
+

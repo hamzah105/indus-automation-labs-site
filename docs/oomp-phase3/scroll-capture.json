@@ -1,0 +1,318 @@
+{
+  "method": "Actual Chrome viewport captures during native mouse-wheel scrolling; GIF is review evidence, not UI media",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "frames": 40,
+  "scenes": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "samples": [
+    {
+      "y": 1004,
+      "scene": "0",
+      "progress": "0.1205",
+      "time": 1565.2999999970198,
+      "nodes": 746
+    },
+    {
+      "y": 1083,
+      "scene": "0",
+      "progress": "0.2425",
+      "time": 1851.5,
+      "nodes": 746
+    },
+    {
+      "y": 1162,
+      "scene": "0",
+      "progress": "0.3644",
+      "time": 2086.89999999851,
+      "nodes": 746
+    },
+    {
+      "y": 1240,
+      "scene": "0",
+      "progress": "0.4847",
+      "time": 2343.6999999955297,
+      "nodes": 746
+    },
+    {
+      "y": 1319,
+      "scene": "0",
+      "progress": "0.6067",
+      "time": 2604.6999999955297,
+      "nodes": 746
+    },
+    {
+      "y": 1398,
+      "scene": "0",
+      "progress": "0.7286",
+      "time": 2859.5,
+      "nodes": 746
+    },
+    {
+      "y": 1477,
+      "scene": "0",
+      "progress": "0.8505",
+      "time": 3111.60000000149,
+      "nodes": 746
+    },
+    {
+      "y": 1555,
+      "scene": "0",
+      "progress": "0.9708",
+      "time": 3368.89999999851,
+      "nodes": 746
+    },
+    {
+      "y": 1634,
+      "scene": "1",
+      "progress": "0.0928",
+      "time": 3632.89999999851,
+      "nodes": 746
+    },
+    {
+      "y": 1713,
+      "scene": "1",
+      "progress": "0.2147",
+      "time": 3899.7999999970198,
+      "nodes": 746
+    },
+    {
+      "y": 1792,
+      "scene": "1",
+      "progress": "0.3366",
+      "time": 4181.19999999553,
+      "nodes": 746
+    },
+    {
+      "y": 1871,
+      "scene": "1",
+      "progress": "0.4585",
+      "time": 4460.39999999851,
+      "nodes": 746
+    },
+    {
+      "y": 1949,
+      "scene": "1",
+      "progress": "0.5789",
+      "time": 4723.69999999553,
+      "nodes": 746
+    },
+    {
+      "y": 2028,
+      "scene": "1",
+      "progress": "0.7008",
+      "time": 5007.89999999851,
+      "nodes": 746
+    },
+    {
+      "y": 2107,
+      "scene": "1",
+      "progress": "0.8227",
+      "time": 5276.5,
+      "nodes": 746
+    },
+    {
+      "y": 2186,
+      "scene": "1",
+      "progress": "0.9446",
+      "time": 5560.39999999851,
+      "nodes": 746
+    },
+    {
+      "y": 2264,
+      "scene": "2",
+      "progress": "0.0650",
+      "time": 5840.19999999553,
+      "nodes": 746
+    },
+    {
+      "y": 2343,
+      "scene": "2",
+      "progress": "0.1869",
+      "time": 6119.60000000149,
+      "nodes": 746
+    },
+    {
+      "y": 2422,
+      "scene": "2",
+      "progress": "0.3088",
+      "time": 6387,
+      "nodes": 746
+    },
+    {
+      "y": 2501,
+      "scene": "2",
+      "progress": "0.4307",
+      "time": 6652,
+      "nodes": 746
+    },
+    {
+      "y": 2579,
+      "scene": "2",
+      "progress": "0.5511",
+      "time": 6908.79999999702,
+      "nodes": 746
+    },
+    {
+      "y": 2658,
+      "scene": "2",
+      "progress": "0.6730",
+      "time": 7177.69999999553,
+      "nodes": 746
+    },
+    {
+      "y": 2737,
+      "scene": "2",
+      "progress": "0.7949",
+      "time": 7447.5,
+      "nodes": 746
+    },
+    {
+      "y": 2816,
+      "scene": "2",
+      "progress": "0.9168",
+      "time": 7732.89999999851,
+      "nodes": 746
+    },
+    {
+      "y": 2895,
+      "scene": "3",
+      "progress": "0.0387",
+      "time": 8041.69999999553,
+      "nodes": 748
+    },
+    {
+      "y": 2973,
+      "scene": "3",
+      "progress": "0.1591",
+      "time": 8309.39999999851,
+      "nodes": 748
+    },
+    {
+      "y": 3052,
+      "scene": "3",
+      "progress": "0.2810",
+      "time": 8590,
+      "nodes": 748
+    },
+    {
+      "y": 3131,
+      "scene": "3",
+      "progress": "0.4029",
+      "time": 8873.79999999702,
+      "nodes": 748
+    },
+    {
+      "y": 3210,
+      "scene": "3",
+      "progress": "0.5249",
+      "time": 9149.69999999553,
+      "nodes": 748
+    },
+    {
+      "y": 3288,
+      "scene": "3",
+      "progress": "0.6452",
+      "time": 9460.5,
+      "nodes": 748
+    },
+    {
+      "y": 3367,
+      "scene": "3",
+      "progress": "0.7671",
+      "time": 9743.29999999702,
+      "nodes": 748
+    },
+    {
+      "y": 3446,
+      "scene": "3",
+      "progress": "0.8891",
+      "time": 10014.5,
+      "nodes": 748
+    },
+    {
+      "y": 3525,
+      "scene": "4",
+      "progress": "0.0110",
+      "time": 10308,
+      "nodes": 746
+    },
+    {
+      "y": 3604,
+      "scene": "4",
+      "progress": "0.1329",
+      "time": 10567.89999999851,
+      "nodes": 746
+    },
+    {
+      "y": 3682,
+      "scene": "4",
+      "progress": "0.2533",
+      "time": 10818.79999999702,
+      "nodes": 746
+    },
+    {
+      "y": 3761,
+      "scene": "4",
+      "progress": "0.3752",
+      "time": 11073.69999999553,
+      "nodes": 746
+    },
+    {
+      "y": 3840,
+      "scene": "4",
+      "progress": "0.4971",
+      "time": 11320,
+      "nodes": 746
+    },
+    {
+      "y": 3919,
+      "scene": "4",
+      "progress": "0.6190",
+      "time": 11589.10000000149,
+      "nodes": 746
+    },
+    {
+      "y": 3997,
+      "scene": "4",
+      "progress": "0.7394",
+      "time": 11854.79999999702,
+      "nodes": 746
+    }
+  ],
+  "metrics": {
+    "cls": 8.977347479926214e-05,
+    "longTasks": [
+      {
+        "start": 319.5,
+        "duration": 72
+      }
+    ]
+  },
+  "delta": {
+    "TaskDuration": 0.949026,
+    "ScriptDuration": 0.012127,
+    "LayoutDuration": 0.012065,
+    "RecalcStyleDuration": 0.363373,
+    "LayoutCount": 46,
+    "RecalcStyleCount": 746
+  },
+  "heap": {
+    "before": 4654396,
+    "after": 4927612
+  },
+  "errors": [],
+  "gif": {
+    "file": "scroll-progression.gif",
+    "frames": 40,
+    "durationMs": 12560,
+    "bytes": 5743214
+  }
+}

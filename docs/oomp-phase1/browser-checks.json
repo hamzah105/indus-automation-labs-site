@@ -1,0 +1,403 @@
+{
+  "environment": {
+    "browser": "Installed Chrome via Playwright 1.63.0",
+    "base": "http://127.0.0.1:3000"
+  },
+  "checks": [
+    {
+      "name": "typewriter sequential, complete, settled; one accessible H1",
+      "detail": {
+        "samples": [
+          {
+            "ms": 341,
+            "visible": 0,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 1125,
+            "visible": 1,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 1209,
+            "visible": 2,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 1308,
+            "visible": 3,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 1392,
+            "visible": 4,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 1476,
+            "visible": 5,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 1576,
+            "visible": 6,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 1659,
+            "visible": 7,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 1760,
+            "visible": 8,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 1842,
+            "visible": 9,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 1926,
+            "visible": 10,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 2026,
+            "visible": 11,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 2109,
+            "visible": 12,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 2209,
+            "visible": 13,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 2293,
+            "visible": 14,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 2376,
+            "visible": 15,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          },
+          {
+            "ms": 2476,
+            "visible": 16,
+            "left": 277.78125,
+            "width": 884.4375,
+            "height": 119.34375
+          }
+        ],
+        "cls": 0.00006534113377700618,
+        "lcp": 560,
+        "started": 152.5,
+        "cursor": "0.4",
+        "running": 0
+      }
+    },
+    {
+      "name": "route metadata",
+      "detail": {
+        "title": "OOMP — Memory beyond the context window | Indus Automation Labs",
+        "canonical": "https://www.indusautomationlabs.com/labs/oomp",
+        "og": "https://www.indusautomationlabs.com/labs/oomp",
+        "image": "https://www.indusautomationlabs.com/oomp/og.png",
+        "description": "Meet OOMP, an open-source alpha memory engine for AI agents. Durable local history, source provenance and selective recall for finite-context models."
+      }
+    },
+    {
+      "name": "in-page navigation and GitHub target",
+      "detail": {
+        "anchors": [
+          {
+            "href": "#overview",
+            "exists": true
+          },
+          {
+            "href": "#architecture",
+            "exists": true
+          },
+          {
+            "href": "#get-started",
+            "exists": true
+          },
+          {
+            "href": "#get-started",
+            "exists": true
+          },
+          {
+            "href": "#architecture",
+            "exists": true
+          }
+        ],
+        "installTop": 147.171875
+      }
+    },
+    {
+      "name": "skip link enters page content",
+      "detail": "/labs/oomp"
+    },
+    {
+      "name": "keyboard CTAs, native disclosure and code focus",
+      "detail": {
+        "passed": true
+      }
+    },
+    {
+      "name": "responsive content 320px",
+      "detail": {
+        "viewport": 320,
+        "main": 320,
+        "client": 320,
+        "headingWidth": 272.234375,
+        "headingLeft": 23.875,
+        "headingRight": 296.109375,
+        "rootScrollWidth": 704
+      }
+    },
+    {
+      "name": "responsive content 360px",
+      "detail": {
+        "viewport": 360,
+        "main": 360,
+        "client": 360,
+        "headingWidth": 272.234375,
+        "headingLeft": 43.875,
+        "headingRight": 316.109375,
+        "rootScrollWidth": 792
+      }
+    },
+    {
+      "name": "responsive content 768px",
+      "detail": {
+        "viewport": 768,
+        "main": 768,
+        "client": 768,
+        "headingWidth": 471.703125,
+        "headingLeft": 148.140625,
+        "headingRight": 619.84375,
+        "rootScrollWidth": 1690
+      }
+    },
+    {
+      "name": "responsive content 1024px",
+      "detail": {
+        "viewport": 1024,
+        "main": 1024,
+        "client": 1024,
+        "headingWidth": 628.9375,
+        "headingLeft": 197.53125,
+        "headingRight": 826.46875,
+        "rootScrollWidth": 1024
+      }
+    },
+    {
+      "name": "responsive content 1440px",
+      "detail": {
+        "viewport": 1440,
+        "main": 1440,
+        "client": 1440,
+        "headingWidth": 884.4375,
+        "headingLeft": 277.78125,
+        "headingRight": 1162.21875,
+        "rootScrollWidth": 1440
+      }
+    },
+    {
+      "name": "existing mobile navigation opens and closes",
+      "detail": true
+    },
+    {
+      "name": "reduced motion shows complete static headline",
+      "detail": [
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        },
+        {
+          "opacity": "1",
+          "animation": "none",
+          "cursor": "none"
+        }
+      ]
+    },
+    {
+      "name": "server-rendered heading and install guide without JavaScript",
+      "detail": true
+    },
+    {
+      "name": "preserved route /",
+      "detail": {
+        "status": 200,
+        "h1": "AI automation for customer conversations and SME operations.",
+        "rootScrollWidthAt360": 620
+      }
+    },
+    {
+      "name": "preserved route /products",
+      "detail": {
+        "status": 200,
+        "h1": "Practical automation products, built to grow with operators.",
+        "rootScrollWidthAt360": 635
+      }
+    },
+    {
+      "name": "preserved route /products/autochat",
+      "detail": {
+        "status": 200,
+        "h1": "Business messaging automation, with the owner in control.",
+        "rootScrollWidthAt360": 638
+      }
+    },
+    {
+      "name": "preserved route /labs/matterflux",
+      "detail": {
+        "status": 200,
+        "h1": "MatterFlux",
+        "rootScrollWidthAt360": 640
+      }
+    },
+    {
+      "name": "MatterFlux success and failure demos",
+      "detail": true
+    },
+    {
+      "name": "existing MatterFlux ZIP",
+      "detail": {
+        "status": 200,
+        "bytes": 116766
+      }
+    },
+    {
+      "name": "sitemap adds OOMP and preserves MatterFlux",
+      "detail": true
+    },
+    {
+      "name": "crawlable heading and internal aspiration excluded from HTML",
+      "detail": true
+    },
+    {
+      "name": "browser runtime, hydration, console and network",
+      "detail": {
+        "errors": 0,
+        "consoleErrors": 0,
+        "failedRequests": 0
+      }
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "status": "PASS"
+}

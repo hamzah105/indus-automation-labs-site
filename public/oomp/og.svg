@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#7136b3" stop-opacity=".4"/><stop offset="1" stop-color="#05070f" stop-opacity="0"/></radialGradient>
+    <linearGradient id="title"><stop stop-color="#e0d4ff"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+  </defs>
+  <path fill="#05070f" d="M0 0h1200v630H0z"/>
+  <ellipse cx="650" cy="220" rx="620" ry="350" fill="url(#glow)"/>
+  <path d="M64 89h1072M64 539h1072" stroke="#a78bfa" stroke-opacity=".2"/>
+  <g font-family="Arial,sans-serif">
+    <text x="64" y="62" fill="#b7abc8" font-size="18" letter-spacing="3">INDUS AUTOMATION LABS / OOMP</text>
+    <text x="64" y="181" fill="#c4b5fd" font-size="16" letter-spacing="3">OPEN-SOURCE ALPHA RESEARCH</text>
+    <text x="60" y="307" fill="url(#title)" font-size="104" font-weight="600" letter-spacing="-5">Introducing OOMP</text>
+    <path d="M988 224v93" stroke="#c4b5fd" stroke-width="3"/>
+    <text x="64" y="387" fill="#f5f3ff" font-size="34">Memory beyond the context window.</text>
+    <text x="64" y="438" fill="#aaa3bc" font-size="22">Persistent history. Selective recall. Finite prompts.</text>
+    <text x="64" y="579" fill="#9b91b0" font-size="16">LOCAL-FIRST / PROVIDER-NEUTRAL / SOURCE-BACKED</text>
+    <text x="965" y="579" fill="#c4b5fd" font-size="16">v0.1.0 · Apache-2.0</text>
+  </g>
+</svg>

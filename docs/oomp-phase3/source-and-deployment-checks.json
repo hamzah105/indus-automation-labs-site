@@ -1,0 +1,174 @@
+{
+  "reviewedAt": "2026-11-14",
+  "website": {
+    "baseline": "6365b27786630117fc355cf712fde6cc82bf4dd2",
+    "localBranch": "feature/oomp-phase1",
+    "remoteMain": "8e3aeb3a134d038396e03fecc7cf50eae4716b33",
+    "comparison": {
+      "repository_full_name": "hamzah105/indus-automation-labs-site",
+      "base": "6365b27786630117fc355cf712fde6cc82bf4dd2",
+      "head": "main",
+      "status": "ahead",
+      "ahead_by": 1,
+      "behind_by": 0,
+      "total_commits": 1,
+      "too_large": null,
+      "base_commit": {
+        "sha": "6365b27786630117fc355cf712fde6cc82bf4dd2",
+        "url": "https://api.github.com/repos/hamzah105/indus-automation-labs-site/commits/6365b27786630117fc355cf712fde6cc82bf4dd2",
+        "html_url": "https://github.com/hamzah105/indus-automation-labs-site/commit/6365b27786630117fc355cf712fde6cc82bf4dd2"
+      },
+      "merge_base_commit": {
+        "sha": "6365b27786630117fc355cf712fde6cc82bf4dd2",
+        "url": "https://api.github.com/repos/hamzah105/indus-automation-labs-site/commits/6365b27786630117fc355cf712fde6cc82bf4dd2",
+        "html_url": "https://github.com/hamzah105/indus-automation-labs-site/commit/6365b27786630117fc355cf712fde6cc82bf4dd2"
+      },
+      "files": []
+    },
+    "production": {
+      "githubDeploymentId": 5649328483,
+      "environment": "Production",
+      "state": "success",
+      "deployedAt": "2026-07-28T23:47:11Z",
+      "sha": "8e3aeb3a134d038396e03fecc7cf50eae4716b33",
+      "url": "https://indus-automation-labs-site-29vcnlk0l-indusautomationlabs.vercel.app",
+      "vercelOverview": "https://vercel.com/indusautomationlabs/indus-automation-labs-site/66tVYRgFujSdZUDH98oJbGCMYxBN",
+      "productionBranch": "main (inferred from production SHA matching current main; private branch setting not accessible)",
+      "projectSettingsRead": false
+    },
+    "canonical": {
+      "apex": {
+        "url": "https://indusautomationlabs.com",
+        "status": 200,
+        "server": "Vercel",
+        "canonical": "https://indusautomationlabs.com"
+      },
+      "www": {
+        "url": "https://www.indusautomationlabs.com",
+        "status": 200,
+        "server": "Vercel",
+        "canonical": "https://indusautomationlabs.com"
+      },
+      "httpRedirect": {
+        "status": 308,
+        "location": "https://indusautomationlabs.com/"
+      }
+    },
+    "publicNewRoutesAtReview": {
+      "/labs": 404,
+      "/labs/oomp": 404
+    },
+    "identicalTree": "7b99e4eba9e86afa0dc6d4cf79b7bb51b3caf543",
+    "cachedLocalMain": "d23dce97584d22f13f4a94dd0c8a56e246150d17"
+  },
+  "oomp": {
+    "repository": "https://github.com/hamzah105/OOMP",
+    "branch": "main",
+    "commit": "bebee6194c0c5f3963b15cbbf56ebc10dd83ccf6",
+    "version": "0.1.0",
+    "maturity": "Development Status :: 3 - Alpha",
+    "license": "Apache-2.0",
+    "requiresPython": ">=3.11",
+    "declaredPythonClassifiers": [
+      "3.11",
+      "3.12"
+    ],
+    "dependencies": [
+      "pydantic>=2.9,<3"
+    ],
+    "extras": {
+      "mcp": [
+        "mcp>=2.3.0,<2.4",
+        "uvicorn>=0.31.1,<1"
+      ],
+      "ui": [
+        "rich==15.0.0",
+        "questionary==2.1.1"
+      ]
+    },
+    "githubReleases": [],
+    "sourcePaths": [
+      {
+        "path": "pyproject.toml",
+        "exists": true
+      },
+      {
+        "path": "LICENSE",
+        "exists": true
+      },
+      {
+        "path": "docs/getting-started.md",
+        "exists": true
+      },
+      {
+        "path": "docs/product-onboarding.md",
+        "exists": true
+      },
+      {
+        "path": "docs/memory-inspection.md",
+        "exists": true
+      },
+      {
+        "path": "docs/limitations.md",
+        "exists": true
+      },
+      {
+        "path": "docs/product-roadmap.md",
+        "exists": true
+      },
+      {
+        "path": "docs/research-plan.md",
+        "exists": true
+      },
+      {
+        "path": "examples/quickstart.py",
+        "exists": true
+      }
+    ],
+    "verificationMethod": "Read-only connected GitHub API, recursive commit tree, public source files, clean local OOMP checkout at same SHA; no engine or profile modifications."
+  },
+  "downloads": {
+    "autochat": {
+      "tag": "v1.1.0",
+      "name": "AutoChat-Setup-v1.1.0.exe",
+      "size": 406266805,
+      "url": "https://github.com/hamzah105/AutoChat-PK-Releases/releases/download/v1.1.0/AutoChat-Setup-v1.1.0.exe",
+      "method": "GitHub release asset metadata and redirected HEAD 200 (release-assets.githubusercontent.com, application/octet-stream, 406266805 bytes); binary not downloaded"
+    },
+    "matterfluxGithub": "https://github.com/hamzah105/matterflux",
+    "matterfluxRepositoryPublic": true,
+    "legacy": [
+      {
+        "version": "v0.1.1",
+        "headStatus": 200,
+        "size": 406183510
+      },
+      {
+        "version": "v0.1.0-pilot",
+        "headStatus": 200
+      }
+    ]
+  },
+  "install": {
+    "method": "Reuse Phase 1 fresh source install because source commit, extras and installation commands are unchanged; rerun version and synthetic quickstart in that disposable environment.",
+    "platform": "Windows",
+    "python": "3.11.4",
+    "versionOutput": "oomp 0.1.0",
+    "syntheticQuickstart": {
+      "schema": 6,
+      "sourceEvents": 13,
+      "earlierFactOutsideRecentEight": true,
+      "sourceEventIds": [
+        "early-project"
+      ],
+      "contextBytes": 727,
+      "budgetBytes": 3000,
+      "modelCalls": 0,
+      "retrievalIsAnAnswer": false
+    },
+    "servicesStarted": false,
+    "independentRepositoriesWritten": false,
+    "posixExecutionTested": false,
+    "reference": "../oomp-phase1/install-check.json"
+  }
+}

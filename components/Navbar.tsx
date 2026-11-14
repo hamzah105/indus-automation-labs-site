@@ -10,6 +10,8 @@ import { Icon } from "@/components/Icon";
 export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const isActive = (href: string) => pathname === href || (href === "/labs" && pathname.startsWith("/labs/"));
+  const currentLocation = (href: string) => pathname === href ? "page" as const : isActive(href) ? "location" as const : undefined;
 
   useEffect(() => {
     function closeOnEscape(event: KeyboardEvent) {
@@ -43,8 +45,8 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              aria-current={pathname === item.href ? "page" : undefined}
-              className={`rounded-full px-3 py-2 text-sm transition ${pathname === item.href ? "bg-white/[0.07] text-white" : "text-slate-400 hover:bg-white/[0.05] hover:text-white"}`}
+              aria-current={currentLocation(item.href)}
+              className={`rounded-full px-3 py-2 text-sm transition ${isActive(item.href) ? "bg-white/[0.07] text-white" : "text-slate-400 hover:bg-white/[0.05] hover:text-white"}`}
             >
               {item.label}
             </Link>
@@ -72,9 +74,9 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                aria-current={pathname === item.href ? "page" : undefined}
+                aria-current={currentLocation(item.href)}
                 onClick={() => setOpen(false)}
-                className={`block rounded-xl px-3 py-3 text-sm transition ${pathname === item.href ? "bg-cyanGlow/[0.08] text-cyan-100" : "text-slate-300 hover:bg-white/[0.06] hover:text-white"}`}
+                className={`block rounded-xl px-3 py-3 text-sm transition ${isActive(item.href) ? "bg-cyanGlow/[0.08] text-cyan-100" : "text-slate-300 hover:bg-white/[0.06] hover:text-white"}`}
               >
                 {item.label}
               </Link>
