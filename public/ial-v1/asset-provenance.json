@@ -1,0 +1,27 @@
+{
+  "identity": "Indus Automation Labs 1.0 — Genesis",
+  "type": "Original procedural stellar sculpture",
+  "generator": "lib/ial-v1/galaxy-data.ts and lib/ial-v1/galaxy-renderer.ts",
+  "reproduction": "Run docs/ial-v1/qa/author-scene.cjs with an externally supplied Playwright installation",
+  "seed": 103197,
+  "desktopParticles": 22000,
+  "mobileParticles": 6800,
+  "assets": [
+    "galaxy-desktop.webp",
+    "galaxy-mobile.webp",
+    "og.png"
+  ],
+  "sourceImagery": "None. No external photographs, reference shaders, textures, video or models are used.",
+  "fonts": "Existing self-hosted Inter and Space Grotesk; their OFL files remain in public/oomp/fonts.",
+  "versionMeaning": "IAL 1.0 is the website creative identity, not an AutoChat or OOMP product version.",
+  "phase2": {
+    "date": "2026-11-16",
+    "refinement": "Lower dust opacity and sprite size; selectively brighter neutral clusters. Geometry, seeded random draw order, particle counts, tier framing and renderer are preserved.",
+    "additionalAssets": [
+      "products-og.png",
+      "autochat-og.png"
+    ],
+    "additionalGenerator": "docs/ial-v1/phase2/author-og.cjs",
+    "referenceAssetsIncluded": false
+  }
+}

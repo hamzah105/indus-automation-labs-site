@@ -1,0 +1,65 @@
+.journey { background:#07060d; }
+.aboutIntro,.aboutPrinciple,.timelineSection,.aboutInvitation,.contactIntro,.contactGrid,.contactFootnote,.accessGrid { max-width:1280px; margin:auto; padding-left:40px; padding-right:40px; }
+.aboutIntro { display:grid; grid-template-columns:1.1fr 1fr; align-items:center; gap:30px; padding-top:60px; padding-bottom:70px; }
+.aboutIntro h1,.contactIntro h1,.accessGrid h1 { font-size:clamp(43px,5.1vw,72px); line-height:1.08; letter-spacing:-.055em; margin-top:30px; }
+.aboutIntro h1 em,.aboutPrinciple h2 em,.aboutInvitation h2 em,.contactIntro h1 em,.accessGrid h1 em { color:#bea5dc; font-style:normal; }
+.lead { color:#c0b0cf; font-size:15px; line-height:1.9; max-width:530px; margin-top:27px; }
+.founder { display:grid; grid-template-columns:1fr; gap:7px; border-left:1px solid #73588a; padding-left:19px; margin-top:35px; font-size:13px; color:#bda7cd; }
+.founder > span:first-child { font:10px ui-monospace,monospace; letter-spacing:.08em; color:#b69acb; }.founder strong { color:#ecdef6; font-weight:500; }
+.brandArtwork { margin:0; min-width:0; position:relative; }
+.brandArtwork img { width:100%; height:auto; display:block; mask-image:radial-gradient(ellipse at 50% 50%,#000 35%,#000c 60%,transparent 74%); }
+.brandArtwork figcaption { text-align:center; font:9px/1.8 ui-monospace,monospace; color:#b49ac8; letter-spacing:.08em; margin-top:-12px; position:relative; }
+.aboutPrinciple { padding-top:70px; padding-bottom:75px; border-top:1px solid #392a47; display:grid; grid-template-columns:1.15fr 1fr; gap:0 60px; }
+.aboutPrinciple > p:first-child { grid-column:1/-1; }.aboutPrinciple h2,.aboutInvitation h2 { font-size:clamp(36px,4.2vw,56px); line-height:1.15; letter-spacing:-.045em; margin-top:25px; }
+.aboutPrinciple > p:last-child { align-self:end; color:#bcaacb; font-size:15px; line-height:1.9; margin-top:28px; }
+.timelineSection { padding-top:75px; padding-bottom:70px; border-top:1px solid #3c2d49; }
+.timelineHeading h2 { font-size:clamp(35px,4.1vw,54px); line-height:1.14; letter-spacing:-.04em; margin-top:25px; }.timelineHeading > p:last-child { color:#bca7cb; font-size:14px; line-height:1.9; max-width:660px; margin-top:23px; }
+.timeline { margin-top:60px; }
+.milestone { display:grid; grid-template-columns:100px 1fr; gap:35px; padding:0 0 65px; --scene-progress:1; scroll-margin-top:110px; }
+.milestoneIndex { position:relative; }.milestoneIndex > span { display:grid; place-items:center; width:58px; height:58px; border:1px solid #84609f; color:#c5a4de; background:#0e0a16; font:13px ui-monospace,monospace; }
+.milestoneIndex > i { position:absolute; left:28px; top:58px; width:1px; bottom:-4px; background:#493055; }
+.milestoneIndex > i::after { content:""; position:absolute; inset:0; background:#be94dc; transform:scaleY(var(--scene-progress)); transform-origin:top; }
+.milestone:last-child { padding-bottom:0; }.milestone:last-child .milestoneIndex > i { display:none; }
+.milestone > div:last-child { padding-top:7px; padding-bottom:23px; border-bottom:1px solid #382541; }
+.milestone h3 { font-size:clamp(28px,3.1vw,39px); letter-spacing:-.035em; line-height:1.2; margin-top:21px; }
+.stageLabel { display:inline-block; border-left:2px solid #b998d4; padding-left:10px; margin-top:20px; color:#d2b7e9; font-size:12px; line-height:1.7; }
+.milestone > div > p:not(:first-child) { max-width:720px; color:#c2aecf; font-size:14px; line-height:1.9; margin-top:20px; }.milestone a { margin-top:13px; }
+.aboutInvitation { padding-top:70px; padding-bottom:90px; border-top:1px solid #463150; }.aboutInvitation > p:not(:first-child) { color:#bfa9cd; font-size:15px; line-height:1.9; margin:27px 0; max-width:540px; }
+.signalRoom { background:#080810; }
+.contactIntro { padding-top:60px; padding-bottom:55px; }.contactIntro > p:last-child { color:#bfaed0; font-size:15px; line-height:1.9; margin-top:25px; max-width:600px; }
+.contactGrid { display:grid; grid-template-columns:.9fr 1.1fr; gap:70px; padding-bottom:70px; align-items:start; }
+.contactChannel { padding-top:25px; min-width:0; }.channelSymbol { width:130px; margin-bottom:30px; }.channelSymbol svg { width:100%; height:auto; stroke:#c49ae9; stroke-width:1.2; }.channelSymbol circle { fill:#c49ae9; }
+.contactChannel h2 { font-size:37px; line-height:1.2; letter-spacing:-.035em; margin-top:23px; }
+.emailAddress { display:inline-block; max-width:100%; overflow-wrap:anywhere; color:#d5b8ee; font-family:var(--font-space-grotesk),sans-serif; font-size:clamp(17px,2vw,25px); line-height:1.5; margin:23px 0; min-height:44px; }
+.contactChannel > p:not(:first-child) { color:#b9a6ca; font-size:14px; line-height:1.9; max-width:440px; }.contactChannel > a:last-child { margin-top:20px; }
+.contactRoutes { margin-top:33px; }.contactRoutes article { display:flex; gap:17px; padding:22px 0; border-top:1px solid #483153; --scene-progress:1; }.contactRoutes article > span { color:#b699cd; font:10px/1.8 ui-monospace,monospace; border-top:1px solid #b88bdd; padding-top:7px; width:24px; flex-shrink:0; opacity:calc(.6 + var(--scene-progress) * .4); }
+.contactRoutes h3 { font-size:19px; line-height:1.4; }.contactRoutes p { color:#b9a6c9; font-size:13px; line-height:1.8; margin-top:7px; }
+.composer { padding:28px; border:1px solid #6c4e81; border-radius:5px; background:#110d1b; min-width:0; }.composerTop { display:flex; justify-content:space-between; gap:15px; color:#b99bce; font:10px/1.8 ui-monospace,monospace; }.composerTop > span:last-child { color:#c8b0d6; font-size:11px; }
+.composer h2 { font-size:31px; line-height:1.2; letter-spacing:-.035em; margin:27px 0 30px; }.composer fieldset { padding:0; border:0; }.composer legend { font-size:13px; color:#decaed; margin-bottom:13px; }
+.categoryChoices { display:grid; gap:9px; }.categoryChoices label { display:flex; align-items:center; gap:13px; min-height:48px; padding:11px 13px; border:1px solid #574061; border-radius:3px; font-size:13px; cursor:pointer; color:#cfb9df; }.categoryChoices label:has(input:checked) { border-color:#b88cd9; background:#251733; color:#f0defb; }.categoryChoices input { accent-color:#b28cdc; width:16px; height:16px; }
+.composeField { display:block; font-size:13px; line-height:1.8; margin-top:24px; color:#e4cfee; }.composeField > span { color:#baa3c8; font-size:12px; }.composeField input,.composeField textarea { display:block; width:100%; min-width:0; border:1px solid #6f547c; border-radius:3px; background:#0b0911; color:#f0e1fa; padding:12px; margin-top:9px; font:14px/1.8 var(--font-inter),sans-serif; }.composeField input { min-height:48px; }.composeField textarea { resize:vertical; min-height:140px; }.composeField textarea::placeholder { color:#aa98b8; }
+.composeField :is(input,textarea):focus-visible { outline:2px solid #c4a0e5; outline-offset:3px; }
+.emailPreview { display:grid; grid-template-columns:75px 1fr; gap:10px; padding-top:24px; margin-top:26px; border-top:1px solid #4a3455; font-size:12px; line-height:1.8; }.emailPreview > span { color:#b89dcc; font:10px/1.8 ui-monospace,monospace; }.emailPreview > strong { font-weight:500; color:#e0c9ee; overflow-wrap:anywhere; }.emailPreview > p { color:#c4acd4; }
+.openDraft { display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:50px; padding:13px 16px; margin-top:27px; color:#1b1028; background:#d0b5fa; border:1px solid #d0b5fa; border-radius:3px; font-size:13px; }.openDraft > span { font-size:20px; }.mailExplanation { color:#bfa7cd; font-size:12px; line-height:1.85; margin-top:17px; }
+.contactFootnote { padding-top:25px; padding-bottom:65px; border-top:1px solid #3d2949; display:flex; align-items:center; justify-content:space-between; gap:35px; }.contactFootnote > p { max-width:780px; color:#bda5cb; font-size:13px; line-height:1.9; }.contactFootnote > p > a { color:#dec0f2; text-decoration:underline; text-underline-offset:4px; }
+.accessRoom { background:#080810; }.accessGrid { display:grid; grid-template-columns:1.05fr 1fr; gap:70px; align-items:center; min-height:calc(100svh - 74px); padding-top:70px; padding-bottom:80px; }.accessGrid .lead { max-width:520px; }.accessLicensing { color:#bda9ca; font-size:14px; line-height:1.9; max-width:500px; margin:22px 0 28px; }
+.accessPlate { min-width:0; padding:27px; border:1px solid #6b507f; border-radius:5px; background:#100d19; }.accessPlateHeader { display:flex; justify-content:space-between; gap:17px; color:#c4a5db; font:10px/1.8 ui-monospace,monospace; }
+.accessGeometry { display:flex; align-items:center; justify-content:center; gap:25px; padding:38px 0 27px; }.accessGeometry > svg { width:100px; height:110px; }.accessGeometry i { width:50px; height:1px; background:linear-gradient(90deg,transparent,#aa80c5); }.accessGeometry i:last-child { transform:rotate(180deg); }
+.accessPlate h2 { font-size:29px; line-height:1.2; letter-spacing:-.03em; }.accessPlate > p { color:#c5aed2; font-size:13px; line-height:1.85; margin-top:18px; }
+.accessPlate dl { margin-top:25px; }.accessPlate dl > div { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:17px 0; border-bottom:1px solid #46304f; font-size:13px; line-height:1.7; }.accessPlate dt { color:#d9c2e6; }.accessPlate dd { color:#bd9dce; font:10px ui-monospace,monospace; }
+.accessStatus { display:flex; align-items:center; gap:12px; font-size:12px; line-height:1.8; color:#c6aed3; margin-top:23px; }.accessStatus > span { color:#d2b1eb; font-size:24px; }
+@media(max-width:1023px) { .aboutIntro { gap:15px; }.aboutIntro h1 { font-size:52px; }.contactGrid,.accessGrid { gap:35px; }.aboutPrinciple { gap:0 35px; } }
+@media(max-width:767px) {
+ .aboutIntro,.aboutPrinciple,.timelineSection,.aboutInvitation,.contactIntro,.contactGrid,.contactFootnote,.accessGrid { padding-left:22px; padding-right:22px; }
+ .aboutIntro { grid-template-columns:1fr; padding-top:40px; padding-bottom:45px; gap:18px; }.aboutIntro h1,.contactIntro h1,.accessGrid h1 { font-size:clamp(38px,9.6vw,57px); margin-top:25px; }.lead { font-size:14px; margin-top:24px; }.founder { margin-top:27px; }
+ .brandArtwork { max-width:430px; margin:auto; }.brandArtwork figcaption { font-size:9px; }.brandArtwork img { margin-top:-8px; }
+ .aboutPrinciple { display:block; padding-top:45px; padding-bottom:50px; }.aboutPrinciple h2,.aboutInvitation h2 { font-size:clamp(32px,8vw,45px); }.aboutPrinciple > p:last-child { font-size:14px; }
+ .timelineSection { padding-top:48px; padding-bottom:50px; }.timelineHeading h2 { font-size:clamp(31px,7.6vw,44px); }.timelineHeading > p:last-child { font-size:13px; }.timeline { margin-top:38px; }
+ .milestone { grid-template-columns:35px 1fr; gap:17px; padding-bottom:40px; }.milestoneIndex > span { width:34px; height:34px; font-size:10px; }.milestoneIndex > i { top:34px; left:16px; }.milestone > div:last-child { padding-top:0; }.milestone h3 { font-size:28px; margin-top:19px; }.milestone .stageLabel { font-size:11px; }.milestone > div > p:not(:first-child) { font-size:13px; }
+ .aboutInvitation { padding-top:45px; padding-bottom:60px; }.aboutInvitation > p:not(:first-child) { font-size:14px; }
+ .contactIntro { padding-top:40px; padding-bottom:35px; }.contactIntro > p:last-child { font-size:14px; }.contactGrid { grid-template-columns:1fr; gap:35px; padding-bottom:40px; }.contactChannel { padding-top:0; }.channelSymbol { width:105px; margin-bottom:24px; }.contactChannel h2 { font-size:32px; }.contactChannel > p:not(:first-child) { font-size:14px; }.emailAddress { font-size:19px; }
+ .composer { padding:23px 17px; }.composerTop { font-size:9px; }.composerTop > span:last-child { font-size:10px; }.composer h2 { font-size:28px; }.categoryChoices label { font-size:13px; }.emailPreview { grid-template-columns:1fr; gap:5px; }.emailPreview > p,.emailPreview > strong { margin-bottom:9px; }.openDraft { font-size:12px; gap:13px; padding:12px; }.mailExplanation { font-size:12px; }
+ .contactFootnote { display:block; padding-bottom:45px; }.contactFootnote > p { font-size:12px; }.contactFootnote > a { margin-top:14px; }
+ .accessGrid { grid-template-columns:1fr; gap:40px; padding-top:40px; padding-bottom:55px; min-height:0; }.accessLicensing { font-size:13px; }.accessPlate { padding:23px 18px; }.accessPlateHeader { font-size:9px; }.accessPlate h2 { font-size:28px; }.accessGeometry { padding-top:32px; gap:20px; }.accessGeometry > svg { width:85px; height:95px; }.accessPlate dl > div { font-size:12px; }.accessPlate dd { font-size:10px; }.accessStatus { font-size:12px; }
+}
+@media(prefers-reduced-motion:reduce) { .milestone { --scene-progress:1!important; }.milestoneIndex > i::after { transform:none; } }

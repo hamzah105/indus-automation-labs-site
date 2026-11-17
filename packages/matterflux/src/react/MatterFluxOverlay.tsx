@@ -21,7 +21,7 @@ type MatterFluxStyle = CSSProperties & {
 
 export function MatterFluxOverlay({ session, onComplete }: MatterFluxOverlayProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const frameRef = useRef<number>();
+  const frameRef = useRef<number | undefined>(undefined);
   const completedRef = useRef(false);
   const startedAtRef = useRef(performance.now());
   const pausedAtRef = useRef<number | null>(null);

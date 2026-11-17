@@ -41,7 +41,7 @@ export function MatterFluxProvider({ children, ...providerDefaults }: MatterFlux
   const mountedRef = useRef(true);
   const completionRef = useRef<(() => void) | null>(null);
   const delayResolversRef = useRef(new Map<number, () => void>());
-  const announcementTimerRef = useRef<number>();
+  const announcementTimerRef = useRef<number | undefined>(undefined);
   const sessionIdRef = useRef(0);
   defaultsRef.current = providerDefaults;
 
