@@ -1,0 +1,25 @@
+.page { background: #08070f; color: #f5f0ff; font-family: var(--font-inter),system-ui,sans-serif; overflow: clip; }
+/* The shared shooting-star pseudo-elements exceed the phone viewport. These
+   three pages supply their own opaque scenes; only their presence disables the
+   legacy backdrop. Removing .page restores all original protected-route styles. */
+:global(body):has(.page) { background-image: none; }
+:global(body):has(.page) > :global(.star-field),
+:global(body):has(.page) > :global(.thin-grid) { display: none; }
+:global(body):has(.page) :global(footer) :global(.status-dot) { animation: none; }
+.page :is(h1,h2,h3) { font-family: var(--font-space-grotesk),sans-serif; font-weight: 500; text-wrap: balance; }
+.page :is(a,button,summary):focus-visible { outline: 2px solid #c4b5fd; outline-offset: 5px; border-radius: 3px; }
+.page button { font-family: inherit; }
+.page p { text-wrap: pretty; }
+.eyebrow { color: #b9a7d1; font: 11px/1.8 ui-monospace,monospace; letter-spacing: .12em; text-transform: uppercase; }
+.action { display: inline-flex; justify-content: space-between; align-items: center; gap: 28px; min-height: 48px; padding: 12px 19px; border: 1px solid #5e4b76; border-radius: 4px; font-size: 13px; line-height: 1.5; color: #e2d4f6; transition: background 180ms,border-color 180ms; }
+.action > span { font-size: 19px; line-height: 1; }
+.primary { background: #d0b5fa; border-color: #d0b5fa; color: #170d27; }
+.primary:hover { background: #e6d5ff; border-color: #e6d5ff; }
+.secondary { background: #14101e; }
+.secondary:hover { background: #231830; border-color: #bc9ce9; }
+.text { background: transparent; border-color: transparent; padding-left: 0; padding-right: 0; }
+.text:hover { color: #fff; text-decoration: underline; text-underline-offset: 6px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.muted { color: #b1a7bf; }
+@media(max-width:600px) { .action { font-size: 12px; min-height: 48px; gap: 20px; } .eyebrow { font-size: 10px; letter-spacing: .08em; } }
+@media(prefers-reduced-motion:reduce) { .action { transition: none; } }

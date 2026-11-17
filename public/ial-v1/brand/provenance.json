@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-17",
+  "source": {
+    "file": "766072071_1829140668458152_6728250225232666006_n (1).webp",
+    "dimensions": [
+      1600,
+      1600
+    ],
+    "format": "RGB opaque WebP",
+    "bytes": 216738,
+    "sha256": "8352eff6e1e2def1dfb2c773a4254ec0baa529c601b25054f7895c35bb90eeb1",
+    "preserved": true
+  },
+  "authority": "Founder-supplied official company artwork; identity and derivative work explicitly requested in the Phase 3 brief.",
+  "mark": {
+    "file": "mark.svg",
+    "method": "Manual geometric trace of the visible luminous face boundaries in the original 1600px coordinate system.",
+    "viewBox": [
+      240,
+      180,
+      1120,
+      1240
+    ],
+    "approximateArtworkMarkBounds": [
+      298,
+      218,
+      1304,
+      1396
+    ],
+    "preserved": [
+      "Open hexagonal frame",
+      "Central A apex and leg angles",
+      "Crossbar shape",
+      "Frame breaks",
+      "Lavender/violet face hierarchy",
+      "Fine bright edges"
+    ],
+    "simplified": [
+      "Cosmic raster background",
+      "Cloud texture",
+      "Grain and small decorative stars"
+    ],
+    "reason": "A transparent vector is legible at normal navigation dimensions without shrinking the entire opaque 1600px background into a small rectangle."
+  },
+  "compact": {
+    "file": "favicon.svg",
+    "viewBox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "placement": "Same traced mark fitted inside a dark-backed 64px icon, with modest edge strengthening for subpixel legibility.",
+    "geometryChanged": false,
+    "strokeAdjustment": "Primary trace edge 4 to 11 source-coordinate units; internal bevel 2.2 to 5. Shape vertices are unchanged."
+  },
+  "rasterization": "Headless Chrome vector rasterization through Canvas 2D. No generative image recreation or automatic segmentation.",
+  "artwork960": "Uncropped downsample of the complete original opaque artwork, encoded WebP quality 0.88. Original root file remains unchanged.",
+  "reproduction": "Run docs/ial-v1/phase3/brand-author.cjs with PLAYWRIGHT_MODULE pointing to an external installation; no app dependency.",
+  "assets": [
+    {
+      "file": "apple-touch-icon.png",
+      "bytes": 19111,
+      "sha256": "b06fcc767ee9a87b9059c3dc4f120ba0c386fc3dfcf6636a2bb287af36ee6177"
+    },
+    {
+      "file": "artwork-480.webp",
+      "bytes": 22286,
+      "sha256": "84d1691524430b6c9f7ae16add8abbea900d6f99f73d13d9326a0a2e6403b4b7"
+    },
+    {
+      "file": "artwork-960.webp",
+      "bytes": 58314,
+      "sha256": "e48a36dbdb4d8fe208056bf968c920c4a929a8e95bccd30d3152ef983a09feda"
+    },
+    {
+      "file": "favicon-16.png",
+      "bytes": 812,
+      "sha256": "730451377057645b7010a533161fa033b9d0fbb1d7a6c62d5d5e18d3e59264de"
+    },
+    {
+      "file": "favicon-32.png",
+      "bytes": 2081,
+      "sha256": "4b62ab4e6c9042ea6e3f239c7175bdc0e9b46800890fc9f183562f99bacd2aa7"
+    },
+    {
+      "file": "favicon-48.png",
+      "bytes": 3614,
+      "sha256": "cf2b99e062c992d96443e980506eb4b5d613885d2b7a4163506e648a2f8d7f26"
+    },
+    {
+      "file": "favicon.svg",
+      "bytes": 2272,
+      "sha256": "5a9744e6ce9fb70a813f8e45e0546c9946b79b66e8e2f7f94ec952b669ef2924"
+    },
+    {
+      "file": "mark-96.png",
+      "bytes": 10864,
+      "sha256": "074be1a873f7986cdbd59cbe4f55f07c70a2c0d2ef73bc04c56bda9a67f6e977"
+    },
+    {
+      "file": "mark.svg",
+      "bytes": 2175,
+      "sha256": "8736e137d7f7aa097fbfe69a8b36ba9c8a131a6049f72a33d65e09f4ce3b6dca"
+    }
+  ],
+  "artwork480": "Uncropped 480px phone derivative from the same complete original opaque artwork, encoded WebP quality 0.88; same framing as the 960px derivative."
+}

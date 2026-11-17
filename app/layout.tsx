@@ -25,10 +25,16 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: `${site.name} | AI Automation Software`,
     description:
-      "AI automation software for business messaging, customer support, sales workflows, and local business operations."
+      "AI automation software for business messaging, customer support, sales workflows, and local business operations.",
+    images: [{ url: `${site.url}/ial-v1/company-og.png`, width: 1200, height: 630, alt: "Indus Automation Labs — the official hexagonal A mark." }]
   },
   icons: {
-    icon: "/favicon.svg"
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/ial-v1/brand/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/ial-v1/brand/favicon-48.png", sizes: "48x48", type: "image/png" }
+    ],
+    apple: [{ url: "/ial-v1/brand/apple-touch-icon.png", sizes: "180x180", type: "image/png" }]
   }
 };
 

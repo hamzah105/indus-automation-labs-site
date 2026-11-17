@@ -1,0 +1,16 @@
+import { site } from "@/lib/site";
+import { licensingOffer as offer } from "@/lib/ial-v1/company";
+import { autochatCapabilities } from "@/lib/ial-v1/portfolio";
+import { ActionLink } from "../IalPage";
+import { LicenseJourney } from "./LicenseJourney";
+import ui from "../ial-ui.module.css";
+import styles from "./licensing.module.css";
+
+export function PricingExperience() {
+  return <>
+    <header className={styles.licensingIntro}><p className={ui.eyebrow}>AUTOCHAT / LICENSING</p><h1>Transparent access.<br /><em>Controlled automation.</em></h1><p>One desktop product. A clear launch offer. Licensing stays inside AutoChat and its approved onboarding process.</p></header>
+    <section className={styles.licenseGrid} aria-labelledby="license-title"><article className={styles.licenseTicket}><div className={styles.ticketHeader}><span>AUTOCHAT v{site.autochatVersion}</span><span>WINDOWS DESKTOP</span></div><h2 id="license-title">Early launch license.</h2><p className={styles.ticketPurpose}>For early businesses testing AutoChat as a Windows desktop business messaging automation tool.</p><div className={styles.price}><span>{offer.currency}</span><strong>{offer.price}</strong><p>Launch price with <b>{offer.voucher}</b></p></div><div className={styles.priceBreakdown}><span>Regular price <strong>{offer.regular}</strong></span><span>NEWCOM voucher <strong>{offer.discount} OFF</strong></span></div><div className={ui.actions}><ActionLink href={site.releaseUrl} kind="primary">Download AutoChat</ActionLink><ActionLink href={site.microsoftStoreUrl}>Microsoft Store</ActionLink></div><p className={styles.noCheckout}>Public website checkout is not active yet. Licensing is handled through the AutoChat desktop app License section and approved onboarding.</p></article><aside className={styles.licenseContext}><p className={ui.eyebrow}>WHAT THE WORKSPACE SUPPORTS</p><ul>{autochatCapabilities.map(item => <li key={item.title}><h3>{item.title}</h3><p>{item.description}</p></li>)}</ul><p className={styles.emailSupport}>Email support during the launch period.</p><ActionLink href="/products/autochat" kind="text">Explore the product and requirements</ActionLink></aside></section>
+    <section className={styles.onboarding} aria-labelledby="onboarding-title"><div className={styles.onboardingHeader}><div><p className={ui.eyebrow}>THE ACTIVATION JOURNEY</p><h2 id="onboarding-title">Four steps.<br /><em>One clear destination.</em></h2></div><p>This visual sequence explains the existing flow. It does not perform activation, take payment or generate a license key.</p></div><LicenseJourney /></section>
+    <section className={styles.commercialNotes} aria-labelledby="launch-terms-title"><div><p className={ui.eyebrow}>LAUNCH TERMS</p><h2 id="launch-terms-title">Keep the terms<br /><em>in the open.</em></h2></div><div><p data-commercial-terms>{offer.terms}</p><p>For product access, licensing, billing questions or custom setup, contact <a href={site.newcomVoucherMailto}>{site.email}</a>.</p><div className={styles.termLinks}><ActionLink href="/terms" kind="text">Terms</ActionLink><ActionLink href="/refund-policy" kind="text">Refund policy</ActionLink><ActionLink href="/contact" kind="text">Contact support</ActionLink></div></div></section>
+  </>;
+}

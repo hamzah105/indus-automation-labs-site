@@ -1,0 +1,91 @@
+.exhibition { background:#090910; }
+.exhibitionIntro,.featured,.capabilities,.labExhibits,.access { max-width:1280px; padding-left:40px; padding-right:40px; margin:auto; }
+.exhibitionIntro { padding-top:64px; padding-bottom:60px; background-image:linear-gradient(#9d80bd09 1px,transparent 1px),linear-gradient(90deg,#9d80bd09 1px,transparent 1px); background-size:72px 72px; }
+.introTop { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.introTop > span { color:#a8a1b8; font:10px/1.7 ui-monospace,monospace; }
+.exhibitionIntro h1 { font-size:clamp(48px,7.4vw,100px); line-height:1.02; letter-spacing:-.06em; margin-top:52px; }
+.exhibitionIntro h1 em { font-style:normal; color:#b6a0d3; }
+.introBottom { display:flex; justify-content:space-between; gap:40px; margin-top:35px; }
+.introBottom > p { max-width:470px; color:#b9afc8; font-size:15px; line-height:1.9; }
+.introBottom > span { color:#b9a8cc; font:10px/1.9 ui-monospace,monospace; align-self:end; text-align:right; letter-spacing:.08em; }
+.featured { display:grid; grid-template-columns:1fr 1.05fr; gap:65px; padding-top:70px; padding-bottom:80px; border-top:1px solid #4b3a5e; }
+.featuredCopy h2 { display:flex; align-items:center; gap:20px; margin-top:23px; font-size:53px; letter-spacing:-.045em; }
+.featuredCopy h2 > span { font:12px ui-monospace,monospace; color:#b5a5c9; border:1px solid #51425c; border-radius:3px; padding:7px 9px; }
+.productLead { font-family:var(--font-space-grotesk),sans-serif; font-size:30px; line-height:1.25; letter-spacing:-.035em; color:#d0c3e0; margin-top:21px; }
+.productBody { margin:25px 0 30px; max-width:450px; color:#b9afc5; font-size:14px; line-height:1.9; }
+.productFacts { display:flex; gap:35px; margin-top:34px; padding-top:23px; border-top:1px solid #3d3248; }
+.productFacts > span { color:#b2a0c6; font:10px/1.7 ui-monospace,monospace; }
+.productFacts strong { display:block; color:#ded4eb; font:13px/1.7 var(--font-inter),sans-serif; margin-top:7px; }
+.spotlight { align-self:center; padding:25px; border:1px solid #6c577d; border-radius:6px; background:#101019; box-shadow:0 26px 80px #0006; min-width:0; }
+.instrumentHeader { display:flex; justify-content:space-between; gap:15px; color:#bba4d2; font:10px/1.8 ui-monospace,monospace; }
+.instrumentHeader > span:last-child { color:#b3a7c1; font:11px var(--font-inter),sans-serif; }
+.lensPanel { min-height:385px; }
+.specimen { height:230px; position:relative; display:grid; align-items:center; justify-content:center; background:radial-gradient(ellipse at 50% 55%,#a579d91c,transparent 60%); }
+.specimenFrame { display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; width:160px; height:155px; border:1px solid #bca1db; border-radius:7px; background:#1b1427; box-shadow:10px 10px 0 #17101f,11px 11px 0 #645074,22px 22px 0 #100d18,23px 23px 0 #3b2e48; transform:perspective(650px) rotateY(-16deg) rotateX(8deg); transition:transform 350ms,box-shadow 350ms; }
+.spotlight[data-lens="1"] .specimenFrame { transform:perspective(650px) rotateY(13deg) rotateX(7deg); }
+.spotlight[data-lens="2"] .specimenFrame { transform:perspective(650px) rotateY(0deg) rotateX(0deg); box-shadow:0 0 0 15px #b28bd50b,0 0 0 16px #74607e,0 0 0 32px #8c5cc108; }
+.specimenCode { font-family:var(--font-space-grotesk),sans-serif; font-size:51px; color:#dec7f7; letter-spacing:-.06em; }
+.specimenLabel { font:9px ui-monospace,monospace; color:#c1a2e0; margin-top:12px; letter-spacing:.1em; }
+.specimenFrame i { position:absolute; background:#c1a2e0; width:4px; height:4px; left:-3px; top:22px; }
+.specimenFrame i:nth-of-type(2) { left:auto; right:-3px; }
+.specimenFrame i:nth-of-type(3) { left:25px; top:auto; bottom:-3px; }
+.instrumentTicks { display:flex; justify-content:space-between; position:absolute; inset:auto 0 8px; color:#a994be; font:9px ui-monospace,monospace; border-bottom:1px solid #3e314c; padding-bottom:9px; }
+.lensPanel h3 { font-size:23px; line-height:1.3; letter-spacing:-.025em; margin-top:20px; }
+.lensPanel > p { color:#bcb0cb; font-size:13px; line-height:1.8; margin-top:11px; min-height:47px; }
+.lensTabs { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:22px; }
+.lensTabs button { min-height:64px; padding:11px 8px; background:#14101e; border:1px solid #504058; color:#c7b6da; text-align:left; font-size:12px; line-height:1.6; cursor:pointer; }
+.lensTabs button > span { display:block; font:9px/1.5 ui-monospace,monospace; margin-bottom:5px; color:#c2a2e3; }
+.lensTabs button[aria-selected="true"] { border-color:#c1a1e3; background:#261b33; color:#f1e2ff; }
+.noScriptNote { font-size:13px; color:#c6b3d8; line-height:1.9; margin-top:20px; }
+.capabilities { padding-top:65px; padding-bottom:70px; border-top:1px solid #3c3049; }
+.sectionHeading h2 { font-size:36px; letter-spacing:-.04em; margin-top:20px; }
+.capabilities dl { display:grid; grid-template-columns:repeat(4,1fr); gap:28px; margin-top:40px; }
+.capabilities dt { font-family:var(--font-space-grotesk),sans-serif; font-size:18px; line-height:1.4; }
+.capabilities dt > span { display:block; color:#b99dd7; font:10px ui-monospace,monospace; margin-bottom:20px; }
+.capabilities dd { color:#b3a7c2; font-size:13px; line-height:1.9; margin-top:13px; }
+.requirements { color:#b6a7c8; font-size:12px; line-height:1.9; margin-top:35px; max-width:850px; }
+.requirements a { color:#d0b0ef; text-decoration:underline; text-underline-offset:4px; display:inline-block; min-height:44px; padding:10px 0; }
+.labExhibits { padding-top:75px; padding-bottom:85px; border-top:1px solid #4b3a5b; }
+.labHeading { display:flex; justify-content:space-between; gap:60px; align-items:end; }
+.labHeading h2 { font-size:clamp(35px,4vw,53px); line-height:1.12; letter-spacing:-.045em; margin-top:23px; }
+.labHeading > p { max-width:360px; color:#b8a9c8; font-size:14px; line-height:1.9; }
+.exhibitGrid { display:grid; grid-template-columns:1fr 1fr; gap:26px; margin-top:45px; }
+.labExhibit { border:1px solid #4e3d5d; border-radius:4px; padding:25px; background:#0e0c15; transition:border-color 200ms; min-width:0; }
+.labExhibit:hover,.labExhibit:focus-within { border-color:#ad8ccd; }
+.exhibitMeta { display:flex; justify-content:space-between; gap:16px; color:#b8a0cd; font:10px/1.8 ui-monospace,monospace; }
+.labArt { width:100%; height:190px; stroke:#b18dcc; stroke-width:1; margin:15px 0; }
+.labArt rect { fill:#be99e510; }
+.labExhibit h3 { font-size:36px; letter-spacing:-.035em; }
+.labExhibit > p { color:#b8a8ca; font-size:14px; line-height:1.85; margin-top:18px; max-width:420px; }
+.exhibitFooter { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px; padding-top:24px; margin-top:26px; border-top:1px solid #3c2c49; }
+.exhibitFooter > span { color:#b1a0c2; font-size:11px; }
+.access { border-top:1px solid #4a3659; padding-top:80px; padding-bottom:90px; }
+.access h2 { font-size:clamp(36px,4vw,54px); line-height:1.12; letter-spacing:-.045em; margin-top:23px; }
+.accessRows { margin-top:40px; }
+.accessRows > div { display:grid; grid-template-columns:1fr 1fr 1.4fr auto; align-items:center; gap:25px; min-height:90px; padding:16px 0; border-bottom:1px solid #3e2f4c; }
+.accessRows strong { font-family:var(--font-space-grotesk),sans-serif; font-weight:500; font-size:22px; }
+.accessRows > div > span { color:#b8a8c9; font-size:12px; line-height:1.7; }
+.accessBottom { display:flex; align-items:center; justify-content:space-between; gap:25px; margin-top:40px; }
+.accessBottom > p { color:#c0aecf; font-size:14px; line-height:1.8; max-width:370px; }
+@media(max-width:1023px) { .featured { gap:35px; } .featuredCopy h2 { font-size:45px; gap:15px; } .productLead { font-size:26px; } .spotlight { padding:20px; } .accessRows > div { grid-template-columns:1fr 1fr 1.2fr; } .accessRows > div > a { grid-column:1/4; justify-content:flex-start; } }
+@media(max-width:767px) {
+ .exhibitionIntro,.featured,.capabilities,.labExhibits,.access { padding-left:22px; padding-right:22px; }
+ .exhibitionIntro { padding-top:38px; padding-bottom:40px; }
+ .introTop { align-items:start; } .introTop > span { font-size:9px; max-width:100px; text-align:right; }
+ .exhibitionIntro h1 { font-size:clamp(42px,10vw,68px); margin-top:38px; }
+ .introBottom { display:block; margin-top:25px; } .introBottom > p { font-size:14px; } .introBottom > span { display:block; text-align:left; margin-top:25px; font-size:9px; }
+ .featured { grid-template-columns:1fr; gap:35px; padding-top:43px; padding-bottom:50px; }
+ .featuredCopy h2 { font-size:44px; } .productLead { font-size:27px; } .productBody { font-size:14px; }
+ .productFacts { gap:30px; } .productFacts strong { font-size:12px; }
+ .spotlight { padding:20px 16px; } .instrumentHeader { font-size:10px; } .lensPanel { min-height:430px; }
+ .lensPanel h3 { font-size:23px; } .lensTabs { grid-template-columns:1fr; gap:8px; } .lensTabs button { display:flex; align-items:center; gap:12px; font-size:12px; min-height:48px; padding:10px 12px; } .lensTabs button > span { margin:0; font-size:10px; }
+ .capabilities,.labExhibits,.access { padding-top:50px; padding-bottom:55px; }
+ .sectionHeading h2 { font-size:31px; }
+ .capabilities dl { grid-template-columns:1fr 1fr; gap:28px 20px; margin-top:30px; } .capabilities dt { font-size:17px; } .capabilities dd { font-size:13px; }
+ .labHeading { display:block; } .labHeading > p { margin-top:24px; } .exhibitGrid { grid-template-columns:1fr; gap:20px; margin-top:30px; }
+ .labExhibit { padding:20px; } .labArt { height:150px; } .labExhibit h3 { font-size:32px; } .exhibitMeta { font-size:9px; }
+ .accessRows > div { grid-template-columns:1fr 1fr; gap:12px; padding:22px 0; } .accessRows > div > span:nth-of-type(2) { grid-column:1/3; } .accessRows > div > a { grid-column:1/3; }
+ .accessRows strong { font-size:22px; } .accessRows > div > span:first-of-type { text-align:right; }
+ .accessBottom { display:block; } .accessBottom > div { margin-top:22px; }
+}
+@media(prefers-reduced-motion:reduce) { .specimenFrame,.labExhibit { transition:none; } .specimenFrame { transform:none!important; } }

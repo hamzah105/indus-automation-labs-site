@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { legalLinks, site } from "@/lib/site";
 import { Icon } from "@/components/Icon";
+import { BrandMark } from "@/components/ial-v1/BrandMark";
 
 const productLinks = [
   { label: "Products", href: "/products" },
@@ -24,8 +25,8 @@ export function Footer() {
     <footer className="relative border-t border-white/[0.08] bg-ink/[0.82]">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.35fr_0.8fr_0.9fr_0.8fr] lg:px-8 lg:py-16">
         <div>
-          <Link href="/" className="inline-flex items-center gap-3">
-            <span className="grid h-11 w-11 place-items-center rounded-2xl border border-cyanGlow/25 bg-cyanGlow/[0.09] font-display text-sm font-bold text-cyanGlow">IA</span>
+          <Link href="/" aria-label="Indus Automation Labs home" className="inline-flex items-center gap-3">
+            <BrandMark size={44} className="h-11 w-11" />
             <span className="font-display text-xl font-semibold tracking-[-0.02em] text-white">{site.name}</span>
           </Link>
           <p className="mt-4 max-w-md text-sm leading-6 text-slate-400">

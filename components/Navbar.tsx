@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { navigation, site } from "@/lib/site";
 import { ButtonLink } from "@/components/ButtonLink";
 import { Icon } from "@/components/Icon";
+import { BrandMark } from "@/components/ial-v1/BrandMark";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -30,13 +31,11 @@ export function Navbar() {
         aria-label="Primary navigation"
         className="mx-auto flex max-w-[90rem] items-center justify-between gap-5 px-4 py-3 sm:px-6 lg:px-8"
       >
-        <Link href="/" className="group flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-cyanGlow/30 bg-gradient-to-br from-cyanGlow/[0.18] to-violetGlow/[0.1] font-display text-base font-bold text-cyanGlow shadow-glow transition group-hover:border-cyanGlow/55 group-hover:bg-cyanGlow/[0.18]">
-            IA
-          </span>
+        <Link href="/" aria-label="Indus Automation Labs home" className="group flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
+          <BrandMark size={40} className="h-10 w-10" />
           <span className="min-w-0">
             <span className="block truncate font-display text-sm font-semibold tracking-[-0.015em] text-white sm:text-base">{site.name}</span>
-            <span className="hidden text-[9px] font-medium uppercase tracking-[0.18em] text-slate-500 sm:block">Automation for operators</span>
+            <span className="block text-[7px] font-medium uppercase tracking-[0.18em] text-slate-500 sm:text-[9px]">GENESIS / A NEW CHAPTER</span>
           </span>
         </Link>
 

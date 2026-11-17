@@ -1,13 +1,15 @@
 # Indus Automation Labs Website
 
-Production-ready lightweight SaaS/company website for Indus Automation Labs and its first product, AutoChat.
+IAL 1.0 company website and product portfolio for Indus Automation Labs and AutoChat. The approved release includes the living stellar homepage, coordinated SVG scrollytelling, official branding, company pages and preserved Labs experiences.
+
+See [IAL 1.0 architecture and release notes](docs/ial-v1/README.md).
 
 ## Stack
 
-- Next.js App Router
+- Next.js 15.5.29 App Router, React 19.3.1, Node 24.x
 - TypeScript
 - Tailwind CSS
-- CSS-only animated night-sky background
+- Original WebGL 1 stellar scene and lightweight SVG/CSS storytelling, with static alternatives
 - Static policy pages for licensing and future payment-provider readiness
 - No backend or database required
 
@@ -16,7 +18,7 @@ Production-ready lightweight SaaS/company website for Indus Automation Labs and 
 Install dependencies:
 
 ```bash
-npm install
+npm ci
 ```
 
 Start the development server:
@@ -35,18 +37,15 @@ npm run build
 
 ## Deploy to Vercel
 
-1. Push this project to a GitHub repository.
-2. Go to Vercel and choose **Add New Project**.
-3. Import the GitHub repository.
-4. Keep the default framework setting as **Next.js**.
-5. Use the default build command:
+The existing project is `indusautomationlabs/indus-automation-labs-site`. Publish through its GitHub integration: review the feature-branch Preview, then merge into the verified production branch. Do not create a replacement project or issue an independent production deployment as a shortcut.
+
+Use Node 24.x and the existing build command:
 
 ```bash
 npm run build
 ```
 
-6. Use the default output handled by Vercel for Next.js.
-7. Deploy.
+Vercel handles the Next.js output. Confirm the actual deployment commit, environment, status and public-domain behavior before declaring a release live.
 
 ## Add the AutoChat prospectus PDF
 
@@ -99,6 +98,8 @@ to the final release or repository URL if it changes.
 Before public launch, confirm that the GitHub release includes a downloadable Windows installer asset, not only release notes.
 
 ## Connect indusautomationlabs.com from Namecheap to Vercel
+
+The domains are already configured. The following is historical first-time setup guidance, not an instruction to change DNS during a release. Verify current Vercel domain instructions before any independently necessary DNS change.
 
 1. In Vercel, open the deployed project.
 2. Go to **Settings** -> **Domains**.

@@ -1,4 +1,6 @@
 import type { ReactNode } from "react";
+import { IalPage } from "@/components/ial-v1/IalPage";
+import styles from "@/components/ial-v1/company/policy.module.css";
 
 type PolicyLayoutProps = {
   title: string;
@@ -8,15 +10,14 @@ type PolicyLayoutProps = {
 
 export function PolicyLayout({ title, lastUpdated = "July 2026", children }: PolicyLayoutProps) {
   return (
-    <main className="relative mx-auto max-w-4xl overflow-hidden px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="hero-orb hero-orb-violet" aria-hidden="true" />
-      <div className="glass relative rounded-[2rem] p-6 sm:p-10 lg:p-12">
-        <p className="eyebrow-label">Last updated: {lastUpdated}</p>
-        <h1 className="mt-5 text-balance font-display text-4xl font-semibold tracking-[-0.035em] text-white sm:text-5xl">{title}</h1>
-        <div className="policy-content mt-10 border-t border-white/[0.08] pt-2">
+    <IalPage className={styles.legal}>
+      <article className={styles.document}>
+        <header><p>Last updated: {lastUpdated}</p>
+        <h1>{title}</h1></header>
+        <div className={styles.copy} data-policy-copy>
           {children}
         </div>
-      </div>
-    </main>
+      </article>
+    </IalPage>
   );
 }
